@@ -192,8 +192,9 @@ exclude:
   - vendor
   - people
   - submenus
-  - teaching
-  - repositories
+  - teaching.md
+  - repositories.md
+  - books.md
 keep_files:
   - CNAME
   - .nojekyll
