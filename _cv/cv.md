@@ -177,19 +177,46 @@ author_profile: true
 
 .download-button .btn {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #2a7ae2;
+  padding: 14px 28px;
+  background: linear-gradient(145deg, #4682b4, #5f9ea0);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: none;
+  position: relative;
+  overflow: hidden;
 }
 
 .download-button .btn:hover {
-  background-color: #1a5cb0;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background: linear-gradient(145deg, #5f9ea0, #4682b4);
+}
+
+.download-button .btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.download-button .btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.download-button .btn:hover::after {
+  opacity: 1;
 }
 
 .cv-section {
@@ -203,9 +230,23 @@ author_profile: true
 }
 
 .cv-section h2 {
-  color: #2a7ae2;
+  color: #4682b4;  /* Steel Blue */
   font-size: 1.5em;
   margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.cv-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #4682b4, #5f9ea0);
+  border-radius: 2px;
 }
 
 .cv-item {
@@ -216,6 +257,7 @@ author_profile: true
   color: #333;
   font-size: 1.2em;
   margin-bottom: 5px;
+  font-weight: 600;
 }
 
 .cv-institution {
@@ -260,6 +302,11 @@ author_profile: true
   
   .cv-item h3 {
     font-size: 1.1em;
+  }
+
+  .download-button .btn {
+    padding: 12px 24px;
+    font-size: 1em;
   }
 }
 </style>

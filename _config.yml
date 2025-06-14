@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Ray Chung / Ray's Blog"
+title                    : "Ray Chung / Homepage"
 title_separator          : "-"
 name                     : &name "Ray Chung"
 description              : &description "Ray's Blog"
