@@ -19,7 +19,9 @@ Go Blue! Go Dawgs!
 
 ## Selected Publications
 
-{% assign selected_papers = site.publications | where_exp: "paper", "paper.author_position contains 'first' or paper.author_position contains 'second'" | sort: "date" | reverse %}
+{% assign first_author_papers = site.publications | where: "author_position", "first" %}
+{% assign second_author_papers = site.publications | where: "author_position", "second" %}
+{% assign selected_papers = first_author_papers | concat: second_author_papers | sort: "date" | reverse %}
 {% for paper in selected_papers limit:3 %}
 {{ forloop.index }}. **{{ paper.authors }}** ({{ paper.date | date: "%Y" }}). [{{ paper.title }}]({{ paper.paperurl }}). *{{ paper.venue }}*. {% if paper.citation %}{{ paper.citation }}{% endif %}
 {% endfor %}
