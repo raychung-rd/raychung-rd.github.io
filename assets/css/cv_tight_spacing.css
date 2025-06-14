@@ -1,0 +1,42 @@
+.page__content p,
+.page__content ul,
+.page__content li {
+  line-height: 1.4;
+}
+
+.cv-entry {
+  display: flex;
+  margin-bottom: 1em; /* Space between entries */
+}
+
+.cv-date {
+  flex: 0 0 120px; /* Fixed width for the date column */
+  margin-right: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.cv-details {
+  flex: 1; /* Take up remaining space */
+}
+
+.cv-details h3 {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  font-size: 1em; /* Adjust as needed */
+}
+
+.cv-details p {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+
+.cv-details ul {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  padding-left: 1.2em;
+}
+
+.cv-details ul li {
+  margin-bottom: 0.2em;
+} 

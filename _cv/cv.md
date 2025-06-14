@@ -11,52 +11,118 @@ author_profile: true
 
 ## 🎓 Education
 
-### Ph.D. in Biomedical and Health Informatics  *2023–2027 (anticipated)*
-University of Washington, Seattle, WA  
-*   Concentration: Human-AI Interaction and AI/ ML
+<div class="cv-entry">
+  <div class="cv-date">2023–2027 (anticipated)</div>
+  <div class="cv-details">
+    <h3>Ph.D. in Biomedical and Health Informatics</h3>
+    <p>University of Washington, Seattle, WA</p>
+    <ul>
+      <li>Concentration: Human-AI Interaction and AI/ ML</li>
+    </ul>
+  </div>
+</div>
 
-### M.P.H. in Nutritional Sciences  *2018–2020*
-University of Michigan, Ann Arbor, MI  
+<div class="cv-entry">
+  <div class="cv-date">2018–2020</div>
+  <div class="cv-details">
+    <h3>M.P.H. in Nutritional Sciences</h3>
+    <p>University of Michigan, Ann Arbor, MI</p>
+  </div>
+</div>
 
-### B.S., Pre-Med  *2013–2017*
-National Chung-Hsing University, Taichung, Taiwan  
+<div class="cv-entry">
+  <div class="cv-date">2013–2017</div>
+  <div class="cv-details">
+    <h3>B.S., Pre-Med</h3>
+    <p>National Chung-Hsing University, Taichung, Taiwan</p>
+  </div>
+</div>
 
 ## 🔬 Research Experience
 
-### Human-AI Interaction Researcher  *2024–Present*
-Unita Health, Remote  
-*   Designed LLM-powered AI agent using RAG pipelines for gastrointestinal health
-*   Improved interpretability and satisfaction via few-shot prompting and heuristic evaluations
+<div class="cv-entry">
+  <div class="cv-date">2024–Present</div>
+  <div class="cv-details">
+    <h3>Human-AI Interaction Researcher</h3>
+    <p>Unita Health, Remote</p>
+    <ul>
+      <li>Designed LLM-powered AI agent using RAG pipelines for gastrointestinal health</li>
+      <li>Improved interpretability and satisfaction via few-shot prompting and heuristic evaluations</li>
+    </ul>
+  </div>
+</div>
 
-### Graduate Researcher  *2023–Present*
-University of Washington, Seattle, WA 
-*   Developed LLM chatbot for older adults using OpenAI API
-*   Classified health misinformation on YouTube using Llama
-*   Evaluated usability of home spirometer for CF patients
-*   Built BERT + ViT content filter for pro-eating disorder material
+<div class="cv-entry">
+  <div class="cv-date">2023–Present</div>
+  <div class="cv-details">
+    <h3>Graduate Researcher</h3>
+    <p>University of Washington, Seattle, WA</p>
+    <ul>
+      <li>Developed LLM chatbot for older adults using OpenAI API</li>
+      <li>Classified health misinformation on YouTube using Llama</li>
+      <li>Evaluated usability of home spirometer for CF patients</li>
+      <li>Built BERT + ViT content filter for pro-eating disorder material</li>
+    </ul>
+  </div>
+</div>
 
-### User Experience Research Intern  *2024*
-Dexcom, San Diego, CA 
-*   Designed mixed-methods survey using TTM
-*   Worked with PMs, engineers, and designers for product insights
+<div class="cv-entry">
+  <div class="cv-date">2024</div>
+  <div class="cv-details">
+    <h3>User Experience Research Intern</h3>
+    <p>Dexcom, San Diego, CA</p>
+    <ul>
+      <li>Designed mixed-methods survey using TTM</li>
+      <li>Worked with PMs, engineers, and designers for product insights</li>
+    </ul>
+  </div>
+</div>
 
-### Research Scientist  *2022–2023*
-Impossible Foods, Redwood City, CA  
-*   Conducted data mining on ingredients and nutrients to optimize products
+<div class="cv-entry">
+  <div class="cv-date">2022–2023</div>
+  <div class="cv-details">
+    <h3>Research Scientist</h3>
+    <p>Impossible Foods, Redwood City, CA</p>
+    <ul>
+      <li>Conducted data mining on ingredients and nutrients to optimize products</li>
+    </ul>
+  </div>
+</div>
 
-### AI Researcher  *2021*
-Heali AI, Remote 
-*   Curated datasets for personalized nutrition AI model training
+<div class="cv-entry">
+  <div class="cv-date">2021</div>
+  <div class="cv-details">
+    <h3>AI Researcher</h3>
+    <p>Heali AI, Remote</p>
+    <ul>
+      <li>Curated datasets for personalized nutrition AI model training</li>
+    </ul>
+  </div>
+</div>
 
-### Graduate Researcher  *2019–2020*
-University of Michigan, Ann Arbor, MI  
-*   Managed RCT logistics on HIIT and weight change using REDCap
+<div class="cv-entry">
+  <div class="cv-date">2019–2020</div>
+  <div class="cv-details">
+    <h3>Graduate Researcher</h3>
+    <p>University of Michigan, Ann Arbor, MI</p>
+    <ul>
+      <li>Managed RCT logistics on HIIT and weight change using REDCap</li>
+    </ul>
+  </div>
+</div>
 
-### UX Analyst - Team Lead  *2018*
-TaskUs/Valve Corporation, Taipei, Taiwan  
-*   Led analysis of Steam UX trends, improving satisfaction by 180%
+<div class="cv-entry">
+  <div class="cv-date">2018</div>
+  <div class="cv-details">
+    <h3>UX Analyst - Team Lead</h3>
+    <p>TaskUs/Valve Corporation, Taipei, Taiwan</p>
+    <ul>
+      <li>Led analysis of Steam UX trends, improving satisfaction by 180%</li>
+    </ul>
+  </div>
+</div>
 
-## 🏆 Honors and Awards
+## �� Honors and Awards
 *   **2023:** Top Scholars Award, UW
 *   **2018–2020:** Global Scholars Award, NSF International
 *   **2019:** Maxine Moore Scholarship, University of Michigan SPH
