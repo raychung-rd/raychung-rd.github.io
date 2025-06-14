@@ -1,3 +1,13 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('a.btn');
+    buttons.forEach(button => {
+      button.setAttribute('target', '_blank');
+      button.setAttribute('rel', 'noopener noreferrer');
+    });
+  });
+</script>
+
 {% include analytics.html %}
