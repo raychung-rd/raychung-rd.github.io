@@ -1,42 +1,43 @@
 .page__content p,
 .page__content ul,
 .page__content li {
-  line-height: 1.4;
+  line-height: 1.3; /* Slightly tighter for general content */
 }
 
-.cv-entry {
+.page__content .cv-entry {
   display: flex;
-  margin-bottom: 1em; /* Space between entries */
+  margin-bottom: 0.5em; /* Reduced space between entries */
+  align-items: baseline; /* Align items based on their baselines */
 }
 
-.cv-date {
+.page__content .cv-date {
   flex: 0 0 120px; /* Fixed width for the date column */
   margin-right: 20px;
   text-align: right;
-  font-weight: bold;
+  font-weight: normal; /* Ensure less bold for date */
+  line-height: 1.3; /* Match content line height */
 }
 
-.cv-details {
+.page__content .cv-details {
   flex: 1; /* Take up remaining space */
 }
 
-.cv-details h3 {
+.page__content .cv-details h3 {
   margin-top: 0;
-  margin-bottom: 0.2em;
-  font-size: 1em; /* Adjust as needed */
+  margin-bottom: 0.1em;
+  font-size: 1.1em; /* Slightly larger than normal text, but not too big */
+  font-weight: bold;
+  line-height: 1.3; /* Ensure consistent line height */
 }
 
-.cv-details p {
+.page__content .cv-details p,
+.page__content .cv-details ul,
+.page__content .cv-details li {
+  line-height: 1.3; /* Tighter line spacing */
   margin-top: 0;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.1em;
 }
 
-.cv-details ul {
-  margin-top: 0.2em;
-  margin-bottom: 0;
+.page__content .cv-details ul {
   padding-left: 1.2em;
-}
-
-.cv-details ul li {
-  margin-bottom: 0.2em;
 } 

@@ -1,13 +1,11 @@
 ---
 layout: single
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 ---
 
 [Download CV as PDF](/files/Ray_Chung_CV.pdf){: .btn .btn--primary}
-
-# Ray-Yuan (Ray) Chung – Curriculum Vitae
 
 ## 🎓 Education
 
@@ -122,7 +120,7 @@ author_profile: true
   </div>
 </div>
 
-## �� Honors and Awards
+## 🏆 Honors and Awards
 *   **2023:** Top Scholars Award, UW
 *   **2018–2020:** Global Scholars Award, NSF International
 *   **2019:** Maxine Moore Scholarship, University of Michigan SPH
