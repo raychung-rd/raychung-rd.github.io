@@ -1,6 +1,7 @@
 ---
 title: "Toward Automated Detection of Biased Social Signals from the Content of Clinical Conversations"
 collection: publications
+category: conferences
 permalink: /publication/2025-01-01-Toward-Automated-Detection-of-Biased-Social-Signals-from-the-Content-of-Clinical-Conversations
 date: 2025-01-01
 venue: 'AMIA Annual Symposium Proceedings'

@@ -14,6 +14,15 @@ def clean_title(title):
     title = title.strip().replace(' ', '-')
     return title
 
+def get_category(entry_type):
+    """Determine the category based on entry type."""
+    if entry_type.lower() in ['article', 'journal']:
+        return 'manuscripts'
+    elif entry_type.lower() in ['inproceedings', 'conference']:
+        return 'conferences'
+    else:
+        return 'manuscripts'  # default to manuscripts
+
 def create_markdown(entry):
     """Create markdown content for a publication."""
     # Get the date
@@ -39,10 +48,14 @@ def create_markdown(entry):
     clean_title_text = clean_title(entry['title'])
     filename = f"{date}-{clean_title_text}.md"
 
+    # Get the category
+    category = get_category(entry.get('ENTRYTYPE', 'article'))
+
     # Create the markdown content
     md = f"""---
 title: "{entry['title']}"
 collection: publications
+category: {category}
 permalink: /publication/{date}-{clean_title_text}
 date: {date}
 venue: '{entry.get('journal', entry.get('booktitle', 'Unknown venue'))}'

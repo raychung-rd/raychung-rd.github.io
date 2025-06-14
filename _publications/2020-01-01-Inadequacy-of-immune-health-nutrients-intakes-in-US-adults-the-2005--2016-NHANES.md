@@ -1,6 +1,7 @@
 ---
 title: "Inadequacy of immune health nutrients: intakes in US adults, the 2005--2016 NHANES"
 collection: publications
+category: manuscripts
 permalink: /publication/2020-01-01-Inadequacy-of-immune-health-nutrients-intakes-in-US-adults-the-2005--2016-NHANES
 date: 2020-01-01
 venue: 'Nutrients'

@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<div class="publications">
+
+  <h1>Publications</h1>
+
+  {% assign publications = site.publications | sort: 'date' | reverse %}
+  
+  {% for category in site.publication_category %}
+    <h2>{{ category[1].title }}</h2>
+    <div class="publication-list">
+      {% for pub in publications %}
+        {% if pub.category == category[0] %}
+          <div class="publication-item">
+            <h3>
+              <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+            </h3>
+            <p class="publication-meta">
+              {{ pub.date | date: "%B %Y" }} | {{ pub.venue }}
+            </p>
+            {% if pub.excerpt %}
+              <p class="publication-excerpt">{{ pub.excerpt }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+
+</div>
+
+<style>
+.publications {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.publication-list {
+  margin-bottom: 40px;
+}
+
+.publication-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+}
+
+.publication-item h3 {
+  margin: 0 0 10px 0;
+}
+
+.publication-item h3 a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+
+.publication-item h3 a:hover {
+  text-decoration: underline;
+}
+
+.publication-meta {
+  color: #666;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.publication-excerpt {
+  margin: 10px 0 0 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+</style> 
