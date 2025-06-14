@@ -18,17 +18,16 @@ Outside of work, I enjoy traveling and playing team sports - mainly basketball a
 Go Blue! Go Dawgs!
 
 ## Selected Publications
-======
-1. **Chung, R.**, & [Co-authors]. (2023). [Title of your recent publication]. *Journal Name*, Volume(Issue), pages. [DOI/URL]
 
-2. **Chung, R.**, & [Co-authors]. (2022). [Title of another publication]. *Journal Name*, Volume(Issue), pages. [DOI/URL]
-
-3. **Chung, R.**, & [Co-authors]. (2021). [Title of another publication]. *Conference Name*, pages. [DOI/URL]
+{% assign selected_papers = site.publications | where_exp: "paper", "paper.author_position == 'first' or paper.author_position == 'second'" | sort: "date" | reverse %}
+{% for paper in selected_papers limit:3 %}
+{{ forloop.index }}. **{{ paper.authors }}** ({{ paper.date | date: "%Y" }}). [{{ paper.title }}]({{ paper.paperurl }}). *{{ paper.venue }}*. {% if paper.citation %}{{ paper.citation }}{% endif %}
+{% endfor %}
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=8Z-pAeQAAAAJ&hl=en).
 
 ## 📸 Photo Gallery
-======
+
 
 <div class="row">
   <div class="column">

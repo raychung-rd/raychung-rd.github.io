@@ -14,6 +14,17 @@ def clean_title(title):
     title = title.strip().replace(' ', '-')
     return title
 
+def get_author_position(authors, target_author="Chung"):
+    """Determine if the target author is first or second author."""
+    author_list = [a.strip() for a in authors.split(' and ')]
+    for i, author in enumerate(author_list):
+        if target_author.lower() in author.lower():
+            if i == 0:
+                return "first"
+            elif i == 1:
+                return "second"
+    return "other"
+
 def get_category(entry_type):
     """Determine the category based on entry type."""
     if entry_type.lower() in ['article', 'journal']:
@@ -51,6 +62,10 @@ def create_markdown(entry):
     # Get the category
     category = get_category(entry.get('ENTRYTYPE', 'article'))
 
+    # Get author position
+    authors = entry.get('author', '')
+    author_position = get_author_position(authors)
+
     # Create the markdown content
     md = f"""---
 title: "{entry['title']}"
@@ -59,15 +74,18 @@ category: {category}
 permalink: /publication/{date}-{clean_title_text}
 date: {date}
 venue: '{entry.get('journal', entry.get('booktitle', 'Unknown venue'))}'
+authors: '{authors.replace(' and ', ', ')}'
+author_position: '{author_position}'
 """
 
     # Add paper URL if available
     if 'url' in entry:
         md += f"paperurl: '{entry['url']}'\n"
+    elif 'doi' in entry:
+        md += f"paperurl: 'https://doi.org/{entry['doi']}'\n"
 
     # Add citation
-    authors = entry.get('author', '').replace(' and ', ', ')
-    citation = f"{authors}. ({year}). {entry['title']}. {entry.get('journal', entry.get('booktitle', ''))}."
+    citation = f"{entry.get('volume', '')}({entry.get('number', '')}), {entry.get('pages', '')}"
     md += f"citation: '{citation}'\n"
 
     md += "---\n\n"
@@ -79,6 +97,8 @@ venue: '{entry.get('journal', entry.get('booktitle', 'Unknown venue'))}'
     # Add link to paper
     if 'url' in entry:
         md += f"[Access paper here]({entry['url']}){{:target=\"_blank\"}}\n"
+    elif 'doi' in entry:
+        md += f"[Access paper here](https://doi.org/{entry['doi']}){{:target=\"_blank\"}}\n"
     else:
         md += f"Use [Google Scholar](https://scholar.google.com/scholar?q={clean_title_text.replace('-', '+')}){{:target=\"_blank\"}} for full citation\n"
 
@@ -86,18 +106,21 @@ venue: '{entry.get('journal', entry.get('booktitle', 'Unknown venue'))}'
 
 def main():
     # Read the BibTeX file
-    with open('publications.bib', 'r', encoding='utf-8') as bibtex_file:
+    bibtex_path = os.path.join(os.path.dirname(__file__), 'publications.bib')
+    with open(bibtex_path, 'r', encoding='utf-8') as bibtex_file:
         parser = bibtexparser.bparser.BibTexParser(common_strings=True)
         bib_database = bibtexparser.load(bibtex_file, parser=parser)
 
     # Create _publications directory if it doesn't exist
-    os.makedirs('../_publications', exist_ok=True)
+    output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), '_publications')
+    os.makedirs(output_dir, exist_ok=True)
 
     # Process each entry
     for entry in bib_database.entries:
         try:
             filename, content = create_markdown(entry)
-            with open(f"../_publications/{filename}", 'w', encoding='utf-8') as f:
+            output_path = os.path.join(output_dir, filename)
+            with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(content)
             print(f"Successfully created: {filename}")
         except Exception as e:
