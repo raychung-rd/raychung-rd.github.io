@@ -25,8 +25,8 @@ author:
   avatar           : "profile.png"
   name             : "Ray-Yuan (Ray) Chung"
   pronouns         : # example: "she/her"  
-  bio              : "Hi,I'm Ray, a PhD student at the University of Washington, conducting research on human-centered AI for health. I'm also a dietitian with experience in mental health and health technology. "
-  location         : "Seattle, WA,USA"
+  bio              : "Hi,I'm Ray, a PhD student at the University of Washington, conducting research on human-centered AI for health. I'm also a dietitian with experience in mental health and health tech. "
+  location         : "Seattle, WA, USA"
   employer         : "University of Washington"
   uri              : # URL
   email            : "raychung@uw.edu" 
@@ -78,8 +78,8 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
+#  books:
+#    title: 'Books'
   manuscripts:
     title: 'Journal Articles'    
   conferences:

@@ -17,7 +17,7 @@ Outside of work, I enjoy traveling and playing team sports - mainly basketball a
 
 <span style="color: #00274c;">Go Blue!</span> <span style="color: #32006e;">Go Dawgs!</span>
 
-<div style="background-color: #f0f8ff; padding: 15px; border-left: 5px solid #4682b4; margin-bottom: 20px;">
+<div style="background-color: #f0f8ff; padding: 15px; margin-bottom: 20px;">
   <h2 style="margin-top: 0; color: #4682b4;">Currently seeking internship opportunities for Fall/Winter 2025!</h2>
   <p>Interested in health AI, LLM reasoning, and human-AI interaction.</p>
 </div>
