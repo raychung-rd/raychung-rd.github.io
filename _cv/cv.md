@@ -8,7 +8,9 @@ author_profile: true
 {% include base_path %}
 
 <div class="cv-container">
-[Download CV as PDF](/files/Ray_Chung_CV.pdf){: .btn .btn--primary}
+<div class="download-button">
+<a href="/files/Ray_Chung_CV.pdf" class="btn btn--primary" target="_blank">Download CV as PDF</a>
+</div>
 
 # Ray-Yuan (Ray) Chung – Curriculum Vitae
 
@@ -107,6 +109,28 @@ Content Analysis, Intervention Design, Psychology
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.download-button {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.download-button .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2a7ae2;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.download-button .btn:hover {
+  background-color: #1a5cb0;
+  color: white;
+  text-decoration: none;
 }
 
 .cv-container h1 {
