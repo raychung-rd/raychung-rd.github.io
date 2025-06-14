@@ -112,41 +112,42 @@ Content Analysis, Intervention Design, Psychology
 .cv-container h1 {
   margin-top: 30px;
   margin-bottom: 20px;
+  font-size: 2em;
 }
 
 .cv-container h2 {
   margin-top: 25px;
   margin-bottom: 15px;
+  font-size: 1.5em;
 }
 
 .cv-container h3 {
   margin-top: 20px;
   margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 .cv-container ul {
   margin-bottom: 15px;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 .cv-container hr {
   margin: 25px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.cv-container p {
+  margin-bottom: 10px;
+}
+
+.cv-container strong {
+  font-weight: 600;
+}
+
+.cv-container em {
+  font-style: italic;
 }
 </style>
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> 
