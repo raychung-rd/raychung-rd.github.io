@@ -154,7 +154,6 @@ author_profile: true
     </section>
   </div>
 </div>
-
 <style>
 .cv-container {
   max-width: 800px;
