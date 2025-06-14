@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/2025-01-01-Learning-from-Elders-Making-an-LLM-powered-Chatbot-for-Retirement-Communities-more-Accessible-through-User-centered-Design
 date: 2025-01-01
 venue: 'arXiv preprint arXiv:2504.08985'
-authors: 'Li, Luna Xingyu, Chung, Ray-yuan, Chen, Feng, Zeng, Wenyu, Jeon, Yein, Zaslavsky, Oleg'
+authors: 'Luna Xingyu Li, Ray-yuan Chung, Feng Chen, Wenyu Zeng, Yein Jeon, Oleg Zaslavsky'
 author_position: 'second'
 citation: '(), '
 ---

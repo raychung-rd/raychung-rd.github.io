@@ -4,6 +4,19 @@ import os
 import re
 from datetime import datetime
 
+def format_single_author(author_full_name):
+    """Format a single author's name from 'Lastname, Firstname' to 'Firstname Lastname'."""
+    parts = [p.strip() for p in author_full_name.split(',')]
+    if len(parts) == 2:
+        return f"{parts[1]} {parts[0]}"
+    return author_full_name # Return as is if not in 'Last, First' format
+
+def format_authors_list(authors_string):
+    """Format a list of authors, converting each from 'Lastname, Firstname' to 'Firstname Lastname'."""
+    individual_authors = [a.strip() for a in authors_string.split(' and ')]
+    formatted_authors = [format_single_author(author) for author in individual_authors]
+    return ", ".join(formatted_authors)
+
 def clean_title(title):
     """Clean the title for use in filenames."""
     # Remove LaTeX commands and special characters
@@ -66,6 +79,9 @@ def create_markdown(entry):
     authors = entry.get('author', '')
     author_position = get_author_position(authors)
 
+    # Format authors for markdown output
+    formatted_authors_for_md = format_authors_list(authors)
+
     # Create the markdown content
     md = f"""---
 title: "{entry['title']}"
@@ -74,7 +90,7 @@ category: {category}
 permalink: /publication/{date}-{clean_title_text}
 date: {date}
 venue: '{entry.get('journal', entry.get('booktitle', 'Unknown venue'))}'
-authors: '{authors.replace(' and ', ', ')}'
+authors: '{formatted_authors_for_md}'
 author_position: '{author_position}'
 """
 
@@ -99,8 +115,6 @@ author_position: '{author_position}'
         md += f"[Access paper here]({entry['url']}){{:target=\"_blank\"}}\n"
     elif 'doi' in entry:
         md += f"[Access paper here](https://doi.org/{entry['doi']}){{:target=\"_blank\"}}\n"
-    else:
-        md += f"Use [Google Scholar](https://scholar.google.com/scholar?q={clean_title_text.replace('-', '+')}){{:target=\"_blank\"}} for full citation\n"
 
     return filename, md
 

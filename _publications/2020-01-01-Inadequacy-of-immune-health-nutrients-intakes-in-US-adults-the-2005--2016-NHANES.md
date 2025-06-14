@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/2020-01-01-Inadequacy-of-immune-health-nutrients-intakes-in-US-adults-the-2005--2016-NHANES
 date: 2020-01-01
 venue: 'Nutrients'
-authors: 'Reider, Carroll A, Chung, Ray-Yuan, Devarshi, Prasad P, Grant, Ryan W, Hazels Mitmesser, Susan'
+authors: 'Carroll A Reider, Ray-Yuan Chung, Prasad P Devarshi, Ryan W Grant, Susan Hazels Mitmesser'
 author_position: 'second'
 citation: '12(6), 1735'
 ---
