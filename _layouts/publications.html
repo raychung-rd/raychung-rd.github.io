@@ -18,7 +18,7 @@ layout: single
               <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
             </h3>
             <p class="publication-meta">
-              {{ pub.date | date: "%B %Y" }} | {{ pub.venue }}
+              {{ pub.authors }} ({{ pub.date | date: "%Y" }}) | {{ pub.venue }}
             </p>
             {% if pub.excerpt %}
               <p class="publication-excerpt">{{ pub.excerpt }}</p>
@@ -57,7 +57,7 @@ layout: single
 }
 
 .publication-item h3 a {
-  color: #2a7ae2;
+  color: #4682b4; /* Steel Blue */
   text-decoration: none;
 }
 
