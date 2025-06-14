@@ -5,307 +5,82 @@ permalink: /cv/
 author_profile: true
 ---
 
-{% include base_path %}
+[Download CV as PDF](/files/Ray_Chung_CV.pdf){: .btn .btn--primary}
 
-<div class="cv-container">
-  <div class="download-button">
-    <a href="/files/Ray_Chung_CV.pdf" class="btn btn--primary" target="_blank">Download CV as PDF</a>
-  </div>
+# Ray-Yuan (Ray) Chung – Curriculum Vitae
 
-  <div class="cv-content">
-    <h1>Ray-Yuan (Ray) Chung – Curriculum Vitae</h1>
+## 📧 Contact
+*   **Email:** raychung@uw.edu
+*   **Location:** Seattle, WA, USA
+*   **Languages:** English, Mandarin Chinese
 
-    <section class="cv-section">
-      <h2>📧 Contact</h2>
-      <ul>
-        <li><strong>Email:</strong> raychung@uw.edu</li>
-        <li><strong>Location:</strong> Seattle, WA, USA</li>
-        <li><strong>Languages:</strong> English, Mandarin Chinese</li>
-      </ul>
-    </section>
+## 🎓 Education
 
-    <section class="cv-section">
-      <h2>🎓 Education</h2>
-      
-      <div class="cv-item">
-        <h3>Ph.D. in Biomedical and Health Informatics</h3>
-        <p class="cv-institution">University of Washington, Seattle, WA — <em>2023–2027 (anticipated)</em></p>
-        <ul>
-          <li>Concentration: HCI and Data Science</li>
-        </ul>
-      </div>
+### Ph.D. in Biomedical and Health Informatics
+University of Washington, Seattle, WA — *2023–2027 (anticipated)*
+*   Concentration: HCI and Data Science
 
-      <div class="cv-item">
-        <h3>M.P.H. in Nutritional Sciences</h3>
-        <p class="cv-institution">University of Michigan, Ann Arbor, MI — <em>2018–2020</em></p>
-      </div>
+### M.P.H. in Nutritional Sciences
+University of Michigan, Ann Arbor, MI — *2018–2020*
 
-      <div class="cv-item">
-        <h3>B.S., Pre-Med</h3>
-        <p class="cv-institution">National Chung-Hsing University, Taichung, Taiwan — <em>2013–2017</em></p>
-      </div>
-    </section>
+### B.S., Pre-Med
+National Chung-Hsing University, Taichung, Taiwan — *2013–2017*
 
-    <section class="cv-section">
-      <h2>🔬 Research Experience</h2>
-      
-      <div class="cv-item">
-        <h3>Human-AI Interaction Researcher</h3>
-        <p class="cv-institution">Unita Health, Remote — <em>2024–Present</em></p>
-        <ul>
-          <li>Designed LLM-powered AI agent using RAG pipelines for gastrointestinal health</li>
-          <li>Improved interpretability and satisfaction via few-shot prompting and heuristic evaluations</li>
-        </ul>
-      </div>
+## 🔬 Research Experience
 
-      <div class="cv-item">
-        <h3>Graduate Researcher</h3>
-        <p class="cv-institution">University of Washington, Seattle, WA — <em>2023–Present</em></p>
-        <ul>
-          <li>Developed LLM chatbot for older adults using OpenAI API</li>
-          <li>Classified health misinformation on YouTube using Llama</li>
-          <li>Evaluated usability of home spirometer for CF patients</li>
-          <li>Built BERT + ViT content filter for pro-eating disorder material</li>
-        </ul>
-      </div>
+### Human-AI Interaction Researcher
+Unita Health, Remote — *2024–Present*
+*   Designed LLM-powered AI agent using RAG pipelines for gastrointestinal health
+*   Improved interpretability and satisfaction via few-shot prompting and heuristic evaluations
 
-      <div class="cv-item">
-        <h3>User Experience Research Intern</h3>
-        <p class="cv-institution">Dexcom, San Diego, CA — <em>2024</em></p>
-        <ul>
-          <li>Designed mixed-methods survey using TTM</li>
-          <li>Worked with PMs, engineers, and designers for product insights</li>
-        </ul>
-      </div>
+### Graduate Researcher
+University of Washington, Seattle, WA — *2023–Present*
+*   Developed LLM chatbot for older adults using OpenAI API
+*   Classified health misinformation on YouTube using Llama
+*   Evaluated usability of home spirometer for CF patients
+*   Built BERT + ViT content filter for pro-eating disorder material
 
-      <div class="cv-item">
-        <h3>Research Scientist</h3>
-        <p class="cv-institution">Impossible Foods, Redwood City, CA — <em>2022–2023</em></p>
-        <ul>
-          <li>Conducted data mining on ingredients and nutrients to optimize products</li>
-        </ul>
-      </div>
+### User Experience Research Intern
+Dexcom, San Diego, CA — *2024*
+*   Designed mixed-methods survey using TTM
+*   Worked with PMs, engineers, and designers for product insights
 
-      <div class="cv-item">
-        <h3>AI Researcher</h3>
-        <p class="cv-institution">Heali AI, Remote — <em>2021</em></p>
-        <ul>
-          <li>Curated datasets for personalized nutrition AI model training</li>
-        </ul>
-      </div>
+### Research Scientist
+Impossible Foods, Redwood City, CA — *2022–2023*
+*   Conducted data mining on ingredients and nutrients to optimize products
 
-      <div class="cv-item">
-        <h3>Graduate Researcher</h3>
-        <p class="cv-institution">University of Michigan, Ann Arbor, MI — <em>2019–2020</em></p>
-        <ul>
-          <li>Managed RCT logistics on HIIT and weight change using REDCap</li>
-        </ul>
-      </div>
+### AI Researcher
+Heali AI, Remote — *2021*
+*   Curated datasets for personalized nutrition AI model training
 
-      <div class="cv-item">
-        <h3>UX Analyst - Team Lead</h3>
-        <p class="cv-institution">TaskUs/Valve Corporation, Taipei, Taiwan — <em>2018</em></p>
-        <ul>
-          <li>Led analysis of Steam UX trends, improving satisfaction by 180%</li>
-        </ul>
-      </div>
-    </section>
+### Graduate Researcher
+University of Michigan, Ann Arbor, MI — *2019–2020*
+*   Managed RCT logistics on HIIT and weight change using REDCap
 
-    <section class="cv-section">
-      <h2>🏆 Honors and Awards</h2>
-      <ul>
-        <li><strong>2023:</strong> Top Scholars Award, UW</li>
-        <li><strong>2018–2020:</strong> Global Scholars Award, NSF International</li>
-        <li><strong>2019:</strong> Maxine Moore Scholarship, University of Michigan SPH</li>
-      </ul>
-    </section>
+### UX Analyst - Team Lead
+TaskUs/Valve Corporation, Taipei, Taiwan — *2018*
+*   Led analysis of Steam UX trends, improving satisfaction by 180%
 
-    <section class="cv-section">
-      <h2>🛠 Skills</h2>
-      
-      <div class="cv-item">
-        <h3>Tools</h3>
-        <p>Python, SQL, R, PyTorch, TensorFlow, Tableau, RedCap</p>
-      </div>
+## 🏆 Honors and Awards
+*   **2023:** Top Scholars Award, UW
+*   **2018–2020:** Global Scholars Award, NSF International
+*   **2019:** Maxine Moore Scholarship, University of Michigan SPH
 
-      <div class="cv-item">
-        <h3>AI / ML</h3>
-        <p>LLMs, Prompt Engineering, NLP, ML, Multimodal Analysis, Causal Inference</p>
-      </div>
+## 🛠 Skills
 
-      <div class="cv-item">
-        <h3>UX / HCI</h3>
-        <p>Mixed-methods, Usability Testing, A/B Testing, Inclusive Design</p>
-      </div>
+### Tools
+Python, SQL, R, PyTorch, TensorFlow, Tableau, RedCap
 
-      <div class="cv-item">
-        <h3>Behavioral Science</h3>
-        <p>Content Analysis, Intervention Design, Psychology</p>
-      </div>
-    </section>
+### AI / ML
+LLMs, Prompt Engineering, NLP, ML, Multimodal Analysis, Causal Inference
 
-    <section class="cv-section">
-      <h2>📜 Certifications and Affiliations</h2>
-      <ul>
-        <li>Registered Dietitian (ID: 86289001)</li>
-        <li>Certified Sports Nutrition Specialist – Taiwan Society for Sports Nutrition</li>
-        <li>Member of The DUB Group at UW, AND, NSCA</li>
-      </ul>
-    </section>
-  </div>
-</div>
-<style>
-.cv-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
+### UX / HCI
+Mixed-methods, Usability Testing, A/B Testing, Inclusive Design
 
-.cv-content {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+### Behavioral Science
+Content Analysis, Intervention Design, Psychology
 
-.download-button {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.download-button .btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background: linear-gradient(145deg, #4682b4, #5f9ea0);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 1.1em;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border: none;
-  position: relative;
-  overflow: hidden;
-}
-
-.download-button .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-  background: linear-gradient(145deg, #5f9ea0, #4682b4);
-}
-
-.download-button .btn:active {
-  transform: translateY(1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.download-button .btn::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0));
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.download-button .btn:hover::after {
-  opacity: 1;
-}
-
-.cv-section {
-  margin: 30px 0;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.cv-section:last-child {
-  border-bottom: none;
-}
-
-.cv-section h2 {
-  color: #4682b4;  /* Steel Blue */
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.cv-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 3px;
-  background: linear-gradient(to right, #4682b4, #5f9ea0);
-  border-radius: 2px;
-}
-
-.cv-item {
-  margin: 20px 0;
-}
-
-.cv-item h3 {
-  color: #333;
-  font-size: 1.2em;
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-
-.cv-institution {
-  color: #666;
-  font-size: 1em;
-  margin: 5px 0;
-}
-
-.cv-container ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 10px 0;
-}
-
-.cv-container li {
-  margin: 5px 0;
-  line-height: 1.5;
-}
-
-.cv-container strong {
-  color: #333;
-  font-weight: 600;
-}
-
-.cv-container em {
-  color: #666;
-  font-style: italic;
-}
-
-@media (max-width: 768px) {
-  .cv-container {
-    padding: 10px;
-  }
-  
-  .cv-content {
-    padding: 20px;
-  }
-  
-  .cv-section h2 {
-    font-size: 1.3em;
-  }
-  
-  .cv-item h3 {
-    font-size: 1.1em;
-  }
-
-  .download-button .btn {
-    padding: 12px 24px;
-    font-size: 1em;
-  }
-}
-</style>
+## 📜 Certifications and Affiliations
+*   Registered Dietitian (ID: 86289001)
+*   Certified Sports Nutrition Specialist – Taiwan Society for Sports Nutrition
+*   Member of The DUB Group at UW, AND, NSCA
