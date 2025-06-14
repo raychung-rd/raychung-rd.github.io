@@ -9,6 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="cv-container">
 [Download CV as PDF](/files/Ray_Chung_CV.pdf){: .btn .btn--primary}
 
 # Ray-Yuan (Ray) Chung – Curriculum Vitae
@@ -100,6 +101,39 @@ Content Analysis, Intervention Design, Psychology
 - Registered Dietitian (ID: 86289001)  
 - Certified Sports Nutrition Specialist – Taiwan Society for Sports Nutrition  
 - Member of The DUB Group at UW, AND, NSCA
+
+</div>
+
+<style>
+.cv-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cv-container h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.cv-container h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.cv-container h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cv-container ul {
+  margin-bottom: 15px;
+}
+
+.cv-container hr {
+  margin: 25px 0;
+}
+</style>
 
 Publications
 ======
