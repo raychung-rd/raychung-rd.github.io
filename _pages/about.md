@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Born and raised in Taiwan, I moved to the US seven years ago to become a registered dietitian in this country. After completing my degree from the University of Michigan, I then worked in collegiate athletic teams; mental health clinics, research institutions, and biotech companies - including multiple startups.
+Born and raised in Taiwan, I moved to the US in 2018 with the goal of becoming a registered dietitian in this country. After completing my degree from the University of Michigan, I then worked in collegiate athletic teams; mental health clinics, research institutions, and health technology companies as a dietitian and research scientist.
 
-I returned to the University of Washington to begin my PhD in Biomedical and Health Informatics. My current research interest lies in the intersection of artificial intelligence (AI), human-AI interaction, and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build holistic digital health applications.
+With a passion of creating better techonology to improve people's health and well-being, I returned to the University of Washington to begin my PhD in Biomedical and Health Informatics in 2023. My current research interest lies in the intersection of artificial intelligence (AI), human-computer interaction, and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build holistic digital health applications.
 
 I am inspired by the late great Kobe Bryant's Mamba Mentality - to become a better version of myself every day and to inspire people around me. Thus, I enjoyed mentorship or just casual coffee chats. It's been a fun and distinct journey, and I'd love to chat with anyone who's interested.
 

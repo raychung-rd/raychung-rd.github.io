@@ -17,9 +17,15 @@ layout: single
             <h3>
               <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
             </h3>
-            <p class="publication-meta">
-              {{ pub.authors }} ({{ pub.date | date: "%Y" }}) | {{ pub.venue }}
+            <p class="publication-authors">
+              {{ pub.authors }}
             </p>
+            <p class="publication-venue-date">
+              {{ pub.venue }}. ({{ pub.date | date: "%Y" }})
+            </p>
+            {% if site.author.googlescholar %}
+              <p class="publication-citation-link">Use <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a> for full citation</p>
+            {% endif %}
             {% if pub.excerpt %}
               <p class="publication-excerpt">{{ pub.excerpt }}</p>
             {% endif %}
@@ -65,10 +71,30 @@ layout: single
   text-decoration: underline;
 }
 
-.publication-meta {
-  color: #666;
+.publication-authors {
+  color: #333; /* A slightly darker color for author names */
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.publication-venue-date {
+  color: #666; /* Similar to original meta color */
   font-size: 0.9em;
   margin: 5px 0;
+}
+
+.publication-citation-link {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.publication-citation-link a {
+  color: #2a7ae2; /* Default link blue */
+  text-decoration: none;
+}
+
+.publication-citation-link a:hover {
+  text-decoration: underline;
 }
 
 .publication-excerpt {
