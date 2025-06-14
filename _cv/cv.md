@@ -9,56 +9,51 @@ author_profile: true
 
 # Ray-Yuan (Ray) Chung – Curriculum Vitae
 
-## 📧 Contact
-*   **Email:** raychung@uw.edu
-*   **Location:** Seattle, WA, USA
-*   **Languages:** English, Mandarin Chinese
-
 ## 🎓 Education
 
-### Ph.D. in Biomedical and Health Informatics
-University of Washington, Seattle, WA — *2023–2027 (anticipated)*
-*   Concentration: HCI and Data Science
+### Ph.D. in Biomedical and Health Informatics  *2023–2027 (anticipated)*
+University of Washington, Seattle, WA  
+*   Concentration: Human-AI Interaction and AI/ ML
 
-### M.P.H. in Nutritional Sciences
-University of Michigan, Ann Arbor, MI — *2018–2020*
+### M.P.H. in Nutritional Sciences  *2018–2020*
+University of Michigan, Ann Arbor, MI  
 
-### B.S., Pre-Med
-National Chung-Hsing University, Taichung, Taiwan — *2013–2017*
+### B.S., Pre-Med  *2013–2017*
+National Chung-Hsing University, Taichung, Taiwan  
 
 ## 🔬 Research Experience
 
-### Human-AI Interaction Researcher
-Unita Health, Remote — *2024–Present*
+### Human-AI Interaction Researcher  *2024–Present*
+Unita Health, Remote  
 *   Designed LLM-powered AI agent using RAG pipelines for gastrointestinal health
 *   Improved interpretability and satisfaction via few-shot prompting and heuristic evaluations
 
-### Graduate Researcher
-University of Washington, Seattle, WA — *2023–Present*
+### Graduate Researcher  *2023–Present*
+University of Washington, Seattle, WA 
 *   Developed LLM chatbot for older adults using OpenAI API
 *   Classified health misinformation on YouTube using Llama
 *   Evaluated usability of home spirometer for CF patients
 *   Built BERT + ViT content filter for pro-eating disorder material
 
-### User Experience Research Intern
-Dexcom, San Diego, CA — *2024*
+### User Experience Research Intern  *2024*
+Dexcom, San Diego, CA 
 *   Designed mixed-methods survey using TTM
 *   Worked with PMs, engineers, and designers for product insights
 
-### Research Scientist
-Impossible Foods, Redwood City, CA — *2022–2023*
+### Research Scientist  *2022–2023*
+Impossible Foods, Redwood City, CA  
 *   Conducted data mining on ingredients and nutrients to optimize products
 
-### AI Researcher
-Heali AI, Remote — *2021*
+### AI Researcher  *2021*
+Heali AI, Remote 
 *   Curated datasets for personalized nutrition AI model training
 
-### Graduate Researcher
-University of Michigan, Ann Arbor, MI — *2019–2020*
+### Graduate Researcher  *2019–2020*
+University of Michigan, Ann Arbor, MI  
 *   Managed RCT logistics on HIIT and weight change using REDCap
 
-### UX Analyst - Team Lead
-TaskUs/Valve Corporation, Taipei, Taiwan — *2018*
+### UX Analyst - Team Lead  *2018*
+TaskUs/Valve Corporation, Taipei, Taiwan  
 *   Led analysis of Steam UX trends, improving satisfaction by 180%
 
 ## 🏆 Honors and Awards
@@ -67,6 +62,9 @@ TaskUs/Valve Corporation, Taipei, Taiwan — *2018*
 *   **2019:** Maxine Moore Scholarship, University of Michigan SPH
 
 ## 🛠 Skills
+
+### Languages
+English, Mandarin/ Chinese
 
 ### Tools
 Python, SQL, R, PyTorch, TensorFlow, Tableau, RedCap
