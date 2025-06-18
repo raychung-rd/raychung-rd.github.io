@@ -6,11 +6,13 @@ layout: single
 
   {% assign publications = site.publications | sort: 'date' | reverse %}
   
-  {% for category in site.publication_category %}
-    <h2>{{ category[1].title }}</h2>
+  {% assign category_order = "conferences,manuscripts" | split: "," %}
+  {% for category_key in category_order %}
+    {% assign category = site.publication_category[category_key] %}
+    <h2 style="color: #4682b4;">{{ category.title }}</h2>
     <div class="publication-list">
       {% for pub in publications %}
-        {% if pub.category == category[0] %}
+        {% if pub.category == category_key %}
           <div class="publication-item">
             <h3>
               {{ pub.title }}

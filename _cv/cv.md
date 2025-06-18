@@ -5,16 +5,10 @@ permalink: /cv/
 author_profile: true
 ---
 
+[Download CV as PDF](/files/Ray_Chung_CV.pdf){: .btn .btn--primary}
+
 <div style="text-align:center; margin-bottom: 0.5em;">
   <h1 style="margin-bottom:0.2em;">Ray-Yuan (Ray) Chung</h1>
-  <div>
-    <a href="mailto:raychung@uw.edu">raychung@uw.edu</a> &nbsp;|&nbsp;
-    <a href="https://scholar.google.com/citations?user=8Z-pAeQAAAAJ">Google Scholar</a> &nbsp;|&nbsp;
-    <a href="https://raychung-rd.github.io/">Personal Site</a>
-  </div>
-  <div style="margin-top:0.3em; color:#003366; font-weight:500;">
-    A human-centered AI researcher with a background in behavioral science and health informatics<br>
-    <b>Research Interests:</b> Human-AI Interaction, Health AI, Explainable AI, Agentic AI
   </div>
 </div>
 

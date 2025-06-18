@@ -11,7 +11,7 @@ Born and raised in Taiwan, I moved to the US in 2018 with the goal of becoming a
 
 With a passion of creating better techonology to improve people's health and well-being, I returned to the University of Washington to begin my PhD in Biomedical and Health Informatics in 2023. My current research interest lies in the intersection of artificial intelligence (AI), human-computer interaction, and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build health applications.
 
-I am inspired by the late great Kobe Bryant's Mamba Mentality - to become a better version of myself every day and to inspire people around me. Thus, I'm open to mentorship oppurtunities or just casual coffee chats. 
+I am inspired by the late great Kobe Bryant's Mamba Mentality - to become a better version of myself every day and to inspire people around me. Thus, I welcome mentorship oppurtunities or just casual coffee chats. If you are interest in my work, please feel free to reach out!
 
 Outside of work, I enjoy traveling and playing sports - mainly basketball and golf (working on my swing) now. If you see me at IMA or on the green, come say hi!
 
