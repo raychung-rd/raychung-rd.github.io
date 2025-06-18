@@ -35,66 +35,33 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 
 ## 📸 Photo Gallery
 
-<div class="photo-carousel-wrapper">
-  <div class="photo-carousel" id="photo-carousel">
-    <img src="/images/photo1.jpg" alt="Description of photo 1">
-    <img src="/images/photo2.jpg" alt="Description of photo 2">
-    <img src="/images/photo3.jpg" alt="Description of photo 3">
-  </div>
+<div class="photo-gallery">
+  <img src="/images/photo1.jpg" alt="Description of photo 1">
+  <img src="/images/photo2.jpg" alt="Description of photo 2">
+  <img src="/images/photo3.jpg" alt="Description of photo 3">
 </div>
 
 <style>
-.photo-carousel-wrapper {
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto 24px auto;
-  max-width: 900px;
-  height: 220px;
-}
-.photo-carousel {
+.photo-gallery {
   display: flex;
   gap: 12px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  width: 100%;
-  height: 220px;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
-.photo-carousel img {
-  width: 320px;
+.photo-gallery img {
+  width: 280px;
   height: 200px;
   object-fit: contain;
   border-radius: 8px;
-  flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   background: #f8f8f8;
 }
 @media (max-width: 600px) {
-  .photo-carousel img {
+  .photo-gallery img {
     width: 90vw;
     height: 160px;
   }
-  .photo-carousel, .photo-carousel-wrapper {
-    height: 170px;
-  }
 }
 </style>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.getElementById('photo-carousel');
-  if (!carousel) return;
-  // Duplicate images for seamless looping
-  carousel.innerHTML += carousel.innerHTML;
-  let scrollPos = 0;
-  const imgCount = carousel.children.length / 2;
-  const imgWidth = carousel.children[0].offsetWidth + 12; // image width + gap
-  setInterval(function() {
-    scrollPos += 1.1; // Adjust speed here
-    if (scrollPos >= imgWidth * imgCount) {
-      scrollPos = 0;
-    }
-    carousel.scrollLeft = scrollPos;
-  }, 16); // ~60fps
-});
-</script>
 
