@@ -104,11 +104,15 @@ author_position: '{author_position}'
     citation = f"{entry.get('volume', '')}({entry.get('number', '')}), {entry.get('pages', '')}"
     md += f"citation: '{citation}'\n"
 
+    # Add abstract to front matter (always include, even if empty)
+    abstract = entry.get('abstract', '')
+    md += f"abstract: '{abstract}'\n"
+
     md += "---\n\n"
 
-    # Add abstract if available
-    if 'abstract' in entry:
-        md += f"{entry['abstract']}\n\n"
+    # Add abstract as content if available
+    if abstract:
+        md += f"{abstract}\n\n"
 
     # Add link to paper
     if 'url' in entry:

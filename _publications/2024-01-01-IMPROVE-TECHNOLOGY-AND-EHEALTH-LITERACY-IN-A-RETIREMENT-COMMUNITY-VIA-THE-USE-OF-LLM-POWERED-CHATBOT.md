@@ -8,6 +8,6 @@ venue: 'Innovation in Aging'
 authors: 'Ray-Yuan Chung, Feng Chen, Yein Jeon, Oleg Zaslavsky'
 author_position: 'first'
 citation: '8(Suppl 1), 1252'
+abstract: ''
 ---
 
-Use [Google Scholar](https://scholar.google.com/scholar?q=IMPROVE+TECHNOLOGY+AND+EHEALTH+LITERACY+IN+A+RETIREMENT+COMMUNITY+VIA+THE+USE+OF+LLM+POWERED+CHATBOT){:target="_blank"} for full citation

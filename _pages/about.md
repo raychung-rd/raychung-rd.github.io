@@ -7,13 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-Born and raised in Taiwan, I moved to the US in 2018 with the goal of becoming a registered dietitian in this country. After completing my degree from the University of Michigan, I then worked in collegiate athletic teams; mental health clinics, research institutions, and health technology companies as a dietitian and research scientist.
+Born and raised in Taiwan, I moved to the US in 2018 with the goal of becoming a registered dietitian in this country. After completing my degree from the University of Michigan, I then worked in collegiate athletic teams, mental health clinics, research institutions, and health technology companies as a dietitian and research scientist.
 
-With a passion of creating better techonology to improve people's health and well-being, I returned to the University of Washington to begin my PhD in Biomedical and Health Informatics in 2023. My current research interest lies in the intersection of artificial intelligence (AI), human-computer interaction, and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build holistic digital health applications.
+With a passion of creating better techonology to improve people's health and well-being, I returned to the University of Washington to begin my PhD in Biomedical and Health Informatics in 2023. My current research interest lies in the intersection of artificial intelligence (AI), human-computer interaction, and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build health applications.
 
-I am inspired by the late great Kobe Bryant's Mamba Mentality - to become a better version of myself every day and to inspire people around me. Thus, I enjoyed mentorship or just casual coffee chats. It's been a fun and distinct journey, and I'd love to chat with anyone who's interested.
+I am inspired by the late great Kobe Bryant's Mamba Mentality - to become a better version of myself every day and to inspire people around me. Thus, I'm open to mentorship oppurtunities or just casual coffee chats. 
 
-Outside of work, I enjoy traveling and playing team sports - mainly basketball and golf (working on my swing) now. If you see me at IMA or on the green, come say hi!
+Outside of work, I enjoy traveling and playing sports - mainly basketball and golf (working on my swing) now. If you see me at IMA or on the green, come say hi!
 
 <span style="color: #00274c;">Go Blue!</span> <span style="color: #32006e;">Go Dawgs!</span>
 
