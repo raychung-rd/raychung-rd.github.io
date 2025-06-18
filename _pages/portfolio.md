@@ -7,42 +7,44 @@ layout: portfolio
 <div class="portfolio">
   <h1 style="color: #4682b4;">Portfolio</h1>
   
+  <!-- Debug info -->
+  <div style="background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px; font-size: 12px;">
+    <strong>Debug Info:</strong><br>
+    This is the Portfolio page with layout: {{ page.layout }}<br>
+    Projects count: {{ site.projects.size }}<br>
+    Posts count: {{ site.posts.size }}<br>
+    Current page title: {{ page.title }}
+  </div>
+  
+  <!-- Static Portfolio Content -->
   <div class="portfolio-list">
-    {% assign projects = site.projects | sort: 'date' | reverse %}
-    {% if projects.size == 0 %}
-      <!-- Show placeholder projects when no real projects exist -->
-      {% assign placeholder_projects = "Project 1,Project 2,Project 3" | split: "," %}
-      {% for project in placeholder_projects %}
-        <div class="portfolio-item">
-          <h3>{{ project }}</h3>
-          <button class="portfolio-modal-trigger" onclick="openPortfolioModal('placeholder-{{ forloop.index }}')">Show Details</button>
-          <div id="modal-placeholder-{{ forloop.index }}" class="portfolio-modal">
-            <div class="modal-content">
-              <button class="close" aria-label="Close">&times;</button>
-              <img class="modal-image" src="/assets/images/portfolio/placeholder.png" alt="Project Image">
-              <div class="modal-title">{{ project }}</div>
-              <div class="modal-description">Project description goes here.</div>
-            </div>
-          </div>
+    <div class="portfolio-item">
+      <h3>Project 1</h3>
+      <p>This is a static portfolio item to test if the page is working correctly.</p>
+      <button class="portfolio-modal-trigger" onclick="openPortfolioModal('test-1')">Show Details</button>
+      <div id="modal-test-1" class="portfolio-modal">
+        <div class="modal-content">
+          <button class="close" aria-label="Close">&times;</button>
+          <img class="modal-image" src="/assets/images/portfolio/placeholder.png" alt="Project Image">
+          <div class="modal-title">Project 1</div>
+          <div class="modal-description">This is a test project to verify the Portfolio page is working correctly.</div>
         </div>
-      {% endfor %}
-    {% else %}
-      <!-- Show real projects -->
-      {% for project in projects %}
-        <div class="portfolio-item">
-          <h3>{{ project.title }}</h3>
-          <button class="portfolio-modal-trigger" onclick="openPortfolioModal('{{ project.slug }}')">Show Details</button>
-          <div id="modal-{{ project.slug }}" class="portfolio-modal">
-            <div class="modal-content">
-              <button class="close" aria-label="Close">&times;</button>
-              <img class="modal-image" src="/assets/images/portfolio/{{ project.slug }}.png" alt="Project Image" onerror="this.src='/assets/images/portfolio/placeholder.png'">
-              <div class="modal-title">{{ project.title }}</div>
-              <div class="modal-description">{{ project.description | default: 'No description available.' }}</div>
-            </div>
-          </div>
+      </div>
+    </div>
+    
+    <div class="portfolio-item">
+      <h3>Project 2</h3>
+      <p>Another static portfolio item for testing.</p>
+      <button class="portfolio-modal-trigger" onclick="openPortfolioModal('test-2')">Show Details</button>
+      <div id="modal-test-2" class="portfolio-modal">
+        <div class="modal-content">
+          <button class="close" aria-label="Close">&times;</button>
+          <img class="modal-image" src="/assets/images/portfolio/placeholder.png" alt="Project Image">
+          <div class="modal-title">Project 2</div>
+          <div class="modal-description">Another test project to verify the Portfolio page functionality.</div>
         </div>
-      {% endfor %}
-    {% endif %}
+      </div>
+    </div>
   </div>
 </div>
 
