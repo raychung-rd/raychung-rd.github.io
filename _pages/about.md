@@ -41,27 +41,3 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   <img src="/images/photo3.jpg" alt="Description of photo 3">
 </div>
 
-<style>
-.photo-gallery {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-.photo-gallery img {
-  width: 280px;
-  height: 200px;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  background: #f8f8f8;
-}
-@media (max-width: 600px) {
-  .photo-gallery img {
-    width: 90vw;
-    height: 160px;
-  }
-}
-</style>
-
