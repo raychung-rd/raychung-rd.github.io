@@ -28,7 +28,7 @@ Outside of work, I enjoy traveling and playing sports - mainly basketball and go
 {% assign second_author_papers = site.publications | where: "author_position", "second" %}
 {% assign selected_papers = first_author_papers | concat: second_author_papers | sort: "date" | reverse %}
 {% for paper in selected_papers limit:3 %}
-{{ forloop.index }}. **{{ paper.authors }}** ({{ paper.date | date: "%Y" }}). [{{ paper.title }}]({{ paper.paperurl }}). *{{ paper.venue }}*. {% if paper.citation %}{{ paper.citation }}{% endif %}
+{{ forloop.index }}. {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }} ({{ paper.date | date: "%Y" }}). [{{ paper.title }}]({{ paper.paperurl }}). *{{ paper.venue }}*. {% if paper.citation %}{{ paper.citation }}{% endif %}
 {% endfor %}
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=8Z-pAeQAAAAJ&hl=en).

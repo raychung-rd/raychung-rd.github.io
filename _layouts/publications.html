@@ -13,7 +13,7 @@ layout: single
         {% if pub.category == category[0] %}
           <div class="publication-item">
             <h3>
-              <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+              {{ pub.title }}
             </h3>
             <p class="publication-authors">
               {{ pub.authors }}
@@ -21,7 +21,8 @@ layout: single
             <p class="publication-venue-date">
               {{ pub.venue }}. ({{ pub.date | date: "%Y" }})
             </p>
-            <button class="publication-modal-trigger" onclick="openPublicationModal('{{ pub.slug }}')">View Details</button>
+            <button class="publication-modal-trigger" onclick="openPublicationModal('{{ pub.slug }}')">Show Summary</button>
+            <button class="publication-gs-trigger" onclick="window.open('https://scholar.google.com/scholar?q={{ pub.title | uri_escape }}', '_blank')">View on Google Scholar</button>
 
             <!-- Modal for this publication -->
             <div id="modal-{{ pub.slug }}" class="publication-modal">
