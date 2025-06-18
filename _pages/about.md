@@ -35,47 +35,61 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 
 ## 📸 Photo Gallery
 
-
-<div class="row">
-  <div class="column">
-    <img src="/images/photo1.jpg" alt="Description of photo 1" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/images/photo2.jpg" alt="Description of photo 2" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/images/photo3.jpg" alt="Description of photo 3" style="width:100%">
+<div class="photo-carousel-wrapper">
+  <div class="photo-carousel" id="photo-carousel">
+    <img src="/images/photo1.jpg" alt="Description of photo 1">
+    <img src="/images/photo2.jpg" alt="Description of photo 2">
+    <img src="/images/photo3.jpg" alt="Description of photo 3">
   </div>
 </div>
 
 <style>
-.row {
+.photo-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto 24px auto;
+  max-width: 900px;
+}
+.photo-carousel {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  padding-bottom: 8px;
 }
-
-.column {
-  flex: 33.33%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
+.photo-carousel img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
+@media (max-width: 600px) {
+  .photo-carousel img {
+    width: 90vw;
+    height: 160px;
   }
 }
 </style>
+<script>
+// Auto-scroll the photo carousel
+(function() {
+  const carousel = document.getElementById('photo-carousel');
+  let scrollAmount = 0;
+  let direction = 1;
+  function autoScroll() {
+    if (!carousel) return;
+    if (direction === 1 && (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 2)) {
+      direction = -1;
+    } else if (direction === -1 && carousel.scrollLeft <= 2) {
+      direction = 1;
+    }
+    carousel.scrollLeft += direction * 1.2; // Adjust speed here
+    requestAnimationFrame(autoScroll);
+  }
+  autoScroll();
+})();
+</script>
 
