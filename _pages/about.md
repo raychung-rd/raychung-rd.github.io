@@ -53,18 +53,20 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 .photo-carousel {
   display: flex;
   gap: 12px;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   width: 100%;
   padding-bottom: 8px;
+  align-items: center;
 }
 .photo-carousel img {
   width: 320px;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
   flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #f8f8f8;
 }
 @media (max-width: 600px) {
   .photo-carousel img {
@@ -74,19 +76,21 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 }
 </style>
 <script>
-// Auto-scroll the photo carousel
+// Infinite auto-scroll for the photo carousel
 (function() {
   const carousel = document.getElementById('photo-carousel');
-  let scrollAmount = 0;
-  let direction = 1;
+  if (!carousel) return;
+  // Duplicate images for seamless looping
+  carousel.innerHTML += carousel.innerHTML;
+  let scrollPos = 0;
+  const imgCount = carousel.children.length / 2;
+  const imgWidth = carousel.children[0].offsetWidth + 12; // image width + gap
   function autoScroll() {
-    if (!carousel) return;
-    if (direction === 1 && (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 2)) {
-      direction = -1;
-    } else if (direction === -1 && carousel.scrollLeft <= 2) {
-      direction = 1;
+    scrollPos += 1.1; // Adjust speed here
+    if (scrollPos >= imgWidth * imgCount) {
+      scrollPos = 0;
     }
-    carousel.scrollLeft += direction * 1.2; // Adjust speed here
+    carousel.scrollLeft = scrollPos;
     requestAnimationFrame(autoScroll);
   }
   autoScroll();

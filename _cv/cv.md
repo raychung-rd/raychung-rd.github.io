@@ -9,7 +9,6 @@ author_profile: true
 
 <div style="text-align:center; margin-bottom: 0.5em;">
   <h1 style="margin-bottom:0.2em;">Ray-Yuan (Ray) Chung</h1>
-  </div>
 </div>
 
 ## 🎓 Education

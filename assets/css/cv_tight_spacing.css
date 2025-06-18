@@ -40,4 +40,15 @@
 
 .page__content .cv-details ul {
   padding-left: 1.2em;
+}
+
+.btn--primary {
+  background-color: #4682b4 !important; /* Steel Blue */
+  color: #fff !important;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.btn--primary:hover, .btn--primary:focus {
+  background-color: #315a7c !important;
+  color: #fff !important;
 } 
