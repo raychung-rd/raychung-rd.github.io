@@ -19,7 +19,7 @@ Outside of work, I enjoy traveling and playing team sports - mainly basketball a
 
 <div style="background-color: #f0f8ff; padding: 15px; margin-bottom: 20px;">
   <h2 style="margin-top: 0; color: #4682b4;">Currently seeking internship opportunities for Fall/Winter 2025!</h2>
-  <p>Interested in health AI, LLM reasoning, and human-AI interaction.</p>
+  <p>Interested in Human-AI Interaction, Health AI, Explainable AI, Agentic AI.</p>
 </div>
 
 ## Selected Publications

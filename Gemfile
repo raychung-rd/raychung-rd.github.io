@@ -18,3 +18,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Webrick is needed for Ruby 3.0+
 gem "webrick", "~> 1.8"
+
+gem "jekyll-sitemap"
