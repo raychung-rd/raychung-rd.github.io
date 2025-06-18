@@ -6,6 +6,8 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+# Trigger rebuild to clear stale routing
+
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "light"
