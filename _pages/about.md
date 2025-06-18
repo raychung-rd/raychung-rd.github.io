@@ -22,7 +22,7 @@ Outside of work, I enjoy traveling and playing sports - mainly basketball and go
   <p>Interested in Human-AI Interaction, Health AI, Explainable AI, Agentic AI.</p>
 </div>
 
-## Selected Publications
+## 📚 Selected Publications
 
 {% assign first_author_papers = site.publications | where: "author_position", "first" %}
 {% assign second_author_papers = site.publications | where: "author_position", "second" %}
@@ -40,4 +40,43 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   <img src="/images/photo2.jpg" alt="Description of photo 2">
   <img src="/images/photo3.jpg" alt="Description of photo 3">
 </div>
+
+<style>
+.photo-gallery {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+.photo-gallery img {
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: #f8f8f8;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .photo-gallery {
+    gap: 12px;
+  }
+  .photo-gallery img {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .photo-gallery {
+    gap: 8px;
+  }
+  .photo-gallery img {
+    width: 160px;
+    height: 120px;
+  }
+}
+</style>
 
