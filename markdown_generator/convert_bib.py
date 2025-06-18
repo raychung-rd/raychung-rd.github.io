@@ -138,9 +138,20 @@ def main():
         try:
             filename, content = create_markdown(entry)
             output_path = os.path.join(output_dir, filename)
+            # If file exists, add a numeric suffix
+            if os.path.exists(output_path):
+                base, ext = os.path.splitext(filename)
+                i = 1
+                while True:
+                    new_filename = f"{base}-{i}{ext}"
+                    new_output_path = os.path.join(output_dir, new_filename)
+                    if not os.path.exists(new_output_path):
+                        output_path = new_output_path
+                        break
+                    i += 1
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(content)
-            print(f"Successfully created: {filename}")
+            print(f"Successfully created: {os.path.basename(output_path)}")
         except Exception as e:
             print(f"Error processing entry: {entry.get('title', 'Unknown')}")
             print(f"Error: {str(e)}")

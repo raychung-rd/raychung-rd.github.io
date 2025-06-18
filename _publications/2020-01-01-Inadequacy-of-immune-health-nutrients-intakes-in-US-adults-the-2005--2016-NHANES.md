@@ -8,6 +8,6 @@ venue: 'Nutrients'
 authors: 'Carroll A Reider, Ray-Yuan Chung, Prasad P Devarshi, Ryan W Grant, Susan Hazels Mitmesser'
 author_position: 'second'
 citation: '12(6), 1735'
-abstract: ''
+abstract: 'An analysis of NHANES data from 26,282 U.S. adults revealed widespread inadequacies in key immune-supporting micronutrients, with over 95% deficient in vitamin D and over 80% in vitamin E. Using nationally representative intake estimates, the study highlights how these gaps may impair immune function. Supplement use was associated with reduced prevalence of inadequacy. The findings underscore the need for public health efforts to promote adequate intake of vitamins A, C, D, E, and zinc to support immune health.'
 ---
 
