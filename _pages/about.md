@@ -49,6 +49,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   width: 100%;
   margin: 0 auto 24px auto;
   max-width: 900px;
+  height: 220px;
 }
 .photo-carousel {
   display: flex;
@@ -56,7 +57,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   overflow-x: hidden;
   scroll-behavior: smooth;
   width: 100%;
-  padding-bottom: 8px;
+  height: 220px;
   align-items: center;
 }
 .photo-carousel img {
@@ -73,11 +74,13 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
     width: 90vw;
     height: 160px;
   }
+  .photo-carousel, .photo-carousel-wrapper {
+    height: 170px;
+  }
 }
 </style>
 <script>
-// Infinite auto-scroll for the photo carousel
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.getElementById('photo-carousel');
   if (!carousel) return;
   // Duplicate images for seamless looping
@@ -85,15 +88,13 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
   let scrollPos = 0;
   const imgCount = carousel.children.length / 2;
   const imgWidth = carousel.children[0].offsetWidth + 12; // image width + gap
-  function autoScroll() {
+  setInterval(function() {
     scrollPos += 1.1; // Adjust speed here
     if (scrollPos >= imgWidth * imgCount) {
       scrollPos = 0;
     }
     carousel.scrollLeft = scrollPos;
-    requestAnimationFrame(autoScroll);
-  }
-  autoScroll();
-})();
+  }, 16); // ~60fps
+});
 </script>
 
