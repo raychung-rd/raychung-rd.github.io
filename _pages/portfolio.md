@@ -1,16 +1,30 @@
 ---
 permalink: /portfolio/
 title: "Portfolio"
-layout: single
+layout: portfolio
 ---
 
 <div class="portfolio">
   <h1 style="color: #4682b4;">Portfolio</h1>
+  
+  <!-- Debug info (remove this later) -->
+  <div style="background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px; font-size: 12px;">
+    <strong>Debug Info:</strong><br>
+    Page layout: {{ page.layout }}<br>
+    Page title: {{ page.title }}<br>
+    Page permalink: {{ page.permalink }}<br>
+    Projects collection size: {{ site.projects.size }}<br>
+    Projects: {% for project in site.projects %}{{ project.title }}{% unless forloop.last %}, {% endunless %}{% endfor %}<br>
+    All collections: {% for collection in site.collections %}{{ collection[0] }}{% unless forloop.last %}, {% endunless %}{% endfor %}<br>
+    Posts size: {{ site.posts.size }}<br>
+  </div>
+  
   <div class="portfolio-list">
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% if projects.size == 0 %}
-      {% assign projects = "Project 1,Project 2,Project 3" | split: "," %}
-      {% for project in projects %}
+      <!-- Show placeholder projects when no real projects exist -->
+      {% assign placeholder_projects = "Project 1,Project 2,Project 3" | split: "," %}
+      {% for project in placeholder_projects %}
         <div class="portfolio-item">
           <h3>{{ project }}</h3>
           <button class="portfolio-modal-trigger" onclick="openPortfolioModal('placeholder-{{ forloop.index }}')">Show Details</button>
@@ -25,6 +39,7 @@ layout: single
         </div>
       {% endfor %}
     {% else %}
+      <!-- Show real projects -->
       {% for project in projects %}
         <div class="portfolio-item">
           <h3>{{ project.title }}</h3>
