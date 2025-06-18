@@ -53,7 +53,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 }
 .photo-gallery img {
   width: 240px;
-  height: 180px;
+  height: 360px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
