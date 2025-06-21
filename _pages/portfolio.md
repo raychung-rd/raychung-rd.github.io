@@ -3,39 +3,48 @@ permalink: /portfolio/
 title: "Portfolio"
 layout: portfolio
 ---
-
-<div class="portfolio">
-  <h1 style="color: #4682b4;">Portfolio</h1>
   
-  <!-- Static Portfolio Content -->
   <div class="portfolio-list">
-    <div class="portfolio-item">
-      <h3>Project 1</h3>
-      <p>To be Added.</p>
-      <button class="portfolio-modal-trigger" onclick="openPortfolioModal('test-1')">Show Details</button>
-      <div id="modal-test-1" class="portfolio-modal">
-        <div class="modal-content">
-          <button class="close" aria-label="Close">&times;</button>
-          <img class="modal-image" src="/assets/images/portfolio/placeholder.png" alt="Project Image">
-          <div class="modal-title">Project 1</div>
-          <div class="modal-description">To be Added.</div>
+    {% assign projects = site.projects | sort: 'date' | reverse %}
+    {% if projects.size > 0 %}
+      {% for project in projects %}
+        <div class="portfolio-item">
+          <h3>{{ project.title }}</h3>
+          
+          {% if project.status %}
+            <div class="project-status">
+              {% if project.status == 'Ongoing' %}
+                <span style="color: #28a745; font-weight: bold;">● Ongoing</span>
+              {% elsif project.status == 'Complete' %}
+                <span style="color: #6c757d; font-weight: bold;">● Complete</span>
+              {% else %}
+                <span style="color: #6c757d;">{{ project.status }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          <button class="portfolio-modal-trigger" onclick="openPortfolioModal('{{ project.slug }}')">Show Details</button>
+          
+          <div id="modal-{{ project.slug }}" class="portfolio-modal">
+            <div class="modal-content">
+              <button class="close" aria-label="Close">&times;</button>
+              <img class="modal-image" src="/assets/images/portfolio/{{ project.slug }}.png" alt="Project Image" onerror="this.src='/assets/images/portfolio/placeholder.png'">
+              <div class="modal-title">{{ project.title }}</div>
+              
+              {% if project.collaborators %}
+                <div class="modal-collaborators">
+                  <strong>Collaborators:</strong> {{ project.collaborators }}
+                </div>
+              {% endif %}
+              
+              <div class="modal-description">{{ project.description | default: 'No description available.' }}</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="portfolio-item">
-      <h3>Project 2</h3>
-      <p>Another static portfolio item for testing.</p>
-      <button class="portfolio-modal-trigger" onclick="openPortfolioModal('test-2')">Show Details</button>
-      <div id="modal-test-2" class="portfolio-modal">
-        <div class="modal-content">
-          <button class="close" aria-label="Close">&times;</button>
-          <img class="modal-image" src="/assets/images/portfolio/placeholder.png" alt="Project Image">
-          <div class="modal-title">Project 2</div>
-          <div class="modal-description">Another test project to verify the Portfolio page functionality.</div>
-        </div>
-      </div>
-    </div>
+      {% endfor %}
+    {% else %}
+        <p>No projects to display yet. Add more to the <code>_projects</code> folder.</p>
+    {% endif %}
   </div>
 </div>
 
@@ -61,13 +70,18 @@ layout: portfolio
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .portfolio-item h3 {
   margin: 0 0 10px 0;
   color: #4682b4;
 }
-.portfolio-modal-trigger {
+.project-status {
   margin-bottom: 10px;
+  font-size: 0.9em;
+}
+.portfolio-modal-trigger {
+  margin-top: auto;
   background: #4682b4;
   color: #fff;
   border: none;
@@ -97,6 +111,7 @@ layout: portfolio
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   position: relative;
   animation: fadeIn 0.3s;
+  text-align: left;
 }
 .portfolio-modal .close {
   position: absolute;
@@ -120,6 +135,11 @@ layout: portfolio
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 0.5em;
+}
+.modal-collaborators {
+  margin-bottom: 1em;
+  font-size: 0.9em;
+  color: #555;
 }
 .portfolio-modal .modal-description {
   font-size: 1em;
