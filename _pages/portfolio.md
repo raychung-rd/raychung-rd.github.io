@@ -49,6 +49,7 @@ layout: portfolio
   </div>
 
   <!-- Modals are moved here to avoid the CSS transform bug -->
+  <div markdown="1">
   {% for project in projects %}
     <div id="modal-{{ project.slug }}" class="portfolio-modal">
       <div class="modal-content">
@@ -66,6 +67,7 @@ layout: portfolio
       </div>
     </div>
   {% endfor %}
+  </div>
 </div>
 
 <style>
@@ -80,9 +82,9 @@ layout: portfolio
   gap: 24px;
 }
 .portfolio-item {
-  flex: 1 1 250px;
-  min-width: 250px;
-  max-width: 350px;
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 380px;
   background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);

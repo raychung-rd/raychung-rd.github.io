@@ -35,7 +35,9 @@ Outside of work, I enjoy traveling and playing sports - mainly basketball and go
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=8Z-pAeQAAAAJ&hl=en).
 
-## 👥 Collaborators
+## 👥 Main Collaborators
+
+{%- assign main_collaborators_to_show = "Ari Pollack, Jaime Snyder, Orson Xu, Wanda Pratt" | split: ", " -%}
 
 {%- assign all_collaborators = "" | split: "," -%}
 {%- for project in site.projects -%}
@@ -46,10 +48,14 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 {%- endfor -%}
 {%- assign unique_collaborators = all_collaborators | uniq | sort -%}
 
+<div markdown="1">
 <div class="collaborators-list">
   {% for collaborator in unique_collaborators %}
-    <span>{{ collaborator }}</span>
+    {% if main_collaborators_to_show contains collaborator %}
+      <span>{{ collaborator }}</span>
+    {% endif %}
   {% endfor %}
+</div>
 </div>
 
 <style>
