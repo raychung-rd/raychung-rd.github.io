@@ -62,7 +62,7 @@ layout: portfolio
   gap: 24px;
 }
 .portfolio-item {
-  width: 350px;
+  width: 400px;
   background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
