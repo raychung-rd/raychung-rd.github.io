@@ -37,38 +37,7 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 
 ## 👥 Main Collaborators
 
-{%- assign main_collaborators_to_show = "Ari Pollack, Jaime Snyder, Orson Xu, Wanda Pratt" | split: ", " -%}
-{%- assign all_collaborators = "" | split: "," -%}
-{%- for project in site.projects -%}
-  {%- if project.collaborators -%}
-    {%- assign project_collaborators = project.collaborators | split: ", " -%}
-    {%- assign all_collaborators = all_collaborators | concat: project_collaborators -%}
-  {%- endif -%}
-{%- endfor -%}
-{%- assign unique_collaborators = all_collaborators | uniq | sort -%}
-
-<div class="collaborators-list">
-  {% for collaborator in unique_collaborators %}
-    {% if main_collaborators_to_show contains collaborator %}
-      <span>{{ collaborator }}</span>
-    {% endif %}
-  {% endfor %}
-</div>
-
-<style>
-.collaborators-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.collaborators-list span {
-  background-color: #f0f0f0;
-  padding: 5px 12px;
-  border-radius: 15px;
-  font-size: 0.9em;
-}
-</style>
+{% include collaborators.html %}
 
 ## 📸 Photo Gallery
 

@@ -1,0 +1,17 @@
+{%- assign main_collaborators_to_show = "Ari Pollack, Jaime Snyder, Orson Xu, Wanda Pratt" | split: ", " -%}
+{%- assign all_collaborators = "" | split: "," -%}
+{%- for project in site.projects -%}
+  {%- if project.collaborators -%}
+    {%- assign project_collaborators = project.collaborators | split: ", " -%}
+    {%- assign all_collaborators = all_collaborators | concat: project_collaborators -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign unique_collaborators = all_collaborators | uniq | sort -%}
+
+<div class="collaborators-list">
+  {% for collaborator in unique_collaborators %}
+    {% if main_collaborators_to_show contains collaborator %}
+      <span>{{ collaborator }}</span>
+    {% endif %}
+  {% endfor %}
+</div> 

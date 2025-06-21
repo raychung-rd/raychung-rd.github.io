@@ -41,3 +41,20 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+@import "theme/{{ site.theme | default: 'default' }}";
+
+
+/* Collaborators list */
+.collaborators-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.collaborators-list span {
+  background-color: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9em;
+}
