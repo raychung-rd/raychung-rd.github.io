@@ -59,10 +59,11 @@ layout: portfolio
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 .portfolio-item {
-  width: 400px;
+  flex: 0 1 270px;
   background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
