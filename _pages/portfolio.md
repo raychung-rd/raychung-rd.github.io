@@ -3,12 +3,14 @@ permalink: /portfolio/
 title: "Portfolio"
 layout: portfolio
 ---
-
-<div class="portfolio">
-  <h1 style="color: #4682b4;">Portfolio</h1>
   
   <div class="portfolio-list">
-    {% assign projects = site.projects | sort: 'date' | reverse %}
+    {% assign ongoing_projects = site.projects | where: "status", "Ongoing" | sort: 'date' | reverse %}
+    {% assign complete_projects = site.projects | where: "status", "Complete" | sort: 'date' | reverse %}
+    {% assign other_projects = site.projects | where_exp: "item", "item.status != 'Ongoing' and item.status != 'Complete'" | sort: 'date' | reverse %}
+    
+    {% assign projects = ongoing_projects | concat: complete_projects | concat: other_projects %}
+    
     {% if projects.size > 0 %}
       {% for project in projects %}
         <div class="portfolio-item">
@@ -19,8 +21,8 @@ layout: portfolio
               <span class="project-status">
                 {% if project.status == 'Ongoing' %}
                   <span style="color: #28a745; font-weight: bold;">● Ongoing</span>
-                {% elsif project.status == 'Complete' %}
-                  <span style="color: #6c757d; font-weight: bold;">● Complete</span>
+                {% elsif project.status == 'Completed' %}
+                  <span style="color: #6c757d; font-weight: bold;">● {{ project.status }}</span>
                 {% else %}
                   <span style="color: #6c757d;">{{ project.status }}</span>
                 {% endif %}
@@ -38,28 +40,31 @@ layout: portfolio
           {% endif %}
 
           <button class="portfolio-modal-trigger" onclick="openPortfolioModal('{{ project.slug }}')">Show Details</button>
-          
-          <div id="modal-{{ project.slug }}" class="portfolio-modal">
-            <div class="modal-content">
-              <button class="close" aria-label="Close">&times;</button>
-              <img class="modal-image" src="/assets/images/portfolio/{{ project.slug }}.png" alt="Project Image" onerror="this.src='/assets/images/portfolio/placeholder.png'">
-              <div class="modal-title">{{ project.title }}</div>
-              
-              {% if project.collaborators %}
-                <div class="modal-collaborators">
-                  <strong>Collaborators:</strong> {{ project.collaborators }}
-                </div>
-              {% endif %}
-              
-              <div class="modal-description">{{ project.description | default: 'No description available.' }}</div>
-            </div>
-          </div>
         </div>
       {% endfor %}
     {% else %}
         <p>No projects to display yet. Add more to the <code>_projects</code> folder.</p>
     {% endif %}
   </div>
+
+  <!-- Modals are moved here to avoid the CSS transform bug -->
+  {% for project in projects %}
+    <div id="modal-{{ project.slug }}" class="portfolio-modal">
+      <div class="modal-content">
+        <button class="close" aria-label="Close">&times;</button>
+        <img class="modal-image" src="/assets/images/portfolio/{{ project.slug }}.png" alt="Project Image" onerror="this.src='/assets/images/portfolio/placeholder.png'">
+        <div class="modal-title">{{ project.title }}</div>
+        
+        {% if project.collaborators %}
+          <div class="modal-collaborators">
+            <strong>Collaborators:</strong> {{ project.collaborators }}
+          </div>
+        {% endif %}
+        
+        <div class="modal-description">{{ project.description | default: 'No description available.' }}</div>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
 <style>

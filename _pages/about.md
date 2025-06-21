@@ -11,7 +11,7 @@ Born and raised in Taiwan, I moved to the U.S. in 2018 with the goal of becoming
 
 Through my clinical work, I witnessed firsthand how profoundly technology can influence human health—for better or worse. Much like the Chinese proverb "水能載舟，亦能覆舟" ("Water can carry a boat, but it can also overturn it"), I’ve come to believe that technology, when thoughtfully designed, can support and uplift people’s health; when misapplied, it can just as easily create harm or inequity.
 
-Driven by this realization, I returned to the University of Washington to pursue a PhD in Biomedical and Health Informatics. My research sits at the intersection of artificial intelligence (AI), human-computer interaction (HCI), and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build context-aware health applications.
+Thus, I returned to the University of Washington to pursue a PhD in Biomedical and Health Informatics. My research sits at the intersection of artificial intelligence (AI), human-computer interaction (HCI), and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build context-aware health applications.
 
 I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a better version of myself every day and to inspire people around me. I'm always open to mentorship, collaboration, or simply a good coffee chat. If my work resonates with you, don’t hesitate to reach out!
 
