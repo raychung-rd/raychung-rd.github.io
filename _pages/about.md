@@ -7,11 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-Born and raised in Taiwan, I moved to the US in 2018 with the goal of becoming a registered dietitian in this country. After completing my degree from the University of Michigan, I then worked in collegiate athletic teams, mental health clinics, research institutions, and health technology companies as a dietitian and research scientist.
+Born and raised in Taiwan, I moved to the U.S. in 2018 with the goal of becoming a registered dietitian. After earning my degree from the University of Michigan, I then worked in collegiate athletic teams, mental health clinics, research institutions, and health technology companies as a dietitian and a research scientist.
 
-With a passion of creating better techonology to improve people's health and well-being, I returned to the University of Washington to begin my PhD in Biomedical and Health Informatics in 2023. My current research interest lies in the intersection of artificial intelligence (AI), human-computer interaction, and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build health applications.
+Through my clinical work, I witnessed firsthand how profoundly technology can influence human health—for better or worse. Much like the Chinese proverb "水能載舟，亦能覆舟" ("Water can carry a boat, but it can also overturn it"), I’ve come to believe that technology, when thoughtfully designed, can support and uplift people’s health; when misapplied, it can just as easily create harm or inequity.
 
-I am inspired by the late great Kobe Bryant's Mamba Mentality - to become a better version of myself every day and to inspire people around me. Thus, I welcome mentorship oppurtunities or just casual coffee chats. If you are interest in my work, please feel free to reach out!
+Driven by this realization, I returned to the University of Washington to pursue a PhD in Biomedical and Health Informatics. My research sits at the intersection of artificial intelligence (AI), human-computer interaction (HCI), and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build context-aware health applications.
+
+I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a better version of myself every day and to inspire people around me. I'm always open to mentorship, collaboration, or simply a good coffee chat. If my work resonates with you, don’t hesitate to reach out!
 
 Outside of work, I enjoy traveling and playing sports - mainly basketball and golf (working on my swing) now. If you see me at IMA or on the green, come say hi!
 

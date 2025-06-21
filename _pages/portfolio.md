@@ -18,18 +18,12 @@ layout: portfolio
             {% if project.status %}
               <span class="project-status">
                 {% if project.status == 'Ongoing' %}
-                  <span style="color: #28a745; font-weight: bold;">●</span> Ongoing
+                  <span style="color: #28a745; font-weight: bold;">● Ongoing</span>
                 {% elsif project.status == 'Complete' %}
-                  <span style="color: #6c757d; font-weight: bold;">●</span> Complete
+                  <span style="color: #6c757d; font-weight: bold;">● Complete</span>
                 {% else %}
-                  {{ project.status }}
+                  <span style="color: #6c757d;">{{ project.status }}</span>
                 {% endif %}
-              </span>
-            {% endif %}
-
-            {% if project.collaborators %}
-              <span class="project-collaborators">
-                | <strong>Collaborators:</strong> {{ project.collaborators }}
               </span>
             {% endif %}
           </div>
@@ -75,34 +69,41 @@ layout: portfolio
   padding: 20px;
 }
 .portfolio-list {
-  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-item {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  flex: 1 1 250px;
+  min-width: 250px;
+  max-width: 350px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.portfolio-item:last-child {
-  border-bottom: none;
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 .portfolio-item h3 {
   margin: 0 0 10px 0;
-  color: #4682b4;
+  color: #3a5795;
+  font-size: 1.15em;
 }
 .project-meta {
-  color: #666;
-  font-size: 0.9em;
-  margin: 5px 0 10px 0;
+  margin-bottom: 10px;
 }
 .project-status {
-  /* The styles for the status text itself are in the HTML spans */
-}
-.project-collaborators {
-  /* Meta styles are applied to the parent */
+  font-size: 0.9em;
 }
 .project-hashtags {
-  margin-top: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 .project-hashtags span {
   display: inline-block;
@@ -114,14 +115,18 @@ layout: portfolio
   margin: 2px;
 }
 .portfolio-modal-trigger {
-  margin-top: 0;
-  background: #4682b4;
+  margin-top: auto;
+  background: #3a5795;
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 6px 16px;
+  padding: 8px 18px;
   cursor: pointer;
   font-size: 1em;
+  transition: background-color 0.2s;
+}
+.portfolio-modal-trigger:hover {
+  background: #2c4373;
 }
 .portfolio-modal {
   display: none;
