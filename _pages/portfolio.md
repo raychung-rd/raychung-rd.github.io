@@ -48,31 +48,11 @@ layout: portfolio
     {% endif %}
   </div>
 
-  <!-- Modals are moved here to avoid the CSS transform bug -->
-  <div markdown="1">
-  {% for project in projects %}
-    <div id="modal-{{ project.slug }}" class="portfolio-modal">
-      <div class="modal-content">
-        <button class="close" aria-label="Close">&times;</button>
-        <img class="modal-image" src="/assets/images/portfolio/{{ project.slug }}.png" alt="Project Image" onerror="this.src='/assets/images/portfolio/placeholder.png'">
-        <div class="modal-title">{{ project.title }}</div>
-        
-        {% if project.collaborators %}
-          <div class="modal-collaborators">
-            <strong>Collaborators:</strong> {{ project.collaborators }}
-          </div>
-        {% endif %}
-        
-        <div class="modal-description">{{ project.description | default: 'No description available.' }}</div>
-      </div>
-    </div>
-  {% endfor %}
-  </div>
-</div>
+  {% include portfolio_modals.html %}
 
 <style>
 .portfolio {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -82,9 +62,9 @@ layout: portfolio
   gap: 24px;
 }
 .portfolio-item {
-  flex: 1 1 300px;
+  flex: 1 1 350px;
   min-width: 300px;
-  max-width: 380px;
+  max-width: 420px;
   background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);

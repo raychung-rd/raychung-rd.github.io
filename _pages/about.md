@@ -2,7 +2,7 @@
 permalink: /
 title: "About Me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -38,7 +38,6 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 ## 👥 Main Collaborators
 
 {%- assign main_collaborators_to_show = "Ari Pollack, Jaime Snyder, Orson Xu, Wanda Pratt" | split: ", " -%}
-
 {%- assign all_collaborators = "" | split: "," -%}
 {%- for project in site.projects -%}
   {%- if project.collaborators -%}
@@ -48,14 +47,12 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 {%- endfor -%}
 {%- assign unique_collaborators = all_collaborators | uniq | sort -%}
 
-<div markdown="1">
 <div class="collaborators-list">
   {% for collaborator in unique_collaborators %}
     {% if main_collaborators_to_show contains collaborator %}
       <span>{{ collaborator }}</span>
     {% endif %}
   {% endfor %}
-</div>
 </div>
 
 <style>

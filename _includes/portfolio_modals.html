@@ -1,0 +1,20 @@
+<!-- This file contains the HTML for the portfolio modals -->
+<div markdown="1">
+{% for project in projects %}
+  <div id="modal-{{ project.slug }}" class="portfolio-modal">
+    <div class="modal-content">
+      <button class="close" aria-label="Close">&times;</button>
+      <img class="modal-image" src="/assets/images/portfolio/{{ project.slug }}.png" alt="Project Image" onerror="this.src='/assets/images/portfolio/placeholder.png'">
+      <div class="modal-title">{{ project.title }}</div>
+      
+      {% if project.collaborators %}
+        <div class="modal-collaborators">
+          <strong>Collaborators:</strong> {{ project.collaborators }}
+        </div>
+      {% endif %}
+      
+      <div class="modal-description">{{ project.description | default: 'No description available.' }}</div>
+    </div>
+  </div>
+{% endfor %}
+</div> 
