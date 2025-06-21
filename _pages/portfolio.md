@@ -3,6 +3,9 @@ permalink: /portfolio/
 title: "Portfolio"
 layout: portfolio
 ---
+
+<div class="portfolio">
+  <h1 style="color: #4682b4;">Portfolio</h1>
   
   <div class="portfolio-list">
     {% assign projects = site.projects | sort: 'date' | reverse %}
@@ -11,15 +14,32 @@ layout: portfolio
         <div class="portfolio-item">
           <h3>{{ project.title }}</h3>
           
-          {% if project.status %}
-            <div class="project-status">
-              {% if project.status == 'Ongoing' %}
-                <span style="color: #28a745; font-weight: bold;">● Ongoing</span>
-              {% elsif project.status == 'Complete' %}
-                <span style="color: #6c757d; font-weight: bold;">● Complete</span>
-              {% else %}
-                <span style="color: #6c757d;">{{ project.status }}</span>
-              {% endif %}
+          <div class="project-meta">
+            {% if project.status %}
+              <span class="project-status">
+                {% if project.status == 'Ongoing' %}
+                  <span style="color: #28a745; font-weight: bold;">●</span> Ongoing
+                {% elsif project.status == 'Complete' %}
+                  <span style="color: #6c757d; font-weight: bold;">●</span> Complete
+                {% else %}
+                  {{ project.status }}
+                {% endif %}
+              </span>
+            {% endif %}
+
+            {% if project.collaborators %}
+              <span class="project-collaborators">
+                | <strong>Collaborators:</strong> {{ project.collaborators }}
+              </span>
+            {% endif %}
+          </div>
+
+          {% if project.hashtags %}
+            <div class="project-hashtags">
+              {% assign tags = project.hashtags | split: ", " %}
+              {% for tag in tags %}
+                <span>{{ tag }}</span>
+              {% endfor %}
             </div>
           {% endif %}
 
@@ -55,33 +75,46 @@ layout: portfolio
   padding: 20px;
 }
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  margin-bottom: 40px;
 }
 .portfolio-item {
-  flex: 1 1 250px;
-  min-width: 250px;
-  max-width: 350px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  padding: 18px 16px 16px 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.portfolio-item:last-child {
+  border-bottom: none;
 }
 .portfolio-item h3 {
   margin: 0 0 10px 0;
   color: #4682b4;
 }
-.project-status {
-  margin-bottom: 10px;
+.project-meta {
+  color: #666;
   font-size: 0.9em;
+  margin: 5px 0 10px 0;
+}
+.project-status {
+  /* The styles for the status text itself are in the HTML spans */
+}
+.project-collaborators {
+  /* Meta styles are applied to the parent */
+}
+.project-hashtags {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.project-hashtags span {
+  display: inline-block;
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin: 2px;
 }
 .portfolio-modal-trigger {
-  margin-top: auto;
+  margin-top: 0;
   background: #4682b4;
   color: #fff;
   border: none;
