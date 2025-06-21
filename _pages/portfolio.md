@@ -6,10 +6,11 @@ layout: portfolio
   
   <div class="portfolio-list">
     {% assign ongoing_projects = site.projects | where: "status", "Ongoing" | sort: 'date' | reverse %}
-    {% assign complete_projects = site.projects | where: "status", "Complete" | sort: 'date' | reverse %}
-    {% assign other_projects = site.projects | where_exp: "item", "item.status != 'Ongoing' and item.status != 'Complete'" | sort: 'date' | reverse %}
+    {% assign complete_p1 = site.projects | where: "status", "Complete" %}
+    {% assign complete_p2 = site.projects | where: "status", "Completed" %}
+    {% assign complete_projects = complete_p1 | concat: complete_p2 | sort: 'date' | reverse %}
     
-    {% assign projects = ongoing_projects | concat: complete_projects | concat: other_projects %}
+    {% assign projects = ongoing_projects | concat: complete_projects %}
     
     {% if projects.size > 0 %}
       {% for project in projects %}

@@ -9,11 +9,11 @@ redirect_from:
 
 Born and raised in Taiwan, I moved to the U.S. in 2018 with the goal of becoming a registered dietitian. After earning my degree from the University of Michigan, I then worked in collegiate athletic teams, mental health clinics, research institutions, and health technology companies as a dietitian and a research scientist.
 
-Through my clinical work, I witnessed firsthand how profoundly technology can influence human health—for better or worse. Much like the Chinese proverb "水能載舟，亦能覆舟" ("Water can carry a boat, but it can also overturn it"), I’ve come to believe that technology, when thoughtfully designed, can support and uplift people’s health; when misapplied, it can just as easily create harm or inequity.
+Through my clinical work, I witnessed firsthand how profoundly technology can influence human health—for better or worse. Much like the Chinese proverb "水能載舟，亦能覆舟" ("Water can carry a boat, but it can also overturn it"), I've come to believe that technology, when thoughtfully designed, can support and uplift people's health; when misapplied, it can just as easily create harm or inequity.
 
 Thus, I returned to the University of Washington to pursue a PhD in Biomedical and Health Informatics. My research sits at the intersection of artificial intelligence (AI), human-computer interaction (HCI), and consumer health informatics. I am working on leveraging human-centered design techniques and AI/ML methods to build context-aware health applications.
 
-I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a better version of myself every day and to inspire people around me. I'm always open to mentorship, collaboration, or simply a good coffee chat. If my work resonates with you, don’t hesitate to reach out!
+I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a better version of myself every day and to inspire people around me. I'm always open to mentorship, collaboration, or simply a good coffee chat. If my work resonates with you, don't hesitate to reach out!
 
 Outside of work, I enjoy traveling and playing sports - mainly basketball and golf (working on my swing) now. If you see me at IMA or on the green, come say hi!
 
@@ -34,6 +34,38 @@ Outside of work, I enjoy traveling and playing sports - mainly basketball and go
 {% endfor %}
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=8Z-pAeQAAAAJ&hl=en).
+
+## 👥 Collaborators
+
+{%- assign all_collaborators = "" | split: "," -%}
+{%- for project in site.projects -%}
+  {%- if project.collaborators -%}
+    {%- assign project_collaborators = project.collaborators | split: ", " -%}
+    {%- assign all_collaborators = all_collaborators | concat: project_collaborators -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign unique_collaborators = all_collaborators | uniq | sort -%}
+
+<div class="collaborators-list">
+  {% for collaborator in unique_collaborators %}
+    <span>{{ collaborator }}</span>
+  {% endfor %}
+</div>
+
+<style>
+.collaborators-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.collaborators-list span {
+  background-color: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9em;
+}
+</style>
 
 ## 📸 Photo Gallery
 
