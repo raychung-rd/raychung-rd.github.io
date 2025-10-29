@@ -16,7 +16,7 @@ I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a bette
 <span style="color: #00274c;">Go Blue!</span> <span style="color: #32006e;">Go Dawgs!</span>
 
 <div style="background-color: #f0f8ff; padding: 15px; margin-bottom: 20px;">
-  <h2 style="margin-top: 0; color: #4682b4;">Currently seeking internship opportunities for Fall/Winter 2025!</h2>
+  <h2 style="margin-top: 0; color: #4682b4;">Currently seeking internship opportunities for Winter 2025 and Spring/Summer 2026!</h2>
   <p>Interested in Human-AI Interaction, Health AI, Explainable AI, Agentic AI.</p>
 </div>
 
