@@ -68,10 +68,10 @@ B.S., Concentration: Pre-Med
 ## 📚 Publications
 
 <ul> 
-<li>Ray-Yuan Chung, Jaime Snyder, Zixuan Xu, Daeun Yoo, Athena C. Ortega, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack. <b>Design Implications for Collaborative Decision-making Technologies in Pediatric Chronic Care.</b> CHI 2026 (Under Review).</li> <li>
+<li><b>Ray-Yuan Chung</b>, Jaime Snyder, Zixuan Xu, Daeun Yoo, Athena C. Ortega, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack. Design Implications for Collaborative Decision-making Technologies in Pediatric Chronic Care. CHI 2026 (Under Review)</i>.</li>
 
 <ul>
-<li>Feng Chen, Manas Satish Bedmutha, <b>Ray-Yuan Chung</b>, Janice Sabin, Wanda Pratt, Brian R Wood, Nadir Weibel, Andrea L Hartzler, Trevor Cohen. Toward Automated Detection of Biased Social Signals from the Content of Clinical Conversations. 2025. <i>AMIA Annual Symposium Proceedings</i>.</li>
+<li>Feng Chen, Manas Satish Bedmutha, <b>Ray-Yuan Chung</b>, Janice Sabin, Wanda Pratt, Brian R Wood, Nadir Weibel, Andrea L Hartzler, Trevor Cohen. Toward Automated Detection of Biased Social Signals from the Content of Clinical Conversations. 2025. <i>AMIA Annual Symposium Proceedings
   
 <li>Luna Xingyu Li, <b>Ray-Yuan Chung</b>, Feng Chen, Wenyu Zeng, Yein Jeon, Oleg Zaslavsky. Learning from Elders: Making an LLM-powered Chatbot for Retirement Communities more Accessible through User-centered Design. 2025. In <i>Proceedings of the CALD-AI Workshop at ASIS&amp;T</i>.</li>
 
