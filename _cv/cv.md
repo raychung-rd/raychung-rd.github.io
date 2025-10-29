@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: true
 ---
 
-[Download CV as PDF](/files/Ray_Chung_CV.pdf){: .btn .btn--primary}
+[Download CV as PDF](/files/Ray_Chung_CV_2025.pdf){: .btn .btn--primary}
 
 <div style="text-align:center; margin-bottom: 0.5em;">
   <h1 style="margin-bottom:0.2em;">Ray-Yuan (Ray) Chung</h1>
@@ -26,24 +26,25 @@ M.P.H. in Nutritional Sciences and Dietetics
 B.S., Concentration: Pre-Med
 </div></div>
 
-## 🔬 Relevant Experience
-
-<div class="cv-entry"><div class="cv-date">Sep 2024–Present</div><div class="cv-details">
-<b>Unita Health</b>, Santa Clara, CA (Remote)<br>
-<b>Human-AI Interaction Researcher</b>
-<ul><li>Led end-to-end development of an LLM-based conversational agent for gastrointestinal health by building a RAG pipeline, incorporating prompt engineering and iterative evaluation.</li></ul>
-</div></div>
+## 🔬 Research Experience
 
 <div class="cv-entry"><div class="cv-date">Sep 2023–Present</div><div class="cv-details">
 <b>University of Washington</b>, Seattle, WA<br>
 <b>Graduate Researcher</b>
 <ul>
-<li><i>Co-Design AI Intervention:</i> Led co-design workshops with kidney patients, caregivers, and clinicians to develop an AI-powered value alignment tool.</li>
-<li><i>LLM Chatbot for Older Adults:</i> Developed and evaluated a chatbot with accessible features for older adults using OpenAI API and Streamlit.</li>
+<li><i>Mental Health Knowledge Graph:</i> Built a multi-agent-based mental health knowledge graph and QA dataset; assessed efficacy via automated and human evaluations.</li>
+<li><i>Co-Design AI Intervention:</i> Co-designed an AI-powered decision-support tool with kidney patients, caregivers, and clinicians through surveys and vignette-based values elicitation.</li>
+<li><i>AI Chatbot for Older Adults:</i> Developed and evaluated a chatbot with accessible features for older adults using OpenAI API and Streamlit.</li>
 <li><i>Online Health Misinformation:</i> Applied mixed-effects regression and LLaMA-based text classification (few-shot + CoT prompting) to study user engagement and perception of health misinformation on YouTube.</li>
 <li><i>Health Device Usability:</i> Conducted interviews and surveys with cystic fibrosis patients to evaluate the usability of an at-home lung monitoring device.</li>
 <li><i>Video Content Filter:</i> Built and tested a multimodal classifier (BERT + ViT) to flag pro-eating disorder content on YouTube.</li>
 </ul>
+</div></div>
+
+<div class="cv-entry"><div class="cv-date">Sep 2024–Sep 2025</div><div class="cv-details">
+<b>Unita Health</b>, Santa Clara, CA (Remote)<br>
+<b>Human-AI Interaction Researcher</b>
+<ul><li>Led end-to-end development of an LLM-based conversational agent for gastrointestinal health by building a RAG pipeline, incorporating prompt engineering and iterative evaluation.</li></ul>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jun 2024–Sep 2024</div><div class="cv-details">
@@ -65,11 +66,19 @@ B.S., Concentration: Pre-Med
 </div></div>
 
 ## 📚 Publications
+
+<ul> 
+<li>Ray-Yuan Chung, Jaime Snyder, Zixuan Xu, Daeun Yoo, Athena C. Ortega, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack. <b>Design Implications for Collaborative Decision-making Technologies in Pediatric Chronic Care.</b> CHI 2026 (Under Review).</li> <li>
+
 <ul>
 <li>Feng Chen, Manas Satish Bedmutha, <b>Ray-Yuan Chung</b>, Janice Sabin, Wanda Pratt, Brian R Wood, Nadir Weibel, Andrea L Hartzler, Trevor Cohen. Toward Automated Detection of Biased Social Signals from the Content of Clinical Conversations. 2025. <i>AMIA Annual Symposium Proceedings</i>.</li>
+  
 <li>Luna Xingyu Li, <b>Ray-Yuan Chung</b>, Feng Chen, Wenyu Zeng, Yein Jeon, Oleg Zaslavsky. Learning from Elders: Making an LLM-powered Chatbot for Retirement Communities more Accessible through User-centered Design. 2025. In <i>Proceedings of the CALD-AI Workshop at ASIS&amp;T</i>.</li>
+
 <li><b>Ray-Yuan Chung</b>, Feng Chen, Yein Jeon, Oleg Zaslavsky. Improve Technology and EHealth Literacy in a Retirement Community via the Use of LLM-Powered Chatbot. 2024. <i>Innovation in Aging</i>.</li>
+
 <li>Prasad P Devarshi, <b>Ray-Yuan Chung</b>, Carroll A Reider, Ryan W Grant, Susan Hazels Mitmesser. Nutrient Gaps in US Adults by Age and Gender: Vitamin A, D, E, K, C, Magnesium, Calcium, Choline and Dietary Fiber. 2020. <i>Journal of the Academy of Nutrition and Dietetics</i>.</li>
+
 <li>Carroll A Reider, <b>Ray-Yuan Chung</b>, Prasad P Devarshi, Ryan W Grant, Susan Hazels Mitmesser. Inadequacy of immune health nutrients: intakes in US adults, the 2005–2016 NHANES. 2020. <i>Nutrients</i>.</li>
 </ul>
 
