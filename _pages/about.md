@@ -7,11 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student at the University of Washington, where my research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and consumer health informatics. My work leverages human-centered design methods and AI/ML techniques to enhance human–AI collaboration and develop context-aware health applications. With a background in behavioral science and dietetics, I bring a multidisciplinary perspective that bridges technology and human well-being. Recently, I co-designed a collaborative decision-support system with stakeholders and have been investigating how people contextualize information from AI systems to inform the design of more trustworthy agentic AI. My research has been published in and submitted to high-impact venues such as <i>Nutrients</i> journal and the <i>ACM CHI</i> conference.
+I am a Ph.D. student at the University of Washington, where my research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and consumer health informatics. With a background in behavioral science and dietetics, I bring a multidisciplinary perspective that bridges technology and human well-being. 
 
+My work leverages human-centered design methods and AI/ML techniques to enhance human–AI collaboration and develop context-aware health applications. I'm currently working on building trustworthy AI systems to support collaborative decision-making with health stakeholders. My research has been published in and submitted to high-impact venues such as <i>Nutrients</i> journal and the <i>ACM CHI</i> conference.
+
+<!--
 Before beginning my doctoral studies, I earned my master’s degree from the University of Michigan and worked as a registered dietitian and research scientist across collegiate athletic teams, mental health clinics, research institutions, and health technology companies including <i>Impossible Foods</i> and <i>Dexcom</i>. Through my clinical work, I witnessed firsthand how profoundly technology can influence human health—for better or worse. Much like the Chinese proverb “Water can carry a boat, but it can also overturn it” (「水能載舟，亦能覆舟」), I’ve come to believe that technology, when thoughtfully designed, can support and uplift people’s health; when misapplied, it can just as easily create harm or inequity. This belief drives my commitment to advancing more human-centered AI technologies.
+-->
 
-I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a better version of myself every day and to inspire people around me. I'm always open to mentorship, collaboration, or simply a good coffee chat. If my work resonates with you, don't hesitate to reach out! Outside of work, I enjoy traveling and playing sports - mainly basketball and golf (working on my swing) now. If you see me at IMA or on the green, come say hi!
+I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a better version of myself every day and to inspire people around me. If my work resonates with you, don't hesitate to reach out! Outside of work, I enjoy traveling and playing sports - mainly basketball and golf (working on my swing).
 
 <span style="color: #00274c;">Go Blue!</span> <span style="color: #32006e;">Go Dawgs!</span>
 
