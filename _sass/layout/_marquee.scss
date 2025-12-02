@@ -1,0 +1,43 @@
+/* Infinite Marquee - Auto-scrolling Gallery */
+
+/* The Outer Window (Hides the overflow) */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap; /* Forces images to stay in one line */
+  padding: 20px 0;
+  background: #f8f9fa; /* Optional background color */
+}
+
+/* The Moving Track */
+.marquee-track {
+  display: inline-block;
+  animation: scroll-left 40s linear infinite; /* The infinite engine */
+}
+
+/* Pause on Hover (Critical for UX) */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Individual Images */
+.marquee-item {
+  height: 200px; /* Fixed height for consistency */
+  width: auto;   /* Width adjusts automatically */
+  margin-right: 20px; /* Space between photos */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  vertical-align: middle;
+}
+
+/* The Animation Logic */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move left by 50% because we doubled the content */
+    transform: translateX(-50%); 
+  }
+}
+

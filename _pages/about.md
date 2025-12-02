@@ -199,49 +199,16 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
 
 ## 📸 Photo Gallery
 
-<div class="photo-gallery">
-  <img src="/images/photo1.jpg" alt="Description of photo 1">
-  <img src="/images/photo2.jpg" alt="Description of photo 2">
-  <img src="/images/photo3.jpg" alt="Description of photo 3">
-  <img src="/images/photo4.jpg" alt="Description of photo 4">
+<div class="marquee-container">
+  <div class="marquee-track">
+    <img src="/images/photo1.jpg" alt="Research photo 1" class="marquee-item">
+    <img src="/images/photo2.jpg" alt="Research photo 2" class="marquee-item">
+    <img src="/images/photo3.jpg" alt="Research photo 3" class="marquee-item">
+    <img src="/images/photo4.jpg" alt="Research photo 4" class="marquee-item">
+    <img src="/images/photo1.jpg" alt="Research photo 1" class="marquee-item">
+    <img src="/images/photo2.jpg" alt="Research photo 2" class="marquee-item">
+    <img src="/images/photo3.jpg" alt="Research photo 3" class="marquee-item">
+    <img src="/images/photo4.jpg" alt="Research photo 4" class="marquee-item">
+  </div>
 </div>
-
-<style>
-.photo-gallery {
-  display: flex;
-  gap: 16px;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 20px 0;
-  overflow-x: auto;
-  padding: 10px 0;
-}
-.photo-gallery img {
-  width: 240px;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  background: #f8f8f8;
-  flex-shrink: 0;
-}
-@media (max-width: 768px) {
-  .photo-gallery {
-    gap: 12px;
-  }
-  .photo-gallery img {
-    width: 200px;
-    height: 150px;
-  }
-}
-@media (max-width: 600px) {
-  .photo-gallery {
-    gap: 8px;
-  }
-  .photo-gallery img {
-    width: 160px;
-    height: 120px;
-  }
-}
-</style>
 
