@@ -20,8 +20,7 @@ layout: single
             </h3>
             {% if pub.tags %}
             <div class="publication-tags">
-              {% assign tag_list = pub.tags | split: ", " %}
-              {% for tag in tag_list %}
+              {% for tag in pub.tags %}
                 <span class="publication-tag">{{ tag }}</span>
               {% endfor %}
             </div>
@@ -43,8 +42,7 @@ layout: single
                 <div class="modal-title">{{ pub.title }}</div>
                 {% if pub.tags %}
                 <div class="modal-tags">
-                  {% assign tag_list = pub.tags | split: ", " %}
-                  {% for tag in tag_list %}
+                  {% for tag in pub.tags %}
                     <span class="publication-tag">{{ tag }}</span>
                   {% endfor %}
                 </div>

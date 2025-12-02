@@ -9,7 +9,12 @@ authors: 'Feng Chen, Manas Satish Bedmutha, Ray-Yuan Chung, Janice Sabin, Wanda 
 author_position: 'other'
 #citation: '2024(), 252'
 paperurl: 'https://pubmed.ncbi.nlm.nih.gov/40417471/'
-tags: 'LLM, NLP, Health Informatics, Responsible AI'
+tags:
+  - 'AI'
+  - 'NLP'
+  - 'Health Informatics'
+  - 'Responsible AI'
+  - 'Bias Detection'
 abstract: 'We developed an automated pipeline using ASR and NLP to detect social signals in 782 patient-provider conversations, achieving 90.1% accuracy and fair performance across racial groups. The system uncovered clear disparities—providers showed more warmth and engagement toward white patients—highlighting how AI can surface subtle, bias-related patterns in clinical communication.'
 ---
 

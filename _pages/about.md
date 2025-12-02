@@ -117,18 +117,17 @@ I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a bette
   {% endif %}
 <div class="selected-publication-item">
   <div class="publication-title-row">
-    <strong>{{ forloop.index }}.</strong> [{{ paper.title }}]({{ paper_link }})
+    <strong>{{ forloop.index }}.</strong> <a href="{{ paper_link }}">{{ paper.title }}</a>
   </div>
   {% if paper.tags %}
   <div class="publication-tags">
-    {% assign tag_list = paper.tags | split: ", " %}
-    {% for tag in tag_list %}
+    {% for tag in paper.tags %}
       <span class="publication-tag">{{ tag }}</span>
     {% endfor %}
   </div>
   {% endif %}
   <div class="publication-meta">
-    {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }} ({{ paper.date | date: "%Y" }}). *{{ paper.venue }}*. {% if paper.citation %}{{ paper.citation }}{% endif %}
+    {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }} ({{ paper.date | date: "%Y" }}). <em>{{ paper.venue }}</em>. {% if paper.citation %}{{ paper.citation }}{% endif %}
   </div>
 </div>
 {% endfor %}
@@ -144,6 +143,11 @@ I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a bette
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.publication-title-row {
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .publication-title-row {

@@ -9,7 +9,10 @@ authors: 'P Devarshi, R Chung, C Reider, R Grant, S Hazels Mitmesser'
 author_position: 'second'
 #citation: '120(9), A27'
 paperurl: 'https://www.jandonline.org/article/S2212-2672(20)30864-9/abstract'
-tags: 'Health Informatics, Public Health'
+tags:
+  - 'Health Informatics'
+  - 'Public Health'
+  - 'Data Analysis'
 abstract: ''
 ---
 

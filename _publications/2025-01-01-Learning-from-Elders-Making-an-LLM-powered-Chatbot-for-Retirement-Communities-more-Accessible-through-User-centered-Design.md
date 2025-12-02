@@ -9,7 +9,12 @@ authors: 'Luna Xingyu Li, Ray-Yuan Chung, Feng Chen, Wenyu Zeng, Yein Jeon, Oleg
 author_position: 'second'
 #citation: ''
 paperurl: 'https://arxiv.org/abs/2504.08985'
-tags: 'Generative AI, Conversational AI, Responsible AI, User Experience Research'
+tags:
+  - 'LLM'
+  - 'Accessibility'
+  - 'User Study'
+  - 'Health Tech'
+  - 'Older Adults'
 abstract: 'We designed a human-centered, LLM-powered chatbot to support older adults in a retirement community, focusing on accessibility and digital literacy. Using interviews and persona development, we built a dual-function tool for information access and tech education. A pilot showed high satisfaction, leading to refinements with GPT-3.5 Turbo, Streamlit, and accessible UI features. The project demonstrates how LLMs can empower older adults through personalized, low-barrier digital support.'
 ---
 
