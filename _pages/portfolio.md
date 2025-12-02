@@ -4,7 +4,7 @@ title: "Portfolio"
 layout: portfolio
 ---
   
-  <div class="portfolio-list">
+  <div class="portfolio-grid">
     {% assign ongoing_projects = site.projects | where: "status", "Ongoing" | sort: 'date' | reverse %}
     {% assign complete_p1 = site.projects | where: "status", "Complete" %}
     {% assign complete_p2 = site.projects | where: "status", "Completed" %}
@@ -14,34 +14,24 @@ layout: portfolio
     
     {% if projects.size > 0 %}
       {% for project in projects %}
-        <div class="portfolio-item">
-          <h3>{{ project.title }}</h3>
-          
-          <div class="project-meta">
-            {% if project.status %}
-              <span class="project-status">
-                {% if project.status == 'Ongoing' %}
-                  <span style="color: #28a745; font-weight: bold;">● Ongoing</span>
-                {% elsif project.status == 'Completed' %}
-                  <span style="color: #6c757d; font-weight: bold;">● {{ project.status }}</span>
-                {% else %}
-                  <span style="color: #6c757d;">{{ project.status }}</span>
-                {% endif %}
-              </span>
+        <article class="portfolio-card">
+          <img src="/assets/images/portfolio/{{ project.slug }}.png" alt="{{ project.title }}" class="portfolio-image" onerror="this.src='/assets/images/portfolio/placeholder.png'">
+          <div class="card-content" style="padding: 1.5rem;">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description | truncate: 120 }}</p>
+            
+            {% if project.hashtags %}
+              <div class="tags">
+                {% assign tags = project.hashtags | split: ", " %}
+                {% for tag in tags %}
+                  <span class="publication-tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
             {% endif %}
+            
+            <a href="#" class="btn" onclick="openPortfolioModal('{{ project.slug }}'); return false;">View Case Study &rarr;</a>
           </div>
-
-          {% if project.hashtags %}
-            <div class="project-hashtags">
-              {% assign tags = project.hashtags | split: ", " %}
-              {% for tag in tags %}
-                <span>{{ tag }}</span>
-              {% endfor %}
-            </div>
-          {% endif %}
-
-          <button class="portfolio-modal-trigger" onclick="openPortfolioModal('{{ project.slug }}')">Show Details</button>
-        </div>
+        </article>
       {% endfor %}
     {% else %}
         <p>No projects to display yet. Add more to the <code>_projects</code> folder.</p>
@@ -51,70 +41,50 @@ layout: portfolio
   {% include portfolio_modals.html %}
 
 <style>
-.portfolio {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+/* Additional styles for portfolio page */
+.card-content h3 {
+  margin: 0 0 0.75rem 0;
+  color: #3a5795;
+  font-size: 1.2em;
 }
-.portfolio-list {
+
+.card-content p {
+  margin: 0 0 1rem 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.tags {
+  margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
+  gap: 0.5rem;
 }
-.portfolio-item {
-  flex: 0 1 270px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.portfolio-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-.portfolio-item h3 {
-  margin: 0 0 10px 0;
-  color: #3a5795;
-  font-size: 1.15em;
-}
-.project-meta {
-  margin-bottom: 10px;
-}
-.project-status {
-  font-size: 0.9em;
-}
-.project-hashtags {
-  margin-bottom: 15px;
-}
-.project-hashtags span {
+
+.publication-tag {
   display: inline-block;
   background-color: #e9ecef;
   color: #495057;
-  padding: 3px 8px;
+  padding: 4px 10px;
   border-radius: 12px;
-  font-size: 0.8em;
-  margin: 2px;
+  font-size: 0.85em;
 }
-.portfolio-modal-trigger {
-  margin-top: auto;
+
+.card-content .btn {
+  display: inline-block;
   background: #3a5795;
   color: #fff;
-  border: none;
+  text-decoration: none;
   border-radius: 5px;
   padding: 8px 18px;
-  cursor: pointer;
-  font-size: 1em;
+  font-size: 0.95em;
   transition: background-color 0.2s;
 }
-.portfolio-modal-trigger:hover {
+
+.card-content .btn:hover {
   background: #2c4373;
 }
+
 .portfolio-modal {
   display: none;
   position: fixed;
@@ -177,4 +147,27 @@ function openPortfolioModal(id) {
   document.getElementById('modal-' + id).style.display = 'block';
   document.body.style.overflow = 'hidden';
 }
+
+// Close modal when clicking the close button
+document.addEventListener('DOMContentLoaded', function() {
+  const closeButtons = document.querySelectorAll('.portfolio-modal .close');
+  closeButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      const modal = this.closest('.portfolio-modal');
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+  });
+  
+  // Close modal when clicking outside
+  const modals = document.querySelectorAll('.portfolio-modal');
+  modals.forEach(function(modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === this) {
+        this.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  });
+});
 </script> 
