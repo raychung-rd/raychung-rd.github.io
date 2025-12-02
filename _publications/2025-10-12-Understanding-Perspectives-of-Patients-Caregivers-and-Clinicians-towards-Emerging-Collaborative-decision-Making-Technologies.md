@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-10-12-Understanding-Perspectives-of-Patients-Caregivers-and-Clinicians-towards-Emerging-Collaborative-decision-Making-Technologies
 date: 2025-10-12
-venue: 'The Workshop on Interactive Systems in Healthcare (WISH) at AMIA (poster)'
+venue: 'The Workshop on Interactive Systems in Healthcare (WISH) at AMIA Annual Symposium (poster)'
 authors: 'Ray-Yuan Chung, Athena Ortega, Zixuan Xu, Daeun Yoo, Jaime Snyder, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack'
 author_position: 'first'
 #citation: ''
