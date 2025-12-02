@@ -7,15 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate at the University of Washington, where my research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and consumer health informatics. With a background in behavioral science and dietetics, I bring a multidisciplinary perspective that bridges technology and human well-being. 
+I am a Ph.D. candidate at the University of Washington, where my research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and consumer health informatics. Prior to pursing my terminal degree, I worked as a dietitian and research scientist in multiple health organizations and tech startups. 
 
-Broadly, I study how people collaborate with AI systems in high-stakes, multi-stakeholder environments. My work combines human-centered design, mixed-methods user research, and AI/ML techniques to investigate how intelligent systems can enhance human communication and decision-making. I'm currently working on building trustworthy AI systems to support collaborative decision-making. My research has been published in and submitted to high-impact venues such as <i>Nutrients</i> journal and the <i>ACM CHI</i> conference.
+My work combines human-centered design, mixed-methods user research, and AI/ML techniques to investigate how intelligent systems can enhance human collaboration and decision-making in high-stakes, multi-stakeholder environments. I am especially motivated by work that produces measurable improvements in people’s lived experiences, or generates frameworks or design implications that researchers and practitioners can adopt to build more responsible, trustworthy AI systems for social good. My research has been published in and submitted to high-impact venues such as <i>Nutrients</i> journal and the <i>ACM CHI</i> conference.
 
 <!--
 Before beginning my doctoral studies, I earned my master’s degree from the University of Michigan and worked as a registered dietitian and research scientist across collegiate athletic teams, mental health clinics, research institutions, and health technology companies including <i>Impossible Foods</i> and <i>Dexcom</i>. Through my clinical work, I witnessed firsthand how profoundly technology can influence human health—for better or worse. Much like the Chinese proverb “Water can carry a boat, but it can also overturn it” (「水能載舟，亦能覆舟」), I’ve come to believe that technology, when thoughtfully designed, can support and uplift people’s health; when misapplied, it can just as easily create harm or inequity. This belief drives my commitment to advancing more human-centered AI technologies.
 -->
 
-I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a better version of myself every day and to inspire people around me. If my work resonates with you, don't hesitate to reach out! I'm always happy to connect. Outside of work, I enjoy traveling and playing sports - mainly basketball and golf.
+I'm inspired by the late Kobe Bryant and his Mamba Mentality—to inspire people around me. If my work resonates with you, don't hesitate to reach out! I'm always happy to connect. Outside of work, I enjoy traveling and playing sports—mainly basketball and golf.
 
 <span style="color: #00274c;">Go Blue!</span> <span style="color: #32006e;">Go Dawgs!</span>
 
@@ -205,10 +205,12 @@ For a complete list of publications, please visit my [Google Scholar profile](ht
     <img src="/images/photo2.jpg" alt="Research photo 2" class="marquee-item">
     <img src="/images/photo3.jpg" alt="Research photo 3" class="marquee-item">
     <img src="/images/photo4.jpg" alt="Research photo 4" class="marquee-item">
+    <img src="/images/photo5.jpg" alt="Research photo 5" class="marquee-item">
     <img src="/images/photo1.jpg" alt="Research photo 1" class="marquee-item">
     <img src="/images/photo2.jpg" alt="Research photo 2" class="marquee-item">
     <img src="/images/photo3.jpg" alt="Research photo 3" class="marquee-item">
     <img src="/images/photo4.jpg" alt="Research photo 4" class="marquee-item">
+    <img src="/images/photo5.jpg" alt="Research photo 5" class="marquee-item">
   </div>
 </div>
 
