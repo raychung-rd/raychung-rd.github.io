@@ -7,7 +7,9 @@ date: 2025-01-01
 venue: 'AMIA Annual Symposium Proceedings'
 authors: 'Feng Chen, Manas Satish Bedmutha, Ray-Yuan Chung, Janice Sabin, Wanda Pratt, Brian R Wood, Nadir Weibel, Andrea L Hartzler, Trevor Cohen'
 author_position: 'other'
-citation: '2024(), 252'
+#citation: '2024(), 252'
+paperurl: 'https://pubmed.ncbi.nlm.nih.gov/40417471/'
+tags: 'AI, NLP, Responsible AI, Health Informatics, Bias Detection'
 abstract: 'We developed an automated pipeline using ASR and NLP to detect social signals in 782 patient-provider conversations, achieving 90.1% accuracy and fair performance across racial groups. The system uncovered clear disparities—providers showed more warmth and engagement toward white patients—highlighting how AI can surface subtle, bias-related patterns in clinical communication.'
 ---
 

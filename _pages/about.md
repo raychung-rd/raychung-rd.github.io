@@ -110,8 +110,82 @@ I'm inspired by the late Kobe Bryant and his Mamba Mentality—to become a bette
 {% assign second_author_papers = site.publications | where: "author_position", "second" %}
 {% assign selected_papers = first_author_papers | concat: second_author_papers | sort: "date" | reverse %}
 {% for paper in selected_papers limit:3 %}
-{{ forloop.index }}. {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }} ({{ paper.date | date: "%Y" }}). [{{ paper.title }}]({{ base_path }}{{ paper.url }}). *{{ paper.venue }}*. {% if paper.citation %}{{ paper.citation }}{% endif %}
+  {% if paper.paperurl %}
+    {% assign paper_link = paper.paperurl %}
+  {% else %}
+    {% assign paper_link = 'https://scholar.google.com/scholar?q=' | append: paper.title | uri_escape %}
+  {% endif %}
+<div class="selected-publication-item">
+  <div class="publication-title-row">
+    <strong>{{ forloop.index }}.</strong> [{{ paper.title }}]({{ paper_link }})
+  </div>
+  {% if paper.tags %}
+  <div class="publication-tags">
+    {% assign tag_list = paper.tags | split: ", " %}
+    {% for tag in tag_list %}
+      <span class="publication-tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <div class="publication-meta">
+    {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }} ({{ paper.date | date: "%Y" }}). *{{ paper.venue }}*. {% if paper.citation %}{{ paper.citation }}{% endif %}
+  </div>
+</div>
 {% endfor %}
+
+<style>
+.selected-publication-item {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.selected-publication-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.publication-title-row {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.publication-title-row a {
+  color: #4682b4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.publication-title-row a:hover {
+  text-decoration: underline;
+}
+
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 10px 0;
+}
+
+.publication-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #4682b4 0%, #5a9bd4 100%);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 4px rgba(70, 130, 180, 0.2);
+}
+
+.publication-meta {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+</style>
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=8Z-pAeQAAAAJ&hl=en).
 

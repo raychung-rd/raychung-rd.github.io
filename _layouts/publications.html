@@ -17,8 +17,16 @@ layout: single
             <h3>
               {{ pub.title }}
             </h3>
+            {% if pub.tags %}
+            <div class="publication-tags">
+              {% assign tag_list = pub.tags | split: ", " %}
+              {% for tag in tag_list %}
+                <span class="publication-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
             <p class="publication-authors">
-              {{ pub.authors }}
+              {{ pub.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }}
             </p>
             <p class="publication-venue-date">
               {{ pub.venue }}. ({{ pub.date | date: "%Y" }})
@@ -32,7 +40,15 @@ layout: single
                 <button class="close" aria-label="Close">&times;</button>
                 <img class="modal-image" src="/assets/images/publications/{{ pub.slug }}.png" alt="Main Figure" onerror="this.src='/assets/images/publications/placeholder.png'">
                 <div class="modal-title">{{ pub.title }}</div>
-                <div class="modal-authors">{{ pub.authors }}</div>
+                {% if pub.tags %}
+                <div class="modal-tags">
+                  {% assign tag_list = pub.tags | split: ", " %}
+                  {% for tag in tag_list %}
+                    <span class="publication-tag">{{ tag }}</span>
+                  {% endfor %}
+                </div>
+                {% endif %}
+                <div class="modal-authors">{{ pub.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }}</div>
                 <div class="modal-abstract">{{ pub.abstract | default: 'No abstract available.' }}</div>
               </div>
             </div>
@@ -108,5 +124,31 @@ layout: single
   margin: 10px 0 0 0;
   font-size: 0.95em;
   line-height: 1.5;
+}
+
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 12px 0;
+}
+
+.publication-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #4682b4 0%, #5a9bd4 100%);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 4px rgba(70, 130, 180, 0.2);
+}
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
 }
 </style> 
