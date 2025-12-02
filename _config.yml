@@ -11,10 +11,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "light"
-title                    : "Ray Chung / Homepage"
+title                    : "Ray-Yuan (Ray) Chung - Applied AI/ML & Human-AI Interaction"
 title_separator          : "-"
 name                     : &name "Ray Chung"
-description              : &description "Ray's Blog"
+description              : "Portfolio of Ray-Yuan (Ray) Chung, an Applied AI/ML and Human-AI Interaction researcher designing trustworthy systems at the University of Washington."
 url                      : https://raychung-rd.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -27,7 +27,7 @@ author:
   avatar           : "profile.png"
   name             : "Ray-Yuan (Ray) Chung"
   pronouns         : # example: "she/her"  
-  bio              : "Hi,I'm Ray, a 3rd year PhD student at the University of Washington. I design, build, and evaluate human-centered, trustworthy AI systems that support decision-making in high-stakes environments. I'm also a dietitian with experience in mental health and health tech companies. "
+  bio              : "Hi, I'm Ray, a 3rd year PhD student at the University of Washington. I design, build, and evaluate human-centered, trustworthy AI systems that support decision-making in high-stakes environments. I'm also a dietitian with experience in mental health and health tech companies. "
   location         : "Seattle, WA, USA"
   employer         : "University of Washington"
   uri              : # URL
