@@ -18,7 +18,6 @@ layout: portfolio
           <img src="/assets/images/portfolio/{{ project.slug }}.png" alt="{{ project.title }}" class="portfolio-image" onerror="this.src='/assets/images/portfolio/placeholder.png'">
           <div class="card-content" style="padding: 1.5rem;">
             <h3>{{ project.title }}</h3>
-            <p>{{ project.description | truncate: 120 }}</p>
             
             {% if project.hashtags %}
               <div class="tags">
@@ -29,7 +28,7 @@ layout: portfolio
               </div>
             {% endif %}
             
-            <a href="#" class="btn" onclick="openPortfolioModal('{{ project.slug }}'); return false;">View Case Study &rarr;</a>
+            <a href="#" class="btn" onclick="openPortfolioModal('{{ project.slug }}'); return false;">View Summary &rarr;</a>
           </div>
         </article>
       {% endfor %}
@@ -43,15 +42,9 @@ layout: portfolio
 <style>
 /* Additional styles for portfolio page */
 .card-content h3 {
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 1rem 0;
   color: #3a5795;
   font-size: 1.2em;
-}
-
-.card-content p {
-  margin: 0 0 1rem 0;
-  color: #555;
-  line-height: 1.6;
 }
 
 .tags {
