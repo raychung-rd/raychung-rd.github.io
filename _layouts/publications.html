@@ -13,6 +13,7 @@ layout: single
     <div class="publication-list">
       {% for pub in publications %}
         {% if pub.category == category_key %}
+          {% assign pub_slug = pub.permalink | remove: '/publication/' | default: pub.name | remove: '.md' %}
           <div class="publication-item">
             <h3>
               {{ pub.title }}
@@ -31,14 +32,14 @@ layout: single
             <p class="publication-venue-date">
               {{ pub.venue }}. ({{ pub.date | date: "%Y" }})
             </p>
-            <button class="publication-modal-trigger" onclick="openPublicationModal('{{ pub.slug }}')">Show Summary</button>
+            <button class="publication-modal-trigger" onclick="openPublicationModal('{{ pub_slug }}')">Show Summary</button>
             <button class="publication-gs-trigger" onclick="window.open('https://scholar.google.com/scholar?q={{ pub.title | uri_escape }}', '_blank')">View on Google Scholar</button>
 
             <!-- Modal for this publication -->
-            <div id="modal-{{ pub.slug }}" class="publication-modal">
+            <div id="modal-{{ pub_slug }}" class="publication-modal">
               <div class="modal-content">
                 <button class="close" aria-label="Close">&times;</button>
-                <img class="modal-image" src="/assets/images/publications/{{ pub.slug }}.png" alt="Main Figure" onerror="this.src='/assets/images/publications/placeholder.png'">
+                <img class="modal-image" src="/assets/images/publications/{{ pub_slug }}.png" alt="Main Figure" onerror="this.src='/assets/images/publications/placeholder.png'">
                 <div class="modal-title">{{ pub.title }}</div>
                 {% if pub.tags %}
                 <div class="modal-tags">
