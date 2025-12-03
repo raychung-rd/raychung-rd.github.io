@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "About Me"
+seo_title: "Ray-Yuan (Ray) Chung - Research Portfolio"
 author_profile: true
 redirect_from:
   - /about/

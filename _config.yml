@@ -11,7 +11,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "light"
-title                    : "Home"
+title                    : "Ray-Yuan (Ray) Chung"
 title_separator          : "-"
 name                     : &name "Ray Chung"
 description              : "Portfolio of Ray-Yuan (Ray) Chung, an Applied AI/ML and Human-AI Interaction researcher designing trustworthy systems at the University of Washington."
