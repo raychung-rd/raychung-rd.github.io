@@ -17,10 +17,12 @@ layout: single
           {% assign asset_name = pub.nickname | default: pub_slug %}
           <div class="publication-item">
             <div class="pub-thumb-wrap">
-              <img src="/assets/publications/{{ asset_name }}.png"
-                   alt="{{ pub.title }}"
-                   class="pub-thumb"
-                   onerror="this.src='/assets/publications/placeholder.png'">
+              <a href="/assets/publications/{{ asset_name }}.png" target="_blank" rel="noopener noreferrer" class="pub-thumb-link">
+                <img src="/assets/publications/{{ asset_name }}.png"
+                     alt="{{ pub.title }}"
+                     class="pub-thumb"
+                     onerror="this.src='/assets/publications/placeholder.png'">
+              </a>
             </div>
             <div class="pub-body">
               <h3 class="pub-title">
@@ -107,13 +109,23 @@ layout: single
   width: 140px;
 }
 
+.pub-thumb-link {
+  display: block;
+  cursor: zoom-in;
+}
+
 .pub-thumb {
   width: 140px;
   height: 90px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 6px;
   border: 1px solid #e2e8f0;
   background: #f8fafc;
+  transition: opacity 0.15s ease;
+}
+
+.pub-thumb-link:hover .pub-thumb {
+  opacity: 0.85;
 }
 
 .pub-body {

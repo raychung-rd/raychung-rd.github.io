@@ -13,6 +13,7 @@ paperurl: 'https://arxiv.org/abs/2504.08985'
 tags:
   - 'Generative AI'
   - 'Responsible AI'
+  - 'User Experience Research'
 abstract: 'We designed a human-centered, LLM-powered chatbot to support older adults in a retirement community, focusing on accessibility and digital literacy. Using interviews and persona development, we built a dual-function tool for information access and tech education. A pilot showed high satisfaction, leading to refinements with GPT-3.5 Turbo, Streamlit, and accessible UI features. The project demonstrates how LLMs can empower older adults through personalized, low-barrier digital support.'
 ---
 
