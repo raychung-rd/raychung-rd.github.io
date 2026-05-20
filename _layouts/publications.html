@@ -79,8 +79,20 @@ layout: single
 </div>
 
 <style>
+/* Widen the page when on Publications — overrides the susy grid 10/12 + 2/12 suffix */
+body:has(.publications) .page {
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  float: none;
+}
+body:has(.publications) #main {
+  max-width: 100%;
+}
+
 .publications {
-  max-width: 820px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -155,38 +167,38 @@ layout: single
   text-decoration: underline;
 }
 
-.pub-authors {
+.publications .pub-authors {
   color: #334155;
-  font-size: 0.9em;
+  font-size: 16px;
   margin: 0 0 1px 0;
   line-height: 1.4;
 }
 
-.pub-venue {
+.publications .pub-venue {
   color: #64748B;
-  font-size: 0.85em;
+  font-size: 16px;
   margin: 0 0 1px 0;
 }
 
-.publication-tags {
+.publications .publication-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
   margin: 1px 0;
 }
 
-.publication-tag {
+.publications .publication-tag {
   display: inline-block;
   background: transparent;
   color: #64748B;
   padding: 2px 8px;
   border-radius: 4px;
-  font-size: 0.72em;
+  font-size: 13px;
   font-weight: 500;
   border: 1px solid #CBD5E1;
 }
 
-.pub-links {
+.publications .pub-links {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -194,12 +206,12 @@ layout: single
   margin-top: 1px;
 }
 
-.pub-link-chip {
+.publications .pub-link-chip {
   display: inline-flex;
   align-items: center;
   padding: 3px 10px;
   border-radius: 4px;
-  font-size: 0.76em;
+  font-size: 14px;
   font-weight: 500;
   color: #2563EB;
   background: #EFF6FF;
@@ -210,18 +222,18 @@ layout: single
   line-height: 1.5;
 }
 
-.pub-link-chip:hover {
+.publications .pub-link-chip:hover {
   background: #2563EB;
   color: #fff !important;
   border-color: #2563EB;
 }
 
-.pub-abstract-btn {
+.publications .pub-abstract-btn {
   display: inline-flex;
   align-items: center;
   padding: 3px 10px;
   border-radius: 4px;
-  font-size: 0.76em;
+  font-size: 14px;
   font-weight: 500;
   color: #7C3AED;
   background: #F5F3FF;
