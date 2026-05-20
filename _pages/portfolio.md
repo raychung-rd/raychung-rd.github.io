@@ -43,7 +43,7 @@ layout: portfolio
 /* Additional styles for portfolio page */
 .card-content h3 {
   margin: 0 0 1rem 0;
-  color: #3a5795;
+  color: #2563EB;
   font-size: 1.2em;
 }
 
@@ -67,21 +67,21 @@ layout: portfolio
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #0d1812;
-  color: #4ade80 !important;
+  background: #2563EB;
+  color: #fff !important;
   text-decoration: none !important;
-  border-radius: 999px;
-  border: 1px solid rgba(74, 222, 128, 0.22) !important;
-  padding: 8px 18px;
-  font-size: 0.88em;
+  border-radius: 6px;
+  border: none !important;
+  padding: 7px 16px;
+  font-size: 0.85em;
   font-weight: 600;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  transition: all 0.18s ease;
+  box-shadow: 0 1px 4px rgba(37,99,235,0.2);
+  transition: all 0.15s ease;
 }
 
 .card-content .btn:hover {
-  background: #132b1f;
-  box-shadow: 0 0 0 1.5px rgba(74, 222, 128, 0.38), 0 4px 14px rgba(0,0,0,0.38);
+  background: #1D4ED8;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.35);
   transform: translateY(-1px);
 }
 

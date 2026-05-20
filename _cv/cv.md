@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: true
 ---
 
-[Download CV as PDF](/files/RayChung_CV_2026_May.pdf){: .btn .btn--dark}
+[Download CV as PDF](/files/RayChung_CV_2026_May.pdf){: .btn}
 
 <div style="text-align:center; margin-bottom: 0.5em;">
   <h1 style="margin-bottom:0.2em;">Ray-Yuan (Ray) Chung</h1>

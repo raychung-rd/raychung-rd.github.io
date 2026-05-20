@@ -33,7 +33,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 
 <style>
 .seeking-notice {
-  border-left: 3px solid #6366f1;
+  border-left: 3px solid #7C3AED;
   background: #f5f3ff;
   padding: 12px 16px;
   margin: 20px 0 28px 0;
@@ -50,7 +50,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 .seeking-dot {
   width: 7px;
   height: 7px;
-  background: #6366f1;
+  background: #7C3AED;
   border-radius: 50%;
   display: inline-block;
   flex-shrink: 0;
@@ -67,7 +67,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #4f46e5;
+  color: #6D28D9;
 }
 
 .seeking-notice-text {
@@ -86,7 +86,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 
 .seeking-tag {
   background: #ede9fe;
-  color: #4338ca;
+  color: #6D28D9;
   font-size: 0.74em;
   font-weight: 500;
   padding: 3px 10px;
@@ -148,7 +148,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 }
 
 .publication-title-row a {
-  color: #4682b4;
+  color: #2563EB;
   text-decoration: none;
   font-weight: 500;
 }
@@ -166,14 +166,13 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 
 .publication-tag {
   display: inline-block;
-  background: linear-gradient(135deg, #4682b4 0%, #5a9bd4 100%);
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 12px;
+  background: #EFF6FF;
+  color: #1D4ED8;
+  padding: 2px 8px;
+  border-radius: 4px;
   font-size: 0.75em;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  box-shadow: 0 2px 4px rgba(70, 130, 180, 0.2);
+  border: 1px solid #BFDBFE;
 }
 
 .publication-meta {
