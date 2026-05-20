@@ -381,11 +381,13 @@ For a complete list of publications, please visit my [Publications page](/public
     <img src="/assets/images/photo3.jpg" alt="Research photo 3" class="marquee-item">
     <img src="/assets/images/photo4.jpg" alt="Research photo 4" class="marquee-item">
     <img src="/assets/images/photo5.jpg" alt="Research photo 5" class="marquee-item">
+    <img src="/assets/images/photo6.jpg" alt="Research photo 6" class="marquee-item">
     <img src="/assets/images/photo1.jpg" alt="Research photo 1" class="marquee-item">
     <img src="/assets/images/photo2.jpg" alt="Research photo 2" class="marquee-item">
     <img src="/assets/images/photo3.jpg" alt="Research photo 3" class="marquee-item">
     <img src="/assets/images/photo4.jpg" alt="Research photo 4" class="marquee-item">
     <img src="/assets/images/photo5.jpg" alt="Research photo 5" class="marquee-item">
+    <img src="/assets/images/photo6.jpg" alt="Research photo 6" class="marquee-item">
   </div>
 </div>
 

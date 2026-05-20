@@ -214,7 +214,6 @@ B.S., Concentration: Pre-Med
   font-size: 0.98em;
   line-height: 1.4;
   padding-top: 2px;
-  white-space: nowrap;
 }
 .cv-download-btn {
   display: inline-flex;
