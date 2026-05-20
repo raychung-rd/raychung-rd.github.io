@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Orson “Xuhai” Xu](https://orsonxu.com/). My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master's degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
+I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Xuhai “Orson” Xu](https://orsonxu.com/). My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master's degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
 
 <style>
 .page__content > p:first-of-type a {

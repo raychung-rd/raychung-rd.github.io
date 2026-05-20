@@ -13,7 +13,7 @@ body:has(.cv-entry) .page__content {
 }
 </style>
 
-[Download CV as PDF](/files/RayChung_CV_2026_May.pdf){: .btn}
+<a href="/files/RayChung_CV_2026_May.pdf" class="cv-download-btn" target="_blank" rel="noopener noreferrer">Download CV as PDF</a>
 
 <div style="text-align:center; margin-bottom: 0.5em;">
   <h1 style="margin-bottom:0.2em;">Ray-Yuan (Ray) Chung</h1>
@@ -123,14 +123,14 @@ B.S., Concentration: Pre-Med
 <li>Maxine Moore Scholarship, University of Michigan (2019)</li>
 </ul>
 
-## 🎤 Invited Talks
+## 🗣️ Invited Talks
 <ul>
 <li>Diversify Dietetics Summit (2025)</li>
 <li>GATE Sports Agency Sports Talk Series (2023)</li>
 <li>University of Michigan Dietetics Seminar (2021)</li>
 </ul>
 
-## 🤝 Services
+## 📋 Services
 <ul>
 <li>Reviewer, ACM CHI (2026)</li>
 <li>Reviewer, ACM IH (Interactive Health) (2026)</li>
@@ -214,6 +214,29 @@ B.S., Concentration: Pre-Med
   font-size: 0.98em;
   line-height: 1.4;
   padding-top: 2px;
+  white-space: nowrap;
+}
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-weight: 500;
+  color: #2563EB;
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  text-decoration: none !important;
+  transition: all 0.15s;
+  font-family: inherit;
+  line-height: 1.5;
+  margin-bottom: 1.2em;
+  display: inline-block;
+}
+.cv-download-btn:hover {
+  background: #2563EB;
+  color: #fff !important;
+  border-color: #2563EB;
 }
 .cv-details {
   flex: 1;
