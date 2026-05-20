@@ -3,21 +3,13 @@
   "short_name": "MySite",
   "icons": [
     {
-<<<<<<< HEAD
-      "src": "/assets/images/favicon/web-app-manifest-192x192.png",
-=======
-      "src": "/images/favicon/web-app-manifest-192x192.png",
->>>>>>> Merge images directories: Move all images from /images to /assets/images and update all path references
+      "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-<<<<<<< HEAD
-      "src": "/assets/images/favicon/web-app-manifest-512x512.png",
-=======
-      "src": "/images/favicon/web-app-manifest-512x512.png",
->>>>>>> Merge images directories: Move all images from /images to /assets/images and update all path references
+      "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
