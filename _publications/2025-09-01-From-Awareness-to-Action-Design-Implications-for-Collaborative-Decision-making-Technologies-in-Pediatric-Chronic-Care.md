@@ -6,7 +6,7 @@ nickname: awareness_action_pediatric_2025
 category: conferences
 permalink: /publication/2025-09-01-From-Awareness-to-Action-Design-Implications-for-Collaborative-Decision-making-Technologies-in-Pediatric-Chronic-Care
 date: 2025-09-01
-venue: 'ACM CHI 2026 (in review)'
+venue: 'ACM CHI (in review)'
 authors: 'Ray-Yuan Chung, Jaime Snyder, Zixuan Xu, Daeun Yoo, Athena Ortega, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack'
 author_position: 'first'
 #citation: ''

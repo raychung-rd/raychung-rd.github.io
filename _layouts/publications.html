@@ -41,7 +41,7 @@ layout: single
               <p class="pub-authors">
                 {{ pub.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }}
               </p>
-              <p class="pub-venue">{{ pub.venue }}. ({{ pub.date | date: "%Y" }})</p>
+              <p class="pub-venue">{{ pub.venue }} ({{ pub.date | date: "%Y" }})</p>
               <div class="pub-links">
                 {% if pub.pdf %}
                   <a href="/assets/publications/{{ asset_name }}.pdf" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[paper]</a>
@@ -170,13 +170,13 @@ layout: single
 
 .publication-tag {
   display: inline-block;
-  background: #EFF6FF;
-  color: #1D4ED8;
+  background: transparent;
+  color: #64748B;
   padding: 2px 8px;
   border-radius: 4px;
   font-size: 0.72em;
   font-weight: 500;
-  border: 1px solid #BFDBFE;
+  border: 1px solid #CBD5E1;
 }
 
 .pub-links {
@@ -190,16 +190,17 @@ layout: single
 .pub-link-chip {
   display: inline-flex;
   align-items: center;
-  padding: 3px 9px;
+  padding: 3px 10px;
   border-radius: 4px;
-  font-size: 0.78em;
-  font-weight: 600;
+  font-size: 0.76em;
+  font-weight: 500;
   color: #2563EB;
   background: #EFF6FF;
   border: 1px solid #BFDBFE;
   text-decoration: none !important;
   transition: all 0.15s;
   font-family: monospace;
+  line-height: 1.6;
 }
 
 .pub-link-chip:hover {
@@ -211,9 +212,9 @@ layout: single
 .pub-abstract-btn {
   display: inline-flex;
   align-items: center;
-  padding: 3px 9px;
+  padding: 3px 10px;
   border-radius: 4px;
-  font-size: 0.78em;
+  font-size: 0.76em;
   font-weight: 500;
   color: #7C3AED;
   background: #F5F3FF;
