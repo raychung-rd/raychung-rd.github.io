@@ -10,92 +10,113 @@ redirect_from:
 
 I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Orson “Xuhai” Xu](https://orsonxu.com/). My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I worked as a dietitian and research scientist across health organizations and tech startups like Impossible Foods, Unita Health, and Dexcom.
 
-My work combines human-centered design, mixed-methods user research, and AI/ML to study how intelligent systems can support human collaboration and decision-making in multi-stakeholder environments. I am especially motivated by work that measurably improves people’s lived experiences, or produces frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues such as ACM CHI conference, AMIA conference, and Nutrients journal.
+My work combines human-centered design, mixed-methods user research, and AI/ML to study how intelligent systems can support human collaboration and decision-making in multi-stakeholder environments. I am especially motivated by work that measurably improves people’s lived experiences, or produces frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues such as *ACM CHI* conference, *AMIA* conference, and *Nutrients* journal.
 
 I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relentless commitment to inspiring those around him. If my work resonates with you, don’t hesitate to reach out. Outside of research, I enjoy traveling and playing sports, mainly basketball and golf.
 
 <span style="color: #00274c;">Go Blue!</span> <span style="color: #32006e;">Go Dawgs!</span>
 
-<div class="announcement-box">
-  <div class="announcement-content">
-    <div class="announcement-icon">💼</div>
-    <div class="announcement-text">
-      <h2 class="announcement-title">Currently seeking internship opportunities for Summer/Fall 2026 and beyond!</h2>
-      <p class="announcement-description">Interested in <strong>Generative AI</strong>, <strong>Human-AI Collaboration</strong>, <strong>Responsible AI</strong>, <strong>Agentic Systems</strong>, <strong>Health and Social Technologies</strong>.</p>
-    </div>
+<div class="seeking-card">
+  <div class="seeking-header">
+    <span class="seeking-badge"><span class="seeking-dot"></span>Open to Opportunities</span>
+    <h2 class="seeking-title">Currently seeking internship opportunities for Summer/Fall 2026 and beyond!</h2>
+  </div>
+  <div class="seeking-tags">
+    <span class="seeking-tag">Generative AI</span>
+    <span class="seeking-tag">Human-AI Collaboration</span>
+    <span class="seeking-tag">Responsible AI</span>
+    <span class="seeking-tag">Agentic Systems</span>
+    <span class="seeking-tag">Health &amp; Social Technologies</span>
   </div>
 </div>
 
 <style>
-.announcement-box {
-  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
-  border-left: 4px solid #4682b4;
-  border-radius: 8px;
-  padding: 24px;
-  margin: 30px 0;
-  box-shadow: 0 4px 12px rgba(70, 130, 180, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.seeking-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin: 32px 0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.announcement-box:hover {
+.seeking-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.11);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(70, 130, 180, 0.2);
 }
 
-.announcement-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
+.seeking-header {
+  margin-bottom: 18px;
 }
 
-.announcement-icon {
-  font-size: 2em;
-  line-height: 1;
-  flex-shrink: 0;
-  margin-top: 4px;
-}
-
-.announcement-text {
-  flex: 1;
-}
-
-.announcement-title {
-  margin: 0 0 12px 0 !important;
-  color: #2c5f8d !important;
-  font-size: 1.4em !important;
-  font-weight: 600 !important;
-  line-height: 1.3;
-}
-
-.announcement-description {
-  margin: 0;
-  color: #4a5568;
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-.announcement-description strong {
-  color: #4682b4;
+.seeking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #f0fdf4;
+  color: #16a34a;
+  font-size: 0.78em;
   font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid #bbf7d0;
+  margin-bottom: 14px;
+}
+
+.seeking-dot {
+  width: 7px;
+  height: 7px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.75); }
+}
+
+.seeking-title {
+  margin: 0 !important;
+  font-size: 1.25em !important;
+  font-weight: 700 !important;
+  color: #1a202c !important;
+  line-height: 1.4 !important;
+}
+
+.seeking-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.seeking-tag {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.82em;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.seeking-tag:hover {
+  background: #4682b4;
+  color: #fff;
+  border-color: #4682b4;
 }
 
 @media (max-width: 600px) {
-  .announcement-box {
-    padding: 18px;
+  .seeking-card {
+    padding: 20px;
   }
-  
-  .announcement-content {
-    flex-direction: column;
-    gap: 12px;
-  }
-  
-  .announcement-icon {
-    font-size: 1.5em;
-    margin-top: 0;
-  }
-  
-  .announcement-title {
-    font-size: 1.2em !important;
+  .seeking-title {
+    font-size: 1.1em !important;
   }
 }
 </style>

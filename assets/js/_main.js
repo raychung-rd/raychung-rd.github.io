@@ -7,6 +7,14 @@ $(document).ready(function () {
   $("html").removeAttr("data-theme");
   localStorage.removeItem("theme");
 
+  // Open all external links in a new tab
+  $("a[href]").each(function () {
+    var href = $(this).attr("href");
+    if (href && href.startsWith("http") && !href.includes(window.location.hostname)) {
+      $(this).attr("target", "_blank").attr("rel", "noopener noreferrer");
+    }
+  });
+
   // These should be the same as the settings in _variables.scss
   const scssLarge = 925; // pixels
 
