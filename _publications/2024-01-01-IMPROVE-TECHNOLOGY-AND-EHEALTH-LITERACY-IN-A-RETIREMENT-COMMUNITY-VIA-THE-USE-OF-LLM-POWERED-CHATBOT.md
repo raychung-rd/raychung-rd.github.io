@@ -12,10 +12,7 @@ author_position: 'first'
 paperurl: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11692876/'
 tags:
   - 'Generative AI'
-  - 'Conversational AI'
-  - 'Accessibility'
   - 'Responsible AI'
-  - 'User Experience Research'
 abstract: 'We developed an LLM-powered chatbot using a human-centered design approach to support older adults in a retirement community with low tech and eHealth literacy. The chatbot offers accessible, conversational assistance for both navigating community resources and improving digital literacy. Features like large text, high-contrast themes, and voice interaction enhance usability. In a pilot trial, residents successfully completed tasks and reported high satisfaction, suggesting the chatbots potential to empower older adults through intuitive, low-barrier technology.'
 ---
 

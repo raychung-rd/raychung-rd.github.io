@@ -12,7 +12,6 @@ author_position: 'second'
 paperurl: 'https://www.jandonline.org/article/S2212-2672(20)30864-9/abstract'
 tags:
   - 'Health Informatics'
-  - 'Public Health'
 abstract: ''
 ---
 
