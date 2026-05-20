@@ -43,17 +43,15 @@ layout: single
               </p>
               <p class="pub-venue">{{ pub.venue }}. ({{ pub.date | date: "%Y" }})</p>
               <div class="pub-links">
+                {% if pub.pdf %}
+                  <a href="/assets/publications/{{ asset_name }}.pdf" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[paper]</a>
+                {% endif %}
                 {% if pub.paperurl %}
                   {% if pub.paperurl contains 'arxiv.org' %}
                     <a href="{{ pub.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[arxiv]</a>
-                  {% elsif pub.paperurl contains 'doi.org' %}
-                    <a href="{{ pub.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[doi]</a>
                   {% else %}
-                    <a href="{{ pub.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[paper]</a>
+                    <a href="{{ pub.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[doi]</a>
                   {% endif %}
-                {% endif %}
-                {% if pub.pdf %}
-                  <a href="/assets/publications/{{ asset_name }}.pdf" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[pdf]</a>
                 {% endif %}
                 {% if pub.abstract and pub.abstract != '' %}
                   <button class="pub-abstract-btn" onclick="toggleAbstract('{{ pub_slug }}')">abstract ▾</button>
