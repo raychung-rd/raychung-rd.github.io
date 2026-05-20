@@ -12,6 +12,9 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  // Always force light mode
+  document.documentElement.removeAttribute('data-theme');
+  try { localStorage.removeItem('theme'); } catch(e) {}
 </script>
 
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
