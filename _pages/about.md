@@ -16,11 +16,12 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 
 <span style="color: #00274c;">Go Blue!</span> <span style="color: #32006e;">Go Dawgs!</span>
 
-<div class="seeking-card">
-  <div class="seeking-header">
-    <span class="seeking-badge"><span class="seeking-dot"></span>Open to Opportunities</span>
-    <h2 class="seeking-title">Currently seeking internship opportunities for Summer/Fall 2026 and beyond!</h2>
+<div class="seeking-notice">
+  <div class="seeking-notice-top">
+    <span class="seeking-dot"></span>
+    <span class="seeking-open-label">Open to Opportunities</span>
   </div>
+  <p class="seeking-notice-text">Currently seeking internship opportunities in the following areas for Summer/Fall 2026 and beyond!</p>
   <div class="seeking-tags">
     <span class="seeking-tag">Generative AI</span>
     <span class="seeking-tag">Human-AI Collaboration</span>
@@ -31,39 +32,19 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 </div>
 
 <style>
-.seeking-card {
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 28px 32px;
-  margin: 32px 0;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+.seeking-notice {
+  border-left: 3px solid #22c55e;
+  background: #f9fdfb;
+  padding: 12px 16px;
+  margin: 20px 0 28px 0;
+  border-radius: 0 6px 6px 0;
 }
 
-.seeking-card:hover {
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.11);
-  transform: translateY(-2px);
-}
-
-.seeking-header {
-  margin-bottom: 18px;
-}
-
-.seeking-badge {
-  display: inline-flex;
+.seeking-notice-top {
+  display: flex;
   align-items: center;
   gap: 7px;
-  background: #f0fdf4;
-  color: #16a34a;
-  font-size: 0.78em;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: 999px;
-  border: 1px solid #bbf7d0;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
 }
 
 .seeking-dot {
@@ -72,6 +53,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   background: #22c55e;
   border-radius: 50%;
   display: inline-block;
+  flex-shrink: 0;
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
@@ -80,44 +62,36 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   50% { opacity: 0.5; transform: scale(0.75); }
 }
 
-.seeking-title {
-  margin: 0 !important;
-  font-size: 1.25em !important;
-  font-weight: 700 !important;
-  color: #1a202c !important;
-  line-height: 1.4 !important;
+.seeking-open-label {
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #16a34a;
+}
+
+.seeking-notice-text {
+  margin: 0 0 10px 0 !important;
+  font-size: 0.92em;
+  font-weight: 600;
+  color: #1a202c;
+  line-height: 1.4;
 }
 
 .seeking-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 5px;
 }
 
 .seeking-tag {
-  background: #f1f5f9;
-  color: #475569;
-  font-size: 0.82em;
+  background: #f0fdf4;
+  color: #166534;
+  font-size: 0.74em;
   font-weight: 500;
-  padding: 5px 14px;
+  padding: 3px 10px;
   border-radius: 999px;
-  border: 1px solid #e2e8f0;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-.seeking-tag:hover {
-  background: #4682b4;
-  color: #fff;
-  border-color: #4682b4;
-}
-
-@media (max-width: 600px) {
-  .seeking-card {
-    padding: 20px;
-  }
-  .seeking-title {
-    font-size: 1.1em !important;
-  }
+  border: 1px solid #bbf7d0;
 }
 </style>
 
@@ -210,10 +184,6 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 </style>
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=8Z-pAeQAAAAJ&hl=en).
-
-## 👥 Main Collaborators
-
-{% include collaborators.html %}
 
 ## 📸 Photo Gallery
 
