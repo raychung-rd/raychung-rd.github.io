@@ -64,18 +64,25 @@ layout: portfolio
 }
 
 .card-content .btn {
-  display: inline-block;
-  background: #3a5795;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #0d1812;
+  color: #4ade80 !important;
+  text-decoration: none !important;
+  border-radius: 999px;
+  border: 1px solid rgba(74, 222, 128, 0.22) !important;
   padding: 8px 18px;
-  font-size: 0.95em;
-  transition: background-color 0.2s;
+  font-size: 0.88em;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: all 0.18s ease;
 }
 
 .card-content .btn:hover {
-  background: #2c4373;
+  background: #132b1f;
+  box-shadow: 0 0 0 1.5px rgba(74, 222, 128, 0.38), 0 4px 14px rgba(0,0,0,0.38);
+  transform: translateY(-1px);
 }
 
 .portfolio-modal {

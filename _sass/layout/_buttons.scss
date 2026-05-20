@@ -129,6 +129,25 @@
     }
   }
 
+  /* dark (dark bg + neon green) */
+
+  &--dark {
+    background: #0d1812;
+    color: #4ade80 !important;
+    border: 1px solid rgba(74, 222, 128, 0.22) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+
+    &:hover {
+      background: #132b1f;
+      box-shadow: 0 0 0 1.5px rgba(74, 222, 128, 0.38), 0 4px 14px rgba(0, 0, 0, 0.4);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
   /* disabled */
 
   &--disabled {

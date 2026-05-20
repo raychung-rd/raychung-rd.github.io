@@ -31,8 +31,10 @@ layout: single
             <p class="publication-venue-date">
               {{ pub.venue }}. ({{ pub.date | date: "%Y" }})
             </p>
-            <button class="publication-modal-trigger" onclick="openPublicationModal('{{ pub_slug }}')">Show Summary</button>
-            <button class="publication-gs-trigger" onclick="window.open('https://scholar.google.com/scholar?q={{ pub.title | uri_escape }}', '_blank')">View on Google Scholar</button>
+            <div class="pub-btn-group">
+              <button class="pub-btn pub-btn--primary" onclick="openPublicationModal('{{ pub_slug }}')">Show Summary</button>
+              <button class="pub-btn pub-btn--secondary" onclick="window.open('https://scholar.google.com/scholar?q={{ pub.title | uri_escape }}', '_blank')">View on Google Scholar</button>
+            </div>
 
             <!-- Modal for this publication -->
             <div id="modal-{{ pub_slug }}" class="publication-modal">
@@ -149,5 +151,51 @@ layout: single
   flex-wrap: wrap;
   gap: 6px;
   margin: 12px 0;
+}
+
+.pub-btn-group {
+  display: inline-flex;
+  background: #0b1812;
+  border-radius: 999px;
+  padding: 4px;
+  gap: 3px;
+  border: 1px solid #1c3a28;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  margin-top: 10px;
+}
+
+.pub-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.82em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  letter-spacing: 0.01em;
+  border: none;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.pub-btn--primary {
+  background: #0a2016;
+  color: #4ade80;
+  box-shadow: inset 0 0 0 1px rgba(74, 222, 128, 0.25);
+}
+
+.pub-btn--primary:hover {
+  background: #0f2b1e;
+  box-shadow: inset 0 0 0 1.5px rgba(74, 222, 128, 0.45), 0 0 10px rgba(74, 222, 128, 0.12);
+}
+
+.pub-btn--secondary {
+  background: #1a3040;
+  color: #4ade80;
+}
+
+.pub-btn--secondary:hover {
+  background: #1e3a4a;
 }
 </style> 
