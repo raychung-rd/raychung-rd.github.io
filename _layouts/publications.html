@@ -30,7 +30,7 @@ layout: single
               </h3>
               {% if pub.tags %}
               <div class="publication-tags">
-                {% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics" | split: "," %}
+                {% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics,User Experience Research" | split: "," %}
                 {% for ordered_tag in tag_order %}
                   {% if pub.tags contains ordered_tag %}
                     <span class="publication-tag">{{ ordered_tag }}</span>
@@ -43,6 +43,9 @@ layout: single
               </p>
               <p class="pub-venue">{{ pub.venue }} ({{ pub.date | date: "%Y" }})</p>
               <div class="pub-links">
+                {% if pub.abstract and pub.abstract != '' %}
+                  <button class="pub-abstract-btn" onclick="toggleAbstract('{{ pub_slug }}')">abstract ▾</button>
+                {% endif %}
                 {% if pub.pdf %}
                   <a href="/assets/publications/{{ asset_name }}.pdf" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[paper]</a>
                 {% endif %}
@@ -52,9 +55,6 @@ layout: single
                   {% else %}
                     <a href="{{ pub.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[doi]</a>
                   {% endif %}
-                {% endif %}
-                {% if pub.abstract and pub.abstract != '' %}
-                  <button class="pub-abstract-btn" onclick="toggleAbstract('{{ pub_slug }}')">abstract ▾</button>
                 {% endif %}
               </div>
               {% if pub.abstract and pub.abstract != '' %}
@@ -158,21 +158,21 @@ layout: single
 .pub-authors {
   color: #334155;
   font-size: 0.9em;
-  margin: 4px 0;
-  line-height: 1.5;
+  margin: 2px 0;
+  line-height: 1.4;
 }
 
 .pub-venue {
   color: #64748B;
   font-size: 0.85em;
-  margin: 3px 0 8px 0;
+  margin: 1px 0 4px 0;
 }
 
 .publication-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  margin: 6px 0 8px 0;
+  margin: 5px 0 6px 0;
 }
 
 .publication-tag {
@@ -191,7 +191,7 @@ layout: single
   align-items: center;
   gap: 6px;
   flex-wrap: wrap;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .pub-link-chip {

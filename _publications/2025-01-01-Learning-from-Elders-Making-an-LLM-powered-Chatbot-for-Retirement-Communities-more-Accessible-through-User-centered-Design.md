@@ -5,7 +5,7 @@ nickname: elders_llm_accessible_2025
 category: conferences
 permalink: /publication/2025-01-01-Learning-from-Elders-Making-an-LLM-powered-Chatbot-for-Retirement-Communities-more-Accessible-through-User-centered-Design
 date: 2025-07-01
-venue: 'arXiv preprint'
+venue: 'The Workshop on Cultural and Linguistic Diversity in AI Applications (CALD-AI), ASIS&T'
 authors: 'Luna Xingyu Li, Ray-Yuan Chung, Feng Chen, Wenyu Zeng, Yein Jeon, Oleg Zaslavsky'
 author_position: 'second'
 #citation: ''
