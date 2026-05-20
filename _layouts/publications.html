@@ -12,7 +12,7 @@ layout: single
     <h2 class="pub-section-title">{{ category.title }}</h2>
     <div class="publication-list">
       {% for pub in publications %}
-        {% if pub.category == category_key %}
+        {% if pub.category == category_key and pub.hidden != true %}
           {% assign pub_slug = pub.permalink | remove: '/publication/' | default: pub.name | remove: '.md' %}
           {% assign asset_name = pub.nickname | default: pub_slug %}
           <div class="publication-item">
@@ -28,8 +28,11 @@ layout: single
               </h3>
               {% if pub.tags %}
               <div class="publication-tags">
-                {% for tag in pub.tags %}
-                  <span class="publication-tag">{{ tag }}</span>
+                {% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics" | split: "," %}
+                {% for ordered_tag in tag_order %}
+                  {% if pub.tags contains ordered_tag %}
+                    <span class="publication-tag">{{ ordered_tag }}</span>
+                  {% endif %}
                 {% endfor %}
               </div>
               {% endif %}
