@@ -15,6 +15,12 @@ I am a PhD student studying human-centered AI at the University of Washington, a
   color: inherit !important;
   text-decoration: underline;
 }
+
+body:has(.seeking-notice) .page__content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 
 My work combines human-centered design, mixed-methods user research, and AI/ML to study how intelligent systems can support human collaboration and decision-making in multi-stakeholder environments. I am especially motivated by work that measurably improves people’s lived experiences, or produces frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues such as *ACM CHI* conference, *AMIA* conference, and *Nutrients* journal.
@@ -114,7 +120,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     {% endif %}
   {% endunless %}
 {% endfor %}
-{% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics" | split: "," %}
+{% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics,User Experience Research" | split: "," %}
 {% for paper in filtered_pubs limit:5 %}
   {% assign pub_slug = paper.permalink | remove: '/publication/' | default: paper.name | remove: '.md' %}
   {% assign asset_name = paper.nickname | default: pub_slug %}

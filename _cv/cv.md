@@ -5,6 +5,14 @@ permalink: /cv/
 author_profile: true
 ---
 
+<style>
+body:has(.cv-entry) .page__content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
 [Download CV as PDF](/files/RayChung_CV_2026_May.pdf){: .btn}
 
 <div style="text-align:center; margin-bottom: 0.5em;">
