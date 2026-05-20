@@ -8,7 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-<p>I am a PhD student studying human-centered AI at the University of Washington, advised by <a href=”https://bime.uw.edu/faculty/ari-pollack/” style=”color: inherit; text-decoration: underline;”>Ari Pollack</a>, <a href=”https://ischool.uw.edu/people/faculty/profile/wpratt” style=”color: inherit; text-decoration: underline;”>Wanda Pratt</a>, and <a href=”https://orsonxu.com/” style=”color: inherit; text-decoration: underline;”>Orson &#8220;Xuhai&#8221; Xu</a>. My research sits at the intersection of artificial intelligence (AI), human&#8211;computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master&#8217;s degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.</p>
+I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Orson “Xuhai” Xu](https://orsonxu.com/). My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master's degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
+
+<style>
+.page__content > p:first-of-type a {
+  color: inherit !important;
+  text-decoration: underline;
+}
+</style>
 
 My work combines human-centered design, mixed-methods user research, and AI/ML to study how intelligent systems can support human collaboration and decision-making in multi-stakeholder environments. I am especially motivated by work that measurably improves people’s lived experiences, or produces frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues such as *ACM CHI* conference, *AMIA* conference, and *Nutrients* journal.
 
