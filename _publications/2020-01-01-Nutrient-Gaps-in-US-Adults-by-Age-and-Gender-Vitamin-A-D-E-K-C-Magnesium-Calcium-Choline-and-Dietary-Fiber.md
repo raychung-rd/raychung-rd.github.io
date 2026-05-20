@@ -1,6 +1,7 @@
 ---
 title: "Nutrient Gaps in US Adults by Age and Gender: Vitamin A, D, E, K, C, Magnesium, Calcium, Choline and Dietary Fiber"
 collection: publications
+nickname: nutrient_gaps_gender_2020
 category: manuscripts
 permalink: /publication/2020-01-01-Nutrient-Gaps-in-US-Adults-by-Age-and-Gender-Vitamin-A-D-E-K-C-Magnesium-Calcium-Choline-and-Dietary-Fiber
 date: 2020-01-01

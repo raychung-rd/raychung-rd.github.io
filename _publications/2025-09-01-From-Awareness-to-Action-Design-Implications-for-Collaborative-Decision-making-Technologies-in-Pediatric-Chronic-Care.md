@@ -1,6 +1,7 @@
 ---
 title: "From Awareness to Action: Design Implications for Collaborative Decision-making Technologies in Pediatric Chronic Care"
 collection: publications
+nickname: awareness_action_pediatric_2025
 category: conferences
 permalink: /publication/2025-09-01-From-Awareness-to-Action-Design-Implications-for-Collaborative-Decision-making-Technologies-in-Pediatric-Chronic-Care
 date: 2025-09-01

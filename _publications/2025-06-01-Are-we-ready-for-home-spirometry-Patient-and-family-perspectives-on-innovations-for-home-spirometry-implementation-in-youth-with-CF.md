@@ -1,6 +1,7 @@
 ---
 title: "Are we ready for home spirometry? Patient and family perspectives on innovations for home spirometry implementation in youth with CF"
 collection: publications
+nickname: home_spirometry_cf_2025
 category: manuscripts
 permalink: /publication/2025-06-01-Are-we-ready-for-home-spirometry-Patient-and-family-perspectives-on-innovations-for-home-spirometry-implementation-in-youth-with-CF
 date: 2025-06-01

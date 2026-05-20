@@ -1,6 +1,7 @@
 ---
 title: "Understanding Perspectives of Patients, Caregivers and Clinicians towards Emerging Collaborative-decision Making Technologies"
 collection: publications
+nickname: cdm_tech_perspectives_2025
 category: conferences
 permalink: /publication/2025-10-12-Understanding-Perspectives-of-Patients-Caregivers-and-Clinicians-towards-Emerging-Collaborative-decision-Making-Technologies
 date: 2025-10-12

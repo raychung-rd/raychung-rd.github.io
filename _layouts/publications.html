@@ -14,9 +14,10 @@ layout: single
       {% for pub in publications %}
         {% if pub.category == category_key %}
           {% assign pub_slug = pub.permalink | remove: '/publication/' | default: pub.name | remove: '.md' %}
+          {% assign asset_name = pub.nickname | default: pub_slug %}
           <div class="publication-item">
             <div class="pub-thumb-wrap">
-              <img src="/assets/publications/{{ pub_slug }}.png"
+              <img src="/assets/publications/{{ asset_name }}.png"
                    alt="{{ pub.title }}"
                    class="pub-thumb"
                    onerror="this.src='/assets/publications/placeholder.png'">
@@ -47,7 +48,7 @@ layout: single
                   {% endif %}
                 {% endif %}
                 {% if pub.pdf %}
-                  <a href="/assets/publications/{{ pub_slug }}.pdf" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[pdf]</a>
+                  <a href="/assets/publications/{{ asset_name }}.pdf" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[pdf]</a>
                 {% endif %}
                 {% if pub.abstract and pub.abstract != '' %}
                   <button class="pub-abstract-btn" onclick="toggleAbstract('{{ pub_slug }}')">abstract ▾</button>

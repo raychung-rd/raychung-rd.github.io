@@ -1,6 +1,7 @@
 ---
 title: "Improve Technology and eHealth Literacy in a Retirement Community via the Use of LLM-Powered Chatbot"
 collection: publications
+nickname: ehealth_literacy_llm_2024
 category: manuscripts
 permalink: /publication/2024-01-01-IMPROVE-TECHNOLOGY-AND-EHEALTH-LITERACY-IN-A-RETIREMENT-COMMUNITY-VIA-THE-USE-OF-LLM-POWERED-CHATBOT
 date: 2024-01-01
