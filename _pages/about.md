@@ -24,7 +24,7 @@ I'm inspired by the late Kobe Bryant and his Mamba Mentality—to inspire people
   <div class="announcement-content">
     <div class="announcement-icon">💼</div>
     <div class="announcement-text">
-      <h2 class="announcement-title">Currently seeking internship opportunities for Spring/Summer 2026!</h2>
+      <h2 class="announcement-title">Currently seeking internship opportunities for Summer/Fall 2026 and beyond!</h2>
       <p class="announcement-description">Interested in <strong>Generative AI</strong>, <strong>Human-AI Collaboration</strong>, <strong>Responsible AI</strong>, <strong>Agentic Systems</strong>, <strong>Health and Social Technologies</strong>.</p>
     </div>
   </div>

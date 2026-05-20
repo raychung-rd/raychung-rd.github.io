@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: true
 ---
 
-[Download CV as PDF](/files/Ray_Chung_CV_2025.pdf){: .btn .btn--primary}
+[Download CV as PDF](/files/RayChung_CV_2026_May.pdf){: .btn .btn--primary}
 
 <div style="text-align:center; margin-bottom: 0.5em;">
   <h1 style="margin-bottom:0.2em;">Ray-Yuan (Ray) Chung</h1>
@@ -68,31 +68,55 @@ B.S., Concentration: Pre-Med
 ## 📚 Publications
 
 <ul>
-  <li><b>Ray-Yuan Chung</b>, Jaime Snyder, Zixuan Xu, Daeun Yoo, Athena C. Ortega, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack. 
-  <i>Design Implications for Collaborative Decision-making Technologies in Pediatric Chronic Care.</i> CHI 2026 (Under Review).</li>
+  <li>Feng Chen, Luna Li, <b>Ray-Yuan Chung</b>, Wenyu Zeng, Yein Jeon, Oleg Zaslavsky.
+  <i>Bridging the Cognitive Gap: Co-Designing and Evaluating a Voice-Enabled Community Chatbot for Older Adults.</i> AMIA 2026.</li>
 
-  <li>Feng Chen, Manas Satish Bedmutha, <b>Ray-Yuan Chung</b>, Janice Sabin, Wanda Pratt, Brian R Wood, Nadir Weibel, Andrea L Hartzler, Trevor Cohen. 
-  <i>Toward Automated Detection of Biased Social Signals from the Content of Clinical Conversations.</i> 2025. <i>AMIA Annual Symposium Proceedings.</i></li>
+  <li><b>Ray-Yuan Chung</b>, Xuhai "Orson" Xu, Ari Pollack.
+  <i>Rethinking Health Agents: From Siloed AI to Collaborative Decision Mediators.</i> Workshop on Human–Agent Collaboration, CHI 2026.</li>
 
-  <li>Luna Xingyu Li, <b>Ray-Yuan Chung</b>, Feng Chen, Wenyu Zeng, Yein Jeon, Oleg Zaslavsky. 
-  <i>Learning from Elders: Making an LLM-powered Chatbot for Retirement Communities more Accessible through User-centered Design.</i> 2025. In <i>Proceedings of the CALD-AI Workshop at ASIS&amp;T.</i></li>
+  <li><b>Ray-Yuan Chung</b>, Jaime Snyder, Zixuan Xu, Daeun Yoo, Athena C. Ortega, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack.
+  <i>Design Considerations for Collaborative Decision-making Technologies in Pediatric Chronic Care.</i> Extended Abstract, CHI 2026.</li>
 
-  <li><b>Ray-Yuan Chung</b>, Feng Chen, Yein Jeon, Oleg Zaslavsky. 
-  <i>Improve Technology and EHealth Literacy in a Retirement Community via the Use of LLM-Powered Chatbot.</i> 2024. <i>Innovation in Aging.</i></li>
+  <li><b>Ray-Yuan Chung</b>, Athena C. Ortega, Zixuan Xu, Daeun Yoo, Jaime Snyder, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack.
+  <i>Understanding Perspectives of Patients, Caregivers and Clinicians towards Emerging Collaborative-decision Making Technologies.</i> Workshop on Interactive Systems in Healthcare (WISH), AMIA 2025.</li>
 
-  <li>Prasad P Devarshi, <b>Ray-Yuan Chung</b>, Carroll A Reider, Ryan W Grant, Susan Hazels Mitmesser. 
-  <i>Nutrient Gaps in US Adults by Age and Gender: Vitamin A, D, E, K, C, Magnesium, Calcium, Choline and Dietary Fiber.</i> 2020. <i>Journal of the Academy of Nutrition and Dietetics.</i></li>
+  <li>Luna Xingyu Li, <b>Ray-Yuan Chung</b>, Feng Chen, Wenyu Zeng, Yein Jeon, Oleg Zaslavsky.
+  <i>Learning from Elders: Making an LLM-powered Chatbot for Retirement Communities more Accessible through User-centered Design.</i> CALD-AI Workshop, ASIS&amp;T 2025.</li>
 
-  <li>Carroll A Reider, <b>Ray-Yuan Chung</b>, Prasad P Devarshi, Ryan W Grant, Susan Hazels Mitmesser. 
-  <i>Inadequacy of immune health nutrients: intakes in US adults, the 2005–2016 NHANES.</i> 2020. <i>Nutrients.</i></li>
+  <li>Feng Chen, Manas Satish Bedmutha, <b>Ray-Yuan Chung</b>, Janice Sabin, Wanda Pratt, Brian R Wood, Nadir Weibel, Andrea L Hartzler, Trevor Cohen.
+  <i>Toward Automated Detection of Biased Social Signals from the Content of Clinical Conversations.</i> AMIA 2024.</li>
+
+  <li><b>Ray-Yuan Chung</b>, Feng Chen, Yein Jeon, Oleg Zaslavsky.
+  <i>Improve Technology and EHealth Literacy in a Retirement Community via the Use of LLM-Powered Chatbot.</i> Innovation in Aging 2024.</li>
+
+  <li>Prasad P Devarshi, <b>Ray-Yuan Chung</b>, Carroll A Reider, Ryan W Grant, Susan Hazels Mitmesser.
+  <i>Nutrient Gaps in US Adults by Age and Gender: Vitamin A, D, E, K, C, Magnesium, Calcium, Choline and Dietary Fiber.</i> Journal of the Academy of Nutrition and Dietetics 2020.</li>
+
+  <li>Carroll A Reider, <b>Ray-Yuan Chung</b>, Prasad P Devarshi, Ryan W Grant, Susan Hazels Mitmesser.
+  <i>Inadequacy of immune health nutrients: intakes in US adults, the 2005–2016 NHANES.</i> Nutrients 2020.</li>
 </ul>
 
 
 ## 🏆 Awards
 <ul>
-<li>Top Scholars Award, UW (2023)</li>
+<li>Ira Kalet and Fred Wolf Endowment Award, University of Washington (2025)</li>
+<li>Top Scholars Award, University of Washington (2023)</li>
 <li>Global Scholars Award, NSF International (2018–2020)</li>
-<li>Maxine Moore Scholarship, UM SPH (2019)</li>
+<li>Maxine Moore Scholarship, University of Michigan (2019)</li>
+</ul>
+
+## 🎤 Invited Talks
+<ul>
+<li>Diversify Dietetics Summit (2025)</li>
+<li>GATE Sports Agency Sports Talk Series (2023)</li>
+<li>University of Michigan Dietetics Seminar (2021)</li>
+</ul>
+
+## 🤝 Services
+<ul>
+<li>Reviewer, ACM CHI (2026)</li>
+<li>Reviewer, ACM IH (Interactive Health) (2026)</li>
+<li>Reviewer, ACM Transactions on Computing for Healthcare (2025)</li>
 </ul>
 
 ## 🛠 Skills
