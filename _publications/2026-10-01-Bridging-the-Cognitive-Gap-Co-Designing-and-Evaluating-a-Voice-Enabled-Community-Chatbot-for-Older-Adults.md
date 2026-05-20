@@ -4,8 +4,8 @@ collection: publications
 pdf: true
 nickname: Codesign_chatbot_old_2026
 category: conferences
-permalink: /publication/2026-10-01-Bridging-the-Cognitive-Gap-Co-Designing-and-Evaluating-a-Voice-Enabled-Community-Chatbot-for-Older-Adults
-date: 2026-10-01
+permalink: /publication/2026-06-11-Bridging-the-Cognitive-Gap-Co-Designing-and-Evaluating-a-Voice-Enabled-Community-Chatbot-for-Older-Adults
+date: 2026-06-11
 venue: 'AMIA'
 authors: 'Feng Chen, Luna Xingyu Li, Ray-Yuan Chung, Wenyu Zeng, Yein Jeon, Yizhou Hu, Oleg Zaslavsky'
 author_position: 'other'

@@ -2,6 +2,7 @@
 permalink: /portfolio/
 title: "Portfolio"
 layout: portfolio
+published: false
 ---
   
   <div class="portfolio-grid">

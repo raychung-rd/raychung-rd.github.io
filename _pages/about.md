@@ -33,8 +33,8 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 
 <style>
 .seeking-notice {
-  border-left: 3px solid #7C3AED;
-  background: #f5f3ff;
+  border-left: 3px solid #2563EB;
+  background: #EFF6FF;
   padding: 12px 16px;
   margin: 20px 0 28px 0;
   border-radius: 0 6px 6px 0;
@@ -50,7 +50,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 .seeking-dot {
   width: 7px;
   height: 7px;
-  background: #7C3AED;
+  background: #2563EB;
   border-radius: 50%;
   display: inline-block;
   flex-shrink: 0;
@@ -67,7 +67,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #6D28D9;
+  color: #1D4ED8;
 }
 
 .seeking-notice-text {
@@ -85,41 +85,60 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 }
 
 .seeking-tag {
-  background: #ede9fe;
-  color: #6D28D9;
+  background: #EFF6FF;
+  color: #2563EB;
   font-size: 0.74em;
   font-weight: 500;
   padding: 3px 10px;
   border-radius: 999px;
-  border: 1px solid #c4b5fd;
+  border: 1px solid #BFDBFE;
 }
 </style>
 
 ## 📚 Selected Publications
 
 {% include base_path %}
-{% assign first_author_papers = site.publications | where: "author_position", "first" %}
-{% assign second_author_papers = site.publications | where: "author_position", "second" %}
-{% assign selected_papers = first_author_papers | concat: second_author_papers | sort: "date" | reverse %}
-{% for paper in selected_papers limit:3 %}
-  {% if paper.paperurl %}
-    {% assign paper_link = paper.paperurl %}
-  {% else %}
-    {% assign paper_link = 'https://scholar.google.com/scholar?q=' | append: paper.title | uri_escape %}
-  {% endif %}
+{% assign all_pubs = site.publications | sort: "date" | reverse %}
+{% assign filtered_pubs = "" | split: "" %}
+{% for pub in all_pubs %}
+  {% unless pub.hidden %}
+    {% if pub.tags contains "Human-AI Collaboration" or pub.tags contains "Responsible AI" or pub.tags contains "Generative AI" %}
+      {% assign filtered_pubs = filtered_pubs | push: pub %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+{% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics" | split: "," %}
+{% for paper in filtered_pubs limit:5 %}
+  {% assign pub_slug = paper.permalink | remove: '/publication/' | default: paper.name | remove: '.md' %}
+  {% assign asset_name = paper.nickname | default: pub_slug %}
 <div class="selected-publication-item">
   <div class="publication-title-row">
-    <strong>{{ forloop.index }}.</strong> <a href="{{ paper_link }}">{{ paper.title }}</a>
+    <strong>{{ forloop.index }}.</strong>
+    {% if paper.paperurl %}<a href="{{ paper.paperurl }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}
   </div>
   {% if paper.tags %}
   <div class="publication-tags">
-    {% for tag in paper.tags %}
-      <span class="publication-tag">{{ tag }}</span>
+    {% for ordered_tag in tag_order %}
+      {% if paper.tags contains ordered_tag %}
+        <span class="publication-tag">{{ ordered_tag }}</span>
+      {% endif %}
     {% endfor %}
   </div>
   {% endif %}
   <div class="publication-meta">
-    {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }} ({{ paper.date | date: "%Y" }}). <em>{{ paper.venue }}</em>. {% if paper.citation %}{{ paper.citation }}{% endif %}
+    {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }}. <em>{{ paper.venue }}</em> ({{ paper.date | date: "%Y" }}).
+  </div>
+  <div class="pub-links">
+    {% if paper.pdf %}
+      <a href="/assets/publications/{{ asset_name }}.pdf" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[paper]</a>
+    {% endif %}
+    {% if paper.paperurl %}
+      {% if paper.paperurl contains 'arxiv.org' %}
+        <a href="{{ paper.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[arxiv]</a>
+      {% else %}
+        <a href="{{ paper.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[doi]</a>
+      {% endif %}
+    {% endif %}
   </div>
 </div>
 {% endfor %}
@@ -142,11 +161,6 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   line-height: 1.4;
 }
 
-.publication-title-row {
-  margin-bottom: 8px;
-  line-height: 1.4;
-}
-
 .publication-title-row a {
   color: #2563EB;
   text-decoration: none;
@@ -160,25 +174,55 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 .publication-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin: 8px 0 10px 0;
+  gap: 5px;
+  margin: 6px 0 8px 0;
 }
 
 .publication-tag {
   display: inline-block;
-  background: #EFF6FF;
-  color: #1D4ED8;
+  background: transparent;
+  color: #64748B;
   padding: 2px 8px;
   border-radius: 4px;
-  font-size: 0.75em;
+  font-size: 0.72em;
   font-weight: 500;
-  border: 1px solid #BFDBFE;
+  border: 1px solid #CBD5E1;
 }
 
 .publication-meta {
   color: #555;
-  font-size: 0.95em;
+  font-size: 0.88em;
   line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.pub-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pub-link-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.76em;
+  font-weight: 500;
+  color: #2563EB;
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  text-decoration: none !important;
+  transition: all 0.15s;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.pub-link-chip:hover {
+  background: #2563EB;
+  color: #fff !important;
+  border-color: #2563EB;
 }
 </style>
 
