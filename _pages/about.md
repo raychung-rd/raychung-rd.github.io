@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Orson “Xuhai” Xu](https://orsonxu.com/). My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I worked as a dietitian and research scientist across health organizations and tech startups like Impossible Foods, Unita Health, and Dexcom.
+I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Orson “Xuhai” Xu](https://orsonxu.com/). My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master’s degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
 
 My work combines human-centered design, mixed-methods user research, and AI/ML to study how intelligent systems can support human collaboration and decision-making in multi-stakeholder environments. I am especially motivated by work that measurably improves people’s lived experiences, or produces frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues such as *ACM CHI* conference, *AMIA* conference, and *Nutrients* journal.
 
@@ -112,39 +112,59 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   {% assign pub_slug = paper.permalink | remove: '/publication/' | default: paper.name | remove: '.md' %}
   {% assign asset_name = paper.nickname | default: pub_slug %}
 <div class="selected-publication-item">
-  <div class="publication-title-row">
-    <strong>{{ forloop.index }}.</strong>
-    {% if paper.paperurl %}<a href="{{ paper.paperurl }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}
+  <div class="sel-pub-thumb-wrap">
+    <a href="/assets/publications/{{ asset_name }}.png" class="pub-img-popup" data-title="{{ paper.title }}">
+      <img src="/assets/publications/{{ asset_name }}.png"
+           alt="{{ paper.title }}"
+           class="sel-pub-thumb"
+           onerror="this.src='/assets/publications/placeholder.png'">
+    </a>
   </div>
-  {% if paper.tags %}
-  <div class="publication-tags">
-    {% for ordered_tag in tag_order %}
-      {% if paper.tags contains ordered_tag %}
-        <span class="publication-tag">{{ ordered_tag }}</span>
-      {% endif %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  <div class="publication-meta">
-    {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }}. <em>{{ paper.venue }}</em> ({{ paper.date | date: "%Y" }}).
-  </div>
-  <div class="pub-links">
-    {% if paper.pdf %}
-      <a href="/assets/publications/{{ asset_name }}.pdf" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[paper]</a>
+  <div class="sel-pub-body">
+    <div class="publication-title-row">
+      <strong>{{ forloop.index }}.</strong>
+      {% if paper.paperurl %}<a href="{{ paper.paperurl }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}
+    </div>
+    {% if paper.tags %}
+    <div class="publication-tags">
+      {% for ordered_tag in tag_order %}
+        {% if paper.tags contains ordered_tag %}
+          <span class="publication-tag">{{ ordered_tag }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
     {% endif %}
-    {% if paper.paperurl %}
-      {% if paper.paperurl contains 'arxiv.org' %}
-        <a href="{{ paper.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[arxiv]</a>
-      {% else %}
-        <a href="{{ paper.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[doi]</a>
+    <div class="publication-meta">
+      {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }}. <em>{{ paper.venue }}</em> ({{ paper.date | date: "%Y" }}).
+    </div>
+    <div class="pub-links">
+      {% if paper.pdf %}
+        <a href="/assets/publications/{{ asset_name }}.pdf" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[paper]</a>
       {% endif %}
-    {% endif %}
+      {% if paper.paperurl %}
+        {% if paper.paperurl contains 'arxiv.org' %}
+          <a href="{{ paper.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[arxiv]</a>
+        {% else %}
+          <a href="{{ paper.paperurl }}" class="pub-link-chip" target="_blank" rel="noopener noreferrer">[doi]</a>
+        {% endif %}
+      {% endif %}
+    </div>
   </div>
 </div>
 {% endfor %}
 
+<div id="pub-img-modal">
+  <div class="modal-inner">
+    <button class="modal-close" aria-label="Close">&#x2715;</button>
+    <img src="" alt="">
+  </div>
+</div>
+
 <style>
 .selected-publication-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
   margin-bottom: 24px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e0e0e0;
@@ -156,19 +176,97 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   padding-bottom: 0;
 }
 
+.sel-pub-thumb-wrap {
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.sel-pub-thumb {
+  width: 100px;
+  height: 65px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  display: block;
+  cursor: zoom-in;
+  transition: opacity 0.15s ease;
+}
+
+.sel-pub-thumb:hover {
+  opacity: 0.85;
+}
+
+.sel-pub-body {
+  flex: 1;
+  min-width: 0;
+}
+
 .publication-title-row {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   line-height: 1.4;
 }
 
 .publication-title-row a {
-  color: #2563EB;
+  color: #1E293B;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .publication-title-row a:hover {
+  color: #2563EB;
   text-decoration: underline;
+}
+
+#pub-img-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+#pub-img-modal.active {
+  display: flex;
+}
+
+#pub-img-modal .modal-inner {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+#pub-img-modal img {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 6px;
+  background: #fff;
+}
+
+#pub-img-modal .modal-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 1em;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+#pub-img-modal .modal-close:hover {
+  background: #f1f5f9;
 }
 
 .publication-tags {
@@ -225,6 +323,39 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   border-color: #2563EB;
 }
 </style>
+
+<script>
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('pub-img-modal');
+    if (!modal) return;
+    var modalImg = modal.querySelector('img');
+    var closeBtn = modal.querySelector('.modal-close');
+
+    document.querySelectorAll('.pub-img-popup').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        modalImg.src = this.getAttribute('href');
+        modalImg.alt = this.getAttribute('data-title') || '';
+        modal.classList.add('active');
+      });
+    });
+
+    function closeModal() {
+      modal.classList.remove('active');
+      modalImg.src = '';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+  });
+})();
+</script>
 
 For a complete list of publications, please visit my [Google Scholar profile](https://scholar.google.com/citations?user=8Z-pAeQAAAAJ&hl=en).
 
