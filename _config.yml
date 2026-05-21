@@ -11,7 +11,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "light"
-title                    : "Ray-Yuan (Ray) Chung"
+title                    : 'Ray-Yuan "Ray" Chung'
 title_separator          : "-"
 name                     : &name "Ray Chung"
 description              : "Portfolio of Ray Chung (Ray-Yuan Chung). Specialist in Applied AI/ML and Human-AI Interaction based in Seattle, WA. Ph.D. Candidate at University of Washington."
