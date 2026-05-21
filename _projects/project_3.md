@@ -1,4 +1,5 @@
 ---
+hidden: true
 title: "Kids Colab: Co-design with chronic disease patients and providers"
 date: 2025-01-01
 slug: project-3

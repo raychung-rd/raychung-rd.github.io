@@ -112,7 +112,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 
 {% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Agentic Systems,Health Informatics,User Experience Research" | split: "," %}
 {% assign projects = site.projects | sort: "date" | reverse %}
-{% for project in projects %}
+{% for project in projects %}{% if project.hidden %}{% continue %}{% endif %}
   {% assign asset_name = project.nickname | default: project.name | remove: '.md' %}
 <div class="selected-publication-item">
   <div class="sel-pub-thumb-wrap">
@@ -124,7 +124,6 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   <div class="sel-pub-body">
     <div class="publication-title-row">
       <strong>{{ project.title }}</strong>
-      <span class="project-status-badge">{{ project.status }}</span>
     </div>
     {% if project.tags %}
     <div class="publication-tags">

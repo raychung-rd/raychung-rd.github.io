@@ -1,4 +1,5 @@
 ---
+hidden: true
 title: "Rebert: A Multi-Agent Conversational Movie Recommender "
 date: 2025-03-31
 slug: project-2

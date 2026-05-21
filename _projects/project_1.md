@@ -1,4 +1,5 @@
 ---
+hidden: true
 title: "Mental Health Knowledge Graph"
 date: 2025-04-01
 slug: project-1
