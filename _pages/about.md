@@ -108,6 +108,60 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 }
 </style>
 
+## 🔭 Current Work
+
+{% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Agentic Systems,Health Informatics,User Experience Research" | split: "," %}
+{% assign projects = site.projects | sort: "date" | reverse %}
+{% for project in projects %}
+  {% assign asset_name = project.nickname | default: project.name | remove: '.md' %}
+<div class="selected-publication-item">
+  <div class="sel-pub-thumb-wrap">
+    <img src="/assets/projects/{{ asset_name }}.png"
+         alt="{{ project.title }}"
+         class="sel-pub-thumb"
+         onerror="this.src='/assets/publications/placeholder.png'">
+  </div>
+  <div class="sel-pub-body">
+    <div class="publication-title-row">
+      <strong>{{ project.title }}</strong>
+      <span class="project-status-badge">{{ project.status }}</span>
+    </div>
+    {% if project.tags %}
+    <div class="publication-tags">
+      {% for ordered_tag in tag_order %}
+        {% if project.tags contains ordered_tag %}
+          <span class="publication-tag">{{ ordered_tag }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+    <div class="project-description">{{ project.description }}</div>
+  </div>
+</div>
+{% endfor %}
+
+<style>
+.project-status-badge {
+  display: inline-block;
+  font-size: 0.68em;
+  font-weight: 600;
+  color: #059669;
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  border-radius: 999px;
+  padding: 1px 8px;
+  margin-left: 8px;
+  vertical-align: middle;
+  letter-spacing: 0.03em;
+}
+.project-description {
+  color: #555;
+  font-size: 0.88em;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+</style>
+
 ## 📚 Selected Publications
 
 {% include base_path %}
