@@ -3,7 +3,7 @@ title: "AI-Assisted Values Elicitation"
 collection: projects
 nickname: ai_values_elicitation
 status: "In Progress"
-date: 2025-06-01
+date: 2026-01-01
 tags:
   - Human-AI Collaboration
   - Responsible AI

@@ -116,10 +116,12 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   {% assign asset_name = project.nickname | default: project.name | remove: '.md' %}
 <div class="selected-publication-item">
   <div class="sel-pub-thumb-wrap">
-    <img src="/assets/projects/{{ asset_name }}.png"
-         alt="{{ project.title }}"
-         class="sel-pub-thumb"
-         onerror="this.src='/assets/publications/placeholder.png'">
+    <a href="/assets/projects/{{ asset_name }}.png" class="pub-img-popup" data-title="{{ project.title }}">
+      <img src="/assets/projects/{{ asset_name }}.png"
+           alt="{{ project.title }}"
+           class="sel-pub-thumb"
+           onerror="this.src='/assets/publications/placeholder.png'">
+    </a>
   </div>
   <div class="sel-pub-body">
     <div class="publication-title-row">

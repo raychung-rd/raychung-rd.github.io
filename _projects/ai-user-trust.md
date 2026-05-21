@@ -3,7 +3,7 @@ title: "User Trust towards AI Features"
 collection: projects
 nickname: ai_user_trust
 status: "In Progress"
-date: 2025-01-01
+date: 2026-03-01
 tags:
   - Human-AI Collaboration
   - Responsible AI
