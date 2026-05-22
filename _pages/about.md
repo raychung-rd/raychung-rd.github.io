@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student studying human-centered AI at the University of Washington, advised by <a href=”https://bime.uw.edu/faculty/ari-pollack/” target=”_blank” rel=”noopener noreferrer”>Ari Pollack</a>, <a href=”https://ischool.uw.edu/people/faculty/profile/wpratt” target=”_blank” rel=”noopener noreferrer”>Wanda Pratt</a>, and <a href=”https://orsonxu.com/” target=”_blank” rel=”noopener noreferrer”>Xuhai “Orson” Xu</a>. My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master's degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
+I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Xuhai “Orson” Xu](https://orsonxu.com/). My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master's degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
 
 <style>
 .page__content > p:first-of-type a {
@@ -445,4 +445,28 @@ For a complete list of publications, please visit my [Publications page](/public
     <img src="/assets/images/photo6.jpg" alt="Research photo 6" class="marquee-item">
   </div>
 </div>
+
+<script>
+(function() {
+  function markExternal() {
+    var advisorMatches = ['bime.uw.edu/faculty/ari-pollack', 'ischool.uw.edu/people/faculty/profile/wpratt', 'orsonxu.com'];
+    var anchors = document.querySelectorAll('a');
+    for (var i = 0; i < anchors.length; i++) {
+      var href = anchors[i].getAttribute('href') || '';
+      for (var j = 0; j < advisorMatches.length; j++) {
+        if (href.indexOf(advisorMatches[j]) !== -1) {
+          anchors[i].setAttribute('target', '_blank');
+          anchors[i].setAttribute('rel', 'noopener noreferrer');
+          break;
+        }
+      }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', markExternal);
+  } else {
+    markExternal();
+  }
+})();
+</script>
 
