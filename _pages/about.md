@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/){:target=”_blank”}, [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt){:target=”_blank”}, and [Xuhai “Orson” Xu](https://orsonxu.com/){:target=”_blank”}. My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master's degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
+I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Xuhai “Orson” Xu](https://orsonxu.com/). My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master's degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
 
 <style>
 .page__content > p:first-of-type a {
@@ -399,6 +399,12 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     if (!modal) return;
     var modalImg = modal.querySelector('img');
     var closeBtn = modal.querySelector('.modal-close');
+
+    // Open advisor links in new tab
+    document.querySelectorAll('.page__content > p:first-of-type a').forEach(function(a) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    });
 
     document.querySelectorAll('.pub-img-popup').forEach(function(link) {
       link.addEventListener('click', function(e) {
