@@ -9,7 +9,7 @@ venue: 'The Workshop on Interactive Systems in Healthcare (WISH), AMIA'
 authors: 'Ray-Yuan Chung, Athena Ortega, Zixuan Xu, Daeun Yoo, Jaime Snyder, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack'
 author_position: 'first'
 #citation: ''
-#paperurl: ''
+paperurl: 'https://arxiv.org/abs/2605.21777'
 tags:
   - 'Responsible AI'
   - 'User Experience Research'
