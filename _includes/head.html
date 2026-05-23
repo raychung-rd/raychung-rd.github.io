@@ -27,6 +27,22 @@
   :root { color-scheme: light; --global-bg-color: #ffffff; --global-text-color: #333639; }
   html { background-color: #ffffff; }
   body { background-color: #ffffff; color: #333639; }
+
+  /* Show author contact links inline on mobile; hide the Follow toggle */
+  .author__urls-wrapper button { display: none !important; }
+  .author__urls {
+    display: block !important;
+    position: relative !important;
+    right: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+  }
+  .author__urls:before,
+  .author__urls:after { display: none !important; }
 </style>
 
 <meta http-equiv="cleartype" content="on">
