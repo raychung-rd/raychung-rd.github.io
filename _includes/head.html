@@ -12,11 +12,6 @@
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: dark)">
-<style>
-  :root { color-scheme: light; --global-bg-color: #ffffff; --global-text-color: #333639; }
-  html { background-color: #ffffff; }
-  body { background-color: #ffffff; color: #333639; }
-</style>
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
@@ -26,6 +21,13 @@
 </script>
 
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+
+<style>
+  /* Force light mode — placed AFTER main.css to win the cascade */
+  :root { color-scheme: light; --global-bg-color: #ffffff; --global-text-color: #333639; }
+  html { background-color: #ffffff; }
+  body { background-color: #ffffff; color: #333639; }
+</style>
 
 <meta http-equiv="cleartype" content="on">
 
