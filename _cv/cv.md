@@ -13,7 +13,7 @@ body:has(.cv-entry) .page__content {
 }
 </style>
 
-<a href="/files/RayChung_CV_2026_May.pdf" class="cv-download-btn" target="_blank" rel="noopener noreferrer">Download CV as PDF</a>
+<a href="/files/RayChung_CV_2026_Oct.pdf" class="cv-download-btn" target="_blank" rel="noopener noreferrer">Download CV as PDF</a>
 
 <div style="text-align:center; margin-bottom: 0.5em;">
   <h1 style="margin-bottom:0.2em;">Ray-Yuan (Ray) Chung</h1>
@@ -86,6 +86,15 @@ B.S., Concentration: Pre-Med
 ## 📚 Publications
 
 <ul>
+  <li><b>Ray-Yuan Chung</b>, Muying Li, Millie Wu, Ari Pollack, Wanda Pratt, Lena Mamykina, Xuhai "Orson" Xu.
+  <i>ExTENDS: Empowering Domain Experts to Build Personalized AI Proxies for Asynchronous Patient Care.</i> In Submission.</li>
+
+  <li><b>Ray-Yuan Chung</b>, Athena Ortega, Xuhai "Orson" Xu, Wanda Pratt, Ari Pollack.
+  <i>“It Helped Me Understand, But…”: Examining Trust Calibration in Health AI Among Lay Health Consumers and Patients.</i> In Submission.</li>
+
+  <li>Millie Wu, Irene Nam, Aurora Guan, <b>Ray-Yuan Chung</b>, Ke Wang, Xuhai "Orson" Xu.
+  <i>“Live Your Day, Twice”: A Multi-Modal Agentic Mental Rehearsal Framework for Closing the Intention–Action Gap.</i> In Submission.</li>
+
   <li>Feng Chen, Luna Li, <b>Ray-Yuan Chung</b>, Wenyu Zeng, Yein Jeon, Oleg Zaslavsky.
   <i>Bridging the Cognitive Gap: Co-Designing and Evaluating a Voice-Enabled Community Chatbot for Older Adults.</i> AMIA 2026.</li>
 
