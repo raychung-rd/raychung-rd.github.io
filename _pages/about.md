@@ -169,7 +169,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 {% assign all_pubs = site.publications | sort: "date" | reverse %}
 {% assign filtered_pubs = "" | split: "" %}
 {% for pub in all_pubs %}
-  {% unless pub.hidden %}
+  {% unless pub.hidden or pub.selected == false %}
     {% if pub.tags contains "Human-AI Collaboration" or pub.tags contains "Responsible AI" or pub.tags contains "Generative AI" %}
       {% assign filtered_pubs = filtered_pubs | push: pub %}
     {% endif %}
