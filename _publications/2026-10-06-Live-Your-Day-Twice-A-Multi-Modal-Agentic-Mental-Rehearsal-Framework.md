@@ -10,6 +10,6 @@ authors: 'Millie Wu, Irene Nam, Aurora Guan, Ray-Yuan Chung, Ke Wang, Xuhai "Ors
 author_position: 'other'
 selected: false
 tags:
-  - 'Generative AI'
+  - 'Agentic AI'
   - 'Human-AI Collaboration'
 ---

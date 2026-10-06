@@ -30,7 +30,7 @@ layout: single
               </h3>
               {% if pub.tags %}
               <div class="publication-tags">
-                {% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics,User Experience Research" | split: "," %}
+                {% assign tag_order = "Agentic AI,Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics,User Experience Research" | split: "," %}
                 {% for ordered_tag in tag_order %}
                   {% if pub.tags contains ordered_tag %}
                     <span class="publication-tag">{{ ordered_tag }}</span>

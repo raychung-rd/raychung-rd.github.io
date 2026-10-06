@@ -34,12 +34,12 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     <span class="seeking-dot"></span>
     <span class="seeking-open-label">Open to Opportunities</span>
   </div>
-  <p class="seeking-notice-text">Currently seeking internship opportunities in the following areas for Summer/Fall 2026 and beyond!</p>
+  <p class="seeking-notice-text">Currently seeking internship and full-time opportunities in the following areas for Spring 2027 and beyond!</p>
   <div class="seeking-tags">
     <span class="seeking-tag">Generative AI</span>
     <span class="seeking-tag">Human-AI Collaboration</span>
     <span class="seeking-tag">Responsible AI</span>
-    <span class="seeking-tag">Agentic Systems</span>
+    <span class="seeking-tag">Agentic AI</span>
     <span class="seeking-tag">Health &amp; Social Technologies</span>
   </div>
 </div>
@@ -110,7 +110,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 
 ## 🔭 Current Work
 
-{% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Agentic Systems,Health Informatics,User Experience Research" | split: "," %}
+{% assign tag_order = "Agentic AI,Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics,User Experience Research" | split: "," %}
 {% assign projects = site.projects | sort: "date" | reverse %}
 {% for project in projects %}{% if project.hidden %}{% continue %}{% endif %}
   {% assign asset_name = project.nickname | default: project.name | remove: '.md' %}
@@ -170,12 +170,12 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 {% assign filtered_pubs = "" | split: "" %}
 {% for pub in all_pubs %}
   {% unless pub.hidden or pub.selected == false %}
-    {% if pub.tags contains "Human-AI Collaboration" or pub.tags contains "Responsible AI" or pub.tags contains "Generative AI" %}
+    {% if pub.tags contains "Human-AI Collaboration" or pub.tags contains "Responsible AI" or pub.tags contains "Generative AI" or pub.tags contains "Agentic AI" %}
       {% assign filtered_pubs = filtered_pubs | push: pub %}
     {% endif %}
   {% endunless %}
 {% endfor %}
-{% assign tag_order = "Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics,User Experience Research" | split: "," %}
+{% assign tag_order = "Agentic AI,Generative AI,Human-AI Collaboration,Responsible AI,Health Informatics,User Experience Research" | split: "," %}
 {% for paper in filtered_pubs limit:5 %}
   {% assign pub_slug = paper.permalink | remove: '/publication/' | default: paper.name | remove: '.md' %}
   {% assign asset_name = paper.nickname | default: pub_slug %}

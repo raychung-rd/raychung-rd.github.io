@@ -9,6 +9,6 @@ venue: 'In Submission'
 authors: 'Ray-Yuan Chung, Muying Li, Millie Wu, Ari Pollack, Wanda Pratt, Lena Mamykina, Xuhai "Orson" Xu'
 author_position: 'first'
 tags:
-  - 'Generative AI'
+  - 'Agentic AI'
   - 'Human-AI Collaboration'
 ---
