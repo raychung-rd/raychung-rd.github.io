@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Xuhai “Orson” Xu](https://orsonxu.com/). My research sits at the intersection of artificial intelligence (AI), human–computer interaction (HCI), and health informatics. Before my doctoral studies, I completed my master's degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
+I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Xuhai “Orson” Xu](https://orsonxu.com/). My research combines human-centered design, AI/ML, and mixed-methods evaluation to study how agentic AI systems support human collaboration and decision-making in multi-stakeholder environments. I am especially motivated by technologies that measurably improve people’s lived experiences, or produce frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues in human–computer interaction (HCI) and health informatics such as *ACM CHI* conference, *AMIA* conference, and *Nutrients* journal.
 
 <style>
 .page__content > p:first-of-type a {
@@ -23,7 +23,7 @@ body:has(.seeking-notice) .page__content {
 }
 </style>
 
-My work combines human-centered design, mixed-methods user research, and AI/ML to study how intelligent systems can support human collaboration and decision-making in multi-stakeholder environments. I am especially motivated by work that measurably improves people’s lived experiences, or produces frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues such as *ACM CHI* conference, *AMIA* conference, and *Nutrients* journal.
+Before my doctoral studies, I completed my master’s degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
 
 I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relentless commitment to inspiring those around him. If my work resonates with you, I’d love to connect and chat. Outside of research, I enjoy traveling and playing sports, mainly basketball and golf.
 
