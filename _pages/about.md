@@ -191,7 +191,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   <div class="sel-pub-body">
     <div class="publication-title-row">
       <strong>{{ forloop.index }}.</strong>
-      {% if paper.paperurl %}<a href="{{ paper.paperurl }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}
+      {% if paper.paperurl %}<a href="{{ paper.paperurl }}">{{ paper.title }}</a>{% else %}<span class="pub-title-text">{{ paper.title }}</span>{% endif %}
     </div>
     {% if paper.tags %}
     <div class="publication-tags">
@@ -275,7 +275,8 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   line-height: 1.4;
 }
 
-.publication-title-row a {
+.publication-title-row a,
+.publication-title-row .pub-title-text {
   color: #1E293B;
   text-decoration: none;
   font-weight: 700;

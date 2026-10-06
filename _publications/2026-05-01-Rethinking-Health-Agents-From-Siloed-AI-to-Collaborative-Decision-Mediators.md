@@ -7,7 +7,7 @@ category: conferences
 permalink: /publication/2026-03-26-Rethinking-Health-Agents-From-Siloed-AI-to-Collaborative-Decision-Mediators
 date: 2026-03-26
 venue: 'Workshop on Human-Agent Collaboration, ACM CHI'
-authors: 'Ray-Yuan Chung, Xuhai Xu, Ari Pollack'
+authors: 'Ray-Yuan Chung, Xuhai "Orson" Xu, Ari Pollack'
 author_position: 'first'
 paperurl: 'https://arxiv.org/abs/2603.24986'
 tags:
