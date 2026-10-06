@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Xuhai “Orson” Xu](https://orsonxu.com/). My research combines human-centered design, AI/ML, and mixed-methods evaluation to study how agentic AI systems support human collaboration and decision-making in multi-stakeholder environments. I am especially motivated by building technologies that measurably improve people’s lived experiences and developing frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues in human–computer interaction (HCI) and health informatics such as *ACM CHI* conference, *AMIA* conference, and *Nutrients* journal.
+I am a PhD candidate studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/), [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and [Xuhai “Orson” Xu](https://orsonxu.com/). My research combines human-centered design, AI/ML, and mixed-methods evaluation to study how agentic AI systems support human collaboration and decision-making in multi-stakeholder environments. I am especially motivated by building technologies that measurably improve people’s lived experiences and developing frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues in human–computer interaction (HCI) and health informatics such as *ACM CHI* conference, *AMIA* conference, and *Nutrients* journal.
 
 <style>
 .page__content > p:first-of-type a {
