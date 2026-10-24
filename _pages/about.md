@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD candidate studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/) and [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt). I’m also a visiting researcher at the SEA Lab at Columbia University, advised by [Xuhai “Orson” Xu](https://orsonxu.com/). My research focuses on **personal AI agents**, **human–AI collaboration**, and **responsible AI**. I am especially motivated by building technologies that measurably improve people’s lived experiences and developing frameworks that help researchers and practitioners build more responsible, trustworthy AI. My research has appeared in high-impact venues in human–computer interaction (HCI) and health informatics such as *ACM CHI* conference, *AMIA* conference, and *Nutrients* journal.
+I’m a PhD candidate studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/) and [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and a visiting researcher at Columbia University’s SEA Lab with [Xuhai “Orson” Xu](https://orsonxu.com/). I build and evaluate AI systems across **personal AI agents**, **human–AI collaboration**, and **responsible AI**. I’m driven to create technology that measurably improves users’ lived experiences, and frameworks that support researchers and practitioners in building more trustworthy AI. My work has been published at top venues including *ACM CHI*, *AMIA*, and *Nutrients*.
 
 <style>
 .page__content > p:first-of-type a {
@@ -23,9 +23,9 @@ body:has(.seeking-notice) .page__content {
 }
 </style>
 
-Before my doctoral studies, I completed my master’s degree at the University of Michigan and then worked as a dietitian and research scientist across health organizations and tech startups such as Impossible Foods, Unita Health, and Dexcom.
+Before my PhD, I earned my master’s at the University of Michigan and worked as a dietitian and research scientist at health organizations and health tech companies, including Impossible Foods, Unita Health AI, and Dexcom. I combine my clinical background with AI/ML methods to build systems that tackle real-world problems for clinicians and patients.
 
-I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relentless commitment to inspiring those around him. If my work resonates with you, I’d love to connect and chat. Outside of research, I enjoy traveling and playing sports, mainly basketball and golf.
+I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relentless commitment to inspiring those around him. Outside of research, I enjoy traveling, basketball, and golf. If my work resonates with you, let’s connect!
 
 <span style="color: #00274c;">Go Blue!</span> <span style="color: #32006e;">Go Dawgs!</span>
 
