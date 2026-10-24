@@ -15,7 +15,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m a PhD candidate studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/) and [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and a visiting researcher at Columbia University’s SEA Lab with [Xuhai “Orson” Xu](https://orsonxu.com/). I build and evaluate AI systems across **personal AI agents**, **human–AI collaboration**, and **responsible AI**. I’m driven to create technology that measurably improves users’ lived experiences, and frameworks that support researchers and practitioners in building more trustworthy AI. My work has been published at top venues including *ACM CHI*, *AMIA*, and *Nutrients*.
+I’m a PhD candidate studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/) and [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and a visiting researcher at Columbia University’s SEA Lab with [Xuhai “Orson” Xu](https://orsonxu.com/). I build and evaluate AI systems across **personal AI agents**, **human–AI collaboration**, and **responsible AI**. <!-- I’m driven to create technology that measurably improves users’ lived experiences, and frameworks that support researchers and practitioners in building more trustworthy AI. --> My work has been published at top venues including *ACM CHI*, *AMIA*, and *Nutrients*.
 
 <style>
 .page__content > p:first-of-type a {
@@ -42,7 +42,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     <span class="seeking-open-label">Open to Opportunities</span>
   </div>
   <p class="seeking-notice-text">Currently seeking full-time positions starting Spring 2027 in the following areas!</p>
-  <p class="seeking-roles">Research Engineer<span class="seeking-roles-sep">·</span>Applied Scientist<span class="seeking-roles-sep">·</span>UX Researcher<span class="seeking-roles-sep">·</span>Technical PM</p>
+  <p class="seeking-roles"><span class="seeking-role">Research Engineer</span><span class="seeking-role">Applied Scientist</span><span class="seeking-role">UX Researcher</span><span class="seeking-role">Technical PM</span></p>
   <div class="seeking-tags">
     <span class="seeking-tag">Generative AI</span>
     <span class="seeking-tag">Human-AI Collaboration</span>
@@ -107,10 +107,25 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   line-height: 1.4;
 }
 
-.seeking-roles-sep {
-  margin: 0 0.45em;
+.seeking-role {
+  margin-right: 0.9em;
+  white-space: nowrap;
+}
+
+.seeking-role::before,
+.seeking-role::after {
   color: #94A3B8;
   font-weight: 400;
+}
+
+.seeking-role::before {
+  content: "[";
+  margin-right: 0.25em;
+}
+
+.seeking-role::after {
+  content: "]";
+  margin-left: 0.25em;
 }
 
 .seeking-tags {
