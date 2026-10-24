@@ -3,6 +3,13 @@ permalink: /
 title: "About Me"
 seo_title: 'Ray-Yuan "Ray" Chung'
 author_profile: true
+typewriter:
+  - text: "Research Engineer"
+    color: "#2563EB"
+  - text: "AI Product Lead"
+    color: "#059669"
+  - text: "Registered Dietitian"
+    color: "#7C3AED"
 redirect_from:
   - /about/
   - /about.html
@@ -96,13 +103,13 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   margin: 0 0 10px 0 !important;
   font-size: 0.95em;
   font-weight: 700;
-  color: #2563EB;
+  color: #1E293B;
   line-height: 1.4;
 }
 
 .seeking-roles-sep {
   margin: 0 0.45em;
-  color: #93C5FD;
+  color: #94A3B8;
   font-weight: 400;
 }
 

@@ -1,0 +1,72 @@
+<div class="typewriter" aria-label="{{ include.items | map: 'text' | join: ', ' }}">
+  <span class="typewriter-text" aria-hidden="true"></span><span class="typewriter-cursor" aria-hidden="true">|</span>
+  <span class="typewriter-static" aria-hidden="true">{{ include.items | map: 'text' | join: ' · ' }}</span>
+</div>
+
+<style>
+.typewriter {
+  min-height: 1.4em;
+  margin: 0 0 0.35em;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.typewriter-text {
+  transition: opacity 0.4s ease;
+}
+.typewriter-text.is-fading {
+  opacity: 0;
+}
+.typewriter-cursor {
+  margin-left: 2px;
+  font-weight: 400;
+  animation: typewriter-blink 1s step-end infinite;
+}
+.typewriter-static {
+  display: none;
+}
+@keyframes typewriter-blink {
+  50% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .typewriter-text,
+  .typewriter-cursor { display: none; }
+  .typewriter-static { display: inline; color: #1E293B; }
+}
+</style>
+
+<script>
+(function () {
+  var items = {{ include.items | jsonify }};
+  var root = document.currentScript.previousElementSibling.previousElementSibling;
+  var text = root.querySelector('.typewriter-text');
+  var cursor = root.querySelector('.typewriter-cursor');
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var TYPE_MS = 70, HOLD_MS = 1800, FADE_MS = 400, GAP_MS = 250;
+  var i = 0;
+
+  function show(item) {
+    text.textContent = '';
+    text.classList.remove('is-fading');
+    text.style.color = item.color;
+    cursor.style.color = item.color;
+    var n = 0;
+    (function type() {
+      text.textContent = item.text.slice(0, ++n);
+      if (n < item.text.length) return setTimeout(type, TYPE_MS);
+      setTimeout(function () {
+        text.classList.add('is-fading');
+        setTimeout(function () {
+          text.textContent = '';
+          i = (i + 1) % items.length;
+          setTimeout(function () { show(items[i]); }, GAP_MS);
+        }, FADE_MS);
+      }, HOLD_MS);
+    })();
+  }
+
+  show(items[0]);
+})();
+</script>
