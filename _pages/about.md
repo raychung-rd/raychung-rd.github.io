@@ -99,16 +99,6 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 }
 
 
-.seeking-role::before {
-  content: "[";
-  margin-right: 0.25em;
-}
-
-.seeking-role::after {
-  content: "]";
-  margin-left: 0.25em;
-}
-
 .seeking-notice-text strong {
   font-weight: 700;
   color: #0F172A;
