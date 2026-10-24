@@ -30,7 +30,7 @@ body:has(.seeking-notice) .page__content {
 }
 </style>
 
-Before my PhD, I earned my master’s at the University of Michigan and worked as a dietitian and research scientist at health organizations and health tech companies, including Impossible Foods, Unita Health AI, and Dexcom. I combine my clinical background with AI/ML methods to build systems that tackle real-world problems for clinicians and patients.
+Before my PhD, I earned my master’s at the University of Michigan and worked as a dietitian, research scientist, and AI product lead at health tech companies, including Impossible Foods, Unita Health AI, and Dexcom. I combine my clinical background with AI/ML methods to build systems that tackle real-world problems for clinicians and patients.
 
 I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relentless commitment to inspiring those around him. Outside of research, I enjoy traveling, basketball, and golf. If my work resonates with you, let’s connect!
 
@@ -41,8 +41,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     <span class="seeking-dot"></span>
     <span class="seeking-open-label">Open to Opportunities</span>
   </div>
-  <p class="seeking-notice-text">Currently seeking full-time positions starting Spring 2027 in the following areas!</p>
-  <p class="seeking-roles"><span class="seeking-role">Research Engineer</span><span class="seeking-role">Applied Scientist</span><span class="seeking-role">UX Researcher</span><span class="seeking-role">Technical PM</span></p>
+  <p class="seeking-notice-text">Currently seeking full-time roles as a <strong>Research Engineer, Applied Scientist, UX Researcher, or Technical Product Manager</strong>, starting Spring 2027, in the following areas:</p>
   <div class="seeking-tags">
     <span class="seeking-tag">Generative AI</span>
     <span class="seeking-tag">Human-AI Collaboration</span>
@@ -92,31 +91,13 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 }
 
 .seeking-notice-text {
-  margin: 0 0 4px 0 !important;
+  margin: 0 0 10px 0 !important;
   font-size: 0.92em;
   font-weight: 600;
   color: #1a202c;
   line-height: 1.4;
 }
 
-.seeking-roles {
-  margin: 0 0 10px 0 !important;
-  font-size: 0.95em;
-  font-weight: 700;
-  color: #1E293B;
-  line-height: 1.4;
-}
-
-.seeking-role {
-  margin-right: 0.9em;
-  white-space: nowrap;
-}
-
-.seeking-role::before,
-.seeking-role::after {
-  color: #94A3B8;
-  font-weight: 400;
-}
 
 .seeking-role::before {
   content: "[";
@@ -126,6 +107,11 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 .seeking-role::after {
   content: "]";
   margin-left: 0.25em;
+}
+
+.seeking-notice-text strong {
+  font-weight: 700;
+  color: #0F172A;
 }
 
 .seeking-tags {

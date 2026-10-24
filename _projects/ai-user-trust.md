@@ -1,5 +1,5 @@
 ---
-title: "User Trust towards AI Features"
+title: "Human Trust Calibration towards AI Features"
 collection: projects
 nickname: ai_user_trust
 status: "In Progress"

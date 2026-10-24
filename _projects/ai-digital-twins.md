@@ -1,5 +1,5 @@
 ---
-title: "Building AI Digital Twins for Human-AI Collaboration"
+title: "Building Personal AI Agents to Support Patient-Clinician Collaboration"
 collection: projects
 nickname: ai_digital_twins
 status: "In Progress"
