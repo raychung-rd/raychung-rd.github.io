@@ -10,6 +10,8 @@ typewriter:
     color: "#059669"
   - text: "Registered Dietitian"
     color: "#7C3AED"
+  - text: "User Experience Researcher"
+    color: "#B45309"
 redirect_from:
   - /about/
   - /about.html
