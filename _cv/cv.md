@@ -52,7 +52,7 @@ B.S., Concentration: Pre-Med
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Sep 2024–Sep 2025</div><div class="cv-details">
-<b>Unita Health</b>, Santa Clara, CA (Remote)<br>
+<b>Unita Health AI</b>, Santa Clara, CA (Remote)<br>
 <b>Research Scientist, AI Agent</b>
 <!--
 <ul><li>Led end-to-end development of an LLM-based conversational agent for gastrointestinal health by building a RAG pipeline, incorporating prompt engineering and iterative evaluation.</li></ul>

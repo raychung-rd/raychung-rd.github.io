@@ -34,7 +34,8 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     <span class="seeking-dot"></span>
     <span class="seeking-open-label">Open to Opportunities</span>
   </div>
-  <p class="seeking-notice-text">Currently seeking internship and full-time opportunities in the following areas for Spring 2027 and beyond!</p>
+  <p class="seeking-notice-text">Currently seeking full-time positions starting Spring 2027 in the following areas!</p>
+  <p class="seeking-roles">Research Engineer<span class="seeking-roles-sep">·</span>Applied Scientist<span class="seeking-roles-sep">·</span>UX Researcher<span class="seeking-roles-sep">·</span>Technical PM</p>
   <div class="seeking-tags">
     <span class="seeking-tag">Generative AI</span>
     <span class="seeking-tag">Human-AI Collaboration</span>
@@ -84,11 +85,25 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
 }
 
 .seeking-notice-text {
-  margin: 0 0 10px 0 !important;
+  margin: 0 0 4px 0 !important;
   font-size: 0.92em;
   font-weight: 600;
   color: #1a202c;
   line-height: 1.4;
+}
+
+.seeking-roles {
+  margin: 0 0 10px 0 !important;
+  font-size: 0.95em;
+  font-weight: 700;
+  color: #2563EB;
+  line-height: 1.4;
+}
+
+.seeking-roles-sep {
+  margin: 0 0.45em;
+  color: #93C5FD;
+  font-weight: 400;
 }
 
 .seeking-tags {
