@@ -41,7 +41,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     <span class="seeking-dot"></span>
     <span class="seeking-open-label">Open to Opportunities</span>
   </div>
-  <p class="seeking-notice-text">Currently seeking full-time roles as a <strong>Research Engineer, Applied Scientist, UX Researcher, or Technical Product Manager</strong>, starting Spring 2027, in the following areas:</p>
+  <p class="seeking-notice-text">Currently seeking full-time roles as a Research Engineer, Applied Scientist, UX Researcher, or Technical Product Manager in the following areas:</p>
   <div class="seeking-tags">
     <span class="seeking-tag">Generative AI</span>
     <span class="seeking-tag">Human-AI Collaboration</span>
@@ -98,11 +98,6 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
   line-height: 1.4;
 }
 
-
-.seeking-notice-text strong {
-  font-weight: 700;
-  color: #0F172A;
-}
 
 .seeking-tags {
   display: flex;
