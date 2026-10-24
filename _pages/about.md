@@ -4,7 +4,7 @@ title: "About Me"
 seo_title: 'Ray-Yuan "Ray" Chung'
 author_profile: true
 typewriter:
-  - text: "Research Engineer"
+  - text: "AI Research Engineer"
     color: "#2563EB"
   - text: "AI Product Lead"
     color: "#059669"
@@ -34,7 +34,7 @@ body:has(.seeking-notice) .page__content {
 
 Before my PhD, I earned my master’s at the University of Michigan and worked as a dietitian, research scientist, and AI product lead at health tech companies, including Impossible Foods, Unita Health AI, and Dexcom. I combine my clinical background with AI/ML methods to build systems that tackle real-world problems for clinicians and patients.
 
-I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relentless commitment to inspiring those around him. Outside of research, I enjoy traveling, basketball, and golf. If my work resonates with you, let’s connect!
+I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relentless commitment to inspiring others through his passion and knowledge. Outside of research, I enjoy traveling, basketball, and golf. If my work resonates with you, let’s connect!
 
 <span style="color: #00274c;">Go Blue!</span> <span style="color: #32006e;">Go Dawgs!</span>
 
@@ -43,7 +43,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     <span class="seeking-dot"></span>
     <span class="seeking-open-label">Open to Opportunities</span>
   </div>
-  <p class="seeking-notice-text">Currently seeking full-time roles as a Research Engineer, Applied Scientist, UX Researcher, or Technical Product Manager in the following areas:</p>
+  <p class="seeking-notice-text">Currently seeking full-time roles as an AI Research Engineer, Applied Scientist, UX Researcher, or Technical Product Manager in the following areas:</p>
   <div class="seeking-tags">
     <span class="seeking-tag">Generative AI</span>
     <span class="seeking-tag">Human-AI Collaboration</span>
