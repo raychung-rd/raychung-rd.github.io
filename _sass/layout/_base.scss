@@ -17,13 +17,17 @@ body {
   padding-bottom: 9em;
   font-family: $global-font-family;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
+}
+
+strong, b {
+  font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6 {
