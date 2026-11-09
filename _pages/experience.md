@@ -5,13 +5,6 @@ permalink: /experience/
 author_profile: true
 ---
 
-<div class="cv-entry"><div class="cv-date">Sep 2023–Present</div><div class="cv-details">
-<b>University of Washington</b>, Seattle, WA<br>
-<b>Graduate Researcher</b>
-<p class="exp-desc">Built a multi-agent platform that lets clinical experts create personal AI agents for asynchronous patient care, plus a voice-enabled chatbot for older adults and an A/B experimentation platform for studying trust in AI.</p>
-<div class="exp-tools"><span>React</span><span>Node.js</span><span>Claude API</span><span>MongoDB</span><span>Streamlit</span><span>LangChain</span><span>OpenAI API</span><span>Gemini API</span></div>
-</div></div>
-
 <div class="cv-entry"><div class="cv-date">Sep 2024–Sep 2025</div><div class="cv-details">
 <b>Unita Health AI</b>, Santa Clara, CA (Remote)<br>
 <b>Research Scientist, AI Agents Product Team</b>
@@ -48,19 +41,6 @@ author_profile: true
 <b>Heali AI</b>, Remote<br>
 <b>AI Researcher</b>
 <p class="exp-desc">Curated and annotated nutrition datasets used to train an AI menu scanner that delivers personalized dietary insights.</p>
-</div></div>
-
-<div class="cv-entry"><div class="cv-date">Jan 2019–Apr 2020</div><div class="cv-details">
-<b>University of Michigan</b>, Ann Arbor, MI<br>
-<b>Graduate Researcher</b>
-<p class="exp-desc">Collected and managed behavioral and physiological data for a randomized trial on high-intensity interval training and weight management.</p>
-<div class="exp-tools"><span>REDCap</span></div>
-</div></div>
-
-<div class="cv-entry"><div class="cv-date">Jan 2019–Apr 2020</div><div class="cv-details">
-<b>University of Michigan Athletics</b>, Ann Arbor, MI<br>
-<b>Performance Nutrition Intern</b>
-<p class="exp-desc">Supported NCAA Division I athletes with personalized assessments, data-informed meal plans, and education to optimize performance and recovery.</p>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jun 2019–Aug 2019</div><div class="cv-details">
@@ -105,7 +85,7 @@ body:has(.exp-desc) .page__content {
   line-height: 1.55;
 }
 .exp-tools {
-  display: flex;
+  display: none; /* muted for now; change to flex to show tool tags */
   flex-wrap: wrap;
   gap: 5px;
 }
