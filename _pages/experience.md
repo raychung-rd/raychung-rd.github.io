@@ -6,16 +6,16 @@ author_profile: true
 ---
 
 <div class="cv-entry"><div class="cv-date">Sep 2024–Sep 2025</div><div class="cv-details">
-<b>Unita Health AI</b>, Santa Clara, CA (Remote)<br>
+<b>Unita Health AI</b>, Santa Clara, CA<br>
 <b>Research Scientist, AI Agents Product Team</b>
-<p class="exp-desc">Led end-to-end development of a RAG-based conversational health agent, tuning retrieval to <b>reduce hallucination rate by 30%</b>, and evaluated it with an LLM-as-a-Judge framework and a multi-phase study with <b>200+ users</b>.</p>
+<p class="exp-desc">Led end-to-end development of a <b>RAG-based conversational health agent</b>, tuning retrieval to <b>reduce hallucination rate by 30%</b>, and evaluated it through an <b>LLM-as-a-Judge framework</b> and user evaluation.</p>
 <div class="exp-tools"><span>OpenAI API</span><span>Pinecone</span><span>FastAPI</span><span>AWS</span></div>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jun 2024–Sep 2024</div><div class="cv-details">
 <b>Dexcom</b>, San Diego, CA<br>
 <b>User Experience Research Intern</b>
-<p class="exp-desc">Ran behavioral theory-driven mixed-methods research with <b>250 participants</b> (surveys and interviews) to define feature requirements for a wearable glucose biosensor, shaping the product roadmap.</p>
+<p class="exp-desc">Ran <b>Stages of Change Model-driven mixed-methods research</b> (surveys and interviews) to define feature requirements for a wearable glucose biosensor, shaping the product roadmap.</p>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">May 2022–Aug 2023</div><div class="cv-details">
@@ -25,34 +25,22 @@ author_profile: true
 <div class="exp-tools"><span>Python</span><span>SQL</span></div>
 </div></div>
 
-<div class="cv-entry"><div class="cv-date">Mar 2021–Aug 2023</div><div class="cv-details">
-<b>So Basic Co.</b>, Seattle, WA<br>
-<b>Healthcare Product Consultant</b>
-<p class="exp-desc">Led supplement ingredient research to ensure compliance with FDA and international health regulations, supporting product development and market launch.</p>
-</div></div>
-
 <div class="cv-entry"><div class="cv-date">Jun 2021–Apr 2022</div><div class="cv-details">
 <b>Eating Recovery Center</b>, Bellevue, WA<br>
 <b>Clinical Dietitian</b>
-<p class="exp-desc">Delivered nutrition assessments and interventions for patients with complex eating and mental health disorders as part of interdisciplinary care teams.</p>
-</div></div>
-
-<div class="cv-entry"><div class="cv-date">Mar 2021–May 2021</div><div class="cv-details">
-<b>Heali AI</b>, Remote<br>
-<b>AI Researcher</b>
-<p class="exp-desc">Curated and annotated nutrition datasets used to train an AI menu scanner that delivers personalized dietary insights.</p>
+<p class="exp-desc">Delivered <b>nutrition assessments and interventions</b> for patients with complex eating and mental health disorders as part of interdisciplinary care teams.</p>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jun 2019–Aug 2019</div><div class="cv-details">
 <b>Pharmavite</b>, West Hills, CA<br>
 <b>Research and Development Intern</b>
-<p class="exp-desc">Analyzed NHANES dietary data to inform data-driven public health strategy and product development decisions.</p>
+<p class="exp-desc">Analyzed <b>NHANES national survey data</b> to inform data-driven public health strategy and product development decisions.</p>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jan 2018–Jul 2018</div><div class="cv-details">
 <b>TaskUs / Valve</b>, Taipei, Taiwan<br>
 <b>User Experience Analyst – Team Lead</b>
-<p class="exp-desc">Led UX analysis of Steam platform usage trends, delivering product insights that <b>improved user satisfaction by 180%</b>.</p>
+<p class="exp-desc">Led UX analysis of Steam platform usage trends, delivering product insights that improved user satisfaction by 180%.</p>
 </div></div>
 
 <style>
