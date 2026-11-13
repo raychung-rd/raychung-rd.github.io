@@ -7,7 +7,7 @@ author_profile: true
 
 <div class="cv-entry"><div class="cv-date">Sep 2024–Sep 2025</div><div class="cv-details">
 <b>Unita Health AI</b>, Santa Clara, CA<br>
-<b>Research Scientist, AI Agents Product Team</b>
+<b>Research Engineer, AI Agents Product Team</b>
 <p class="exp-desc">Led end-to-end development of a <b>RAG-based conversational health agent</b>, tuning retrieval to <b>reduce hallucination rate by 30%</b>, and evaluated it through an <b>LLM-as-a-Judge framework</b> and user evaluation.</p>
 <div class="exp-tools"><span>OpenAI API</span><span>Pinecone</span><span>FastAPI</span><span>AWS</span></div>
 </div></div>
@@ -32,8 +32,8 @@ author_profile: true
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jun 2019–Aug 2019</div><div class="cv-details">
-<b>Pharmavite</b>, West Hills, CA<br>
-<b>Research and Development Intern</b>
+<b>Pharmavite Research</b>, West Hills, CA<br>
+<b>Data Science Research Intern</b>
 <p class="exp-desc">Analyzed <b>NHANES national survey data</b> to inform data-driven public health strategy and product development decisions.</p>
 </div></div>
 
