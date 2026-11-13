@@ -23,11 +23,12 @@ body:has(.cv-entry) .page__content {
 
 <div class="cv-entry"><div class="cv-date">2023–2027 (anticipated)</div><div class="cv-details">
 <b>University of Washington</b>, Seattle, WA<br>
-Ph.D. in Biomedical and Health Informatics, Concentration: Human-centered AI
+Ph.D. in Health Informatics, Concentration: Human-centered AI
 </div></div>
 <div class="cv-entry"><div class="cv-date">2018–2020</div><div class="cv-details">
 <b>University of Michigan</b>, Ann Arbor, MI<br>
-M.P.H. in Nutritional Sciences and Dietetics
+M.P.H. in Behavioral Science, Concentration: Nutrition<br>
+Honors: Global Scholars Award (Full Scholarship)
 </div></div>
 <div class="cv-entry"><div class="cv-date">2013–2017</div><div class="cv-details">
 <b>National Chung-Hsing University</b>, Taichung, Taiwan<br>

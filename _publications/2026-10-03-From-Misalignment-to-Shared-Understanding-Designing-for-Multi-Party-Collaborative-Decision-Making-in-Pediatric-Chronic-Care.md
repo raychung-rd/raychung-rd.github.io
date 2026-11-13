@@ -1,12 +1,12 @@
 ---
-title: "From Awareness to Action: Design Implications for Collaborative Decision-making Technologies in Pediatric Chronic Care"
+title: "From Misalignment to Shared Understanding: Designing for Multi-Party Collaborative Decision-Making in Pediatric Chronic Care"
 collection: publications
-hidden: true
-nickname: awareness_action_pediatric_2025
+selected: false
+nickname: misalignment_shared_understanding_2026
 category: conferences
-permalink: /publication/2025-09-01-From-Awareness-to-Action-Design-Implications-for-Collaborative-Decision-making-Technologies-in-Pediatric-Chronic-Care
-date: 2025-09-01
-venue: 'ACM CHI (in review)'
+permalink: /publication/2026-10-03-From-Misalignment-to-Shared-Understanding-Designing-for-Multi-Party-Collaborative-Decision-Making-in-Pediatric-Chronic-Care
+date: 2026-10-03
+venue: 'In Submission'
 authors: 'Ray-Yuan Chung, Jaime Snyder, Zixuan Xu, Daeun Yoo, Athena Ortega, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack'
 author_position: 'first'
 #citation: ''
