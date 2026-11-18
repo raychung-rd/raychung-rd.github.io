@@ -17,7 +17,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m a PhD candidate studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/) and [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and a visiting researcher at Columbia University’s SEA Lab with [Xuhai “Orson” Xu](https://orsonxu.com/). I build and evaluate AI systems across **personal AI agents**, **human–AI collaboration**, and **responsible AI**. <!-- I’m driven to create technology that measurably improves users’ lived experiences, and frameworks that support researchers and practitioners in building more trustworthy AI. --> My work has been published at top venues including *ACM CHI*, *AMIA*, and *Nutrients*.
+I’m a PhD candidate studying human-centered AI at the University of Washington, advised by [Ari Pollack](https://bime.uw.edu/faculty/ari-pollack/) and [Wanda Pratt](https://ischool.uw.edu/people/faculty/profile/wpratt), and a visiting researcher at Columbia University’s SEA Lab with [Xuhai “Orson” Xu](https://orsonxu.com/). I build and evaluate AI systems across **personal AI agents**, **human–AI collaboration**, **LLM-based human behavior simulation**, and **responsible AI**. <!-- I’m driven to create technology that measurably improves users’ lived experiences, and frameworks that support researchers and practitioners in building more trustworthy AI. --> My work has been published at top venues including *ACM CHI*, *AMIA*, and *Nutrients*.
 
 <style>
 .page__content > p:first-of-type a {
