@@ -32,7 +32,7 @@ body:has(.seeking-notice) .page__content {
 }
 </style>
 
-I earned my master’s at the University of Michigan, then worked as a dietitian, research scientist, and AI product lead at tech companies, including Impossible Foods, Unita Health AI, and Dexcom. I combined my clinical background with AI/ML and user research methods to build products that tackle real-world challenges for clinicians and health consumers.
+I earned my master’s at the University of Michigan and worked as a dietitian, research scientist, and AI product lead at tech companies, including Impossible Foods, Unita Health AI, and Dexcom. I combined my clinical background with AI/ML and user research methods to build products that tackle real-world challenges for clinicians and health consumers.
 
 I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relentless commitment to inspiring others through his passion and knowledge. Outside of research, I enjoy traveling, basketball, and golf. If my work resonates with you, let’s connect!
 
