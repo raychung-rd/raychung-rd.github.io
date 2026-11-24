@@ -43,7 +43,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     <span class="seeking-dot"></span>
     <span class="seeking-open-label">Open to Opportunities</span>
   </div>
-  <p class="seeking-notice-text">Currently seeking full-time positions as an Applied Scientist, Research Engineer, or Technical Product Manager in the following areas:</p>
+  <p class="seeking-notice-text">Currently seeking full-time positions such as Applied Scientist, Research Engineer, or other technical product roles in the following areas:</p>
   <div class="seeking-tags">
     <span class="seeking-tag">Generative AI</span>
     <span class="seeking-tag">Human-AI Collaboration</span>
