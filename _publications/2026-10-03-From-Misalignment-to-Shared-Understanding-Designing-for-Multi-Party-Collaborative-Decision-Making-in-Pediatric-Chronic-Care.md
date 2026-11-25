@@ -6,7 +6,8 @@ nickname: misalignment_shared_understanding_2026
 category: conferences
 permalink: /publication/2026-10-03-From-Misalignment-to-Shared-Understanding-Designing-for-Multi-Party-Collaborative-Decision-Making-in-Pediatric-Chronic-Care
 date: 2026-10-03
-venue: 'In Submission'
+venue: 'ACM CSCW, Major Revision'
+display_year: 2027
 authors: 'Ray-Yuan Chung, Jaime Snyder, Zixuan Xu, Daeun Yoo, Athena Ortega, Wanda Pratt, Aaron Wightman, Ryan Hutson, Cozumel Pruette, Ari Pollack'
 author_position: 'first'
 #citation: ''

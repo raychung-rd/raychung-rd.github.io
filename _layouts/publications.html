@@ -41,7 +41,7 @@ layout: single
               <p class="pub-authors">
                 {{ pub.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }}
               </p>
-              <p class="pub-venue">{{ pub.venue }} ({{ pub.date | date: "%Y" }})</p>
+              <p class="pub-venue">{{ pub.venue }} ({% if pub.display_year %}{{ pub.display_year }}{% else %}{{ pub.date | date: "%Y" }}{% endif %})</p>
               <div class="pub-links">
                 {% if pub.abstract and pub.abstract != '' %}
                   <button class="pub-abstract-btn" onclick="toggleAbstract('{{ pub_slug }}')">abstract ▾</button>
