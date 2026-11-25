@@ -213,7 +213,7 @@ I’m inspired by the late, great Kobe Bryant’s Mamba Mentality — his relent
     </div>
     {% endif %}
     <div class="publication-meta">
-      {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }}. <em>{{ paper.venue }}</em> ({% if paper.display_year %}{{ paper.display_year }}{% else %}{{ paper.date | date: "%Y" }}{% endif %}).
+      {{ paper.authors | replace: 'Ray-yuan Chung', '<b>Ray-yuan Chung</b>' | replace: 'Ray-Yuan Chung', '<b>Ray-Yuan Chung</b>' | replace: 'R Chung', '<b>R Chung</b>' | replace: 'Ray Chung', '<b>Ray Chung</b>' }}. <em>{{ paper.venue }}</em> ({% if paper.display_year %}{{ paper.display_year }}{% else %}{{ paper.date | date: "%Y" }}{% endif %}).{% if paper.status %} {{ paper.status }}.{% endif %}
     </div>
     <div class="pub-links">
       {% if paper.pdf %}
