@@ -1,5 +1,5 @@
 ---
-title: "Building Personal AI Agents to Support Patient-Clinician Collaboration"
+title: "Empowering Domain Experts to Build Personal AI Agents for Patient–Clinician Collaboration"
 collection: projects
 nickname: ai_digital_twins
 status: "In Progress"
@@ -7,5 +7,5 @@ date: 2026-02-01
 tags:
   - Human-AI Collaboration
   - Agentic AI
-description: "Health consumers increasingly use AI tools in isolation from healthcare providers, generating risks of hallucination, erosion of clinician authority, and fragmented decision-making. We are investigating what it takes to construct accurate digital proxies—AI agents that can represent individuals to support human-AI collaboration in this setting."
+description: "We are entering an era in which people will increasingly interact with AI agents created by other humans. In this project, we investigate what it takes for domain experts to build AI proxies—AI agents that represent their voice and knowledge to provide continuous support for patients. We built a multi-agent system with integrated simulated patients that lets domain experts author and test their proxies. The authoring system will soon be open-sourced, and we are developing evaluation metrics for AI proxies."
 ---
