@@ -1,5 +1,5 @@
 ---
-title: "AI-Assisted Values Elicitation"
+title: "LLMs for Human Value Elicitation and Mediation"
 collection: projects
 nickname: ai_values_elicitation
 status: "In Progress"
@@ -7,5 +7,5 @@ date: 2026-01-01
 tags:
   - Human-AI Collaboration
   - Responsible AI
-description: "My team developed a React application that uses LLMs to elicit, extract, and visualize individual values from open-ended conversation, mapping them onto a shared representational space. This work explores the capacity of current LLMs to act as value mediators, bridging personal values and goals between humans to support collaborative decisions."
+description: "Value alignment has become a central challenge as LLMs are increasingly used to understand what humans care about. We are studying how LLMs can support the elicitation, extraction, and visualization of individual values from open-ended conversations and personal stories, and whether they can act as value mediators that bridge personal values and goals to support collaborative decisions."
 ---
