@@ -1,9 +1,9 @@
 ---
-title: "Empowering Domain Experts to Build Personal AI Agents for Patient–Clinician Collaboration"
+title: "Empowering Domain Experts to Build Personal AI Agents for Asynchronous Collaboration"
 collection: projects
 nickname: ai_digital_twins
 status: "In Progress"
-date: 2026-02-01
+date: 2026-03-01
 tags:
   - Human-AI Collaboration
   - Agentic AI

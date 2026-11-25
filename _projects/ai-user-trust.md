@@ -3,7 +3,7 @@ title: "User Trust Calibration in AI Systems"
 collection: projects
 nickname: ai_user_trust
 status: "In Progress"
-date: 2026-03-01
+date: 2026-02-01
 tags:
   - Human-AI Collaboration
   - Responsible AI
