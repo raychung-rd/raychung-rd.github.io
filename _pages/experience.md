@@ -8,33 +8,33 @@ author_profile: true
 <div class="cv-entry"><div class="cv-date">Sep 2024–Sep 2025</div><div class="cv-details">
 <b>Unita Health AI</b>, Santa Clara, CA<br>
 <b>Research Engineer, AI Agents Product Team</b>
-<p class="exp-desc">Led end-to-end development of a <b>RAG-based conversational health agent</b>, tuning retrieval to <b>reduce hallucination rate by 30%</b>, and evaluated it through an <b>LLM-as-a-Judge framework</b> and user evaluation.</p>
+<p class="exp-desc">Led the end-to-end development of a <b>RAG-powered conversational health agent</b>, including dataset curation and evaluation with 200+ users and an <b>LLM-as-a-Judge framework</b>.</p>
 <div class="exp-tools"><span>OpenAI API</span><span>Pinecone</span><span>FastAPI</span><span>AWS</span></div>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jun 2024–Sep 2024</div><div class="cv-details">
 <b>Dexcom</b>, San Diego, CA<br>
 <b>User Experience Research Intern</b>
-<p class="exp-desc">Ran <b>Stages of Change Model-driven mixed-methods research</b> (surveys and interviews) to define feature requirements for a wearable glucose biosensor, shaping the product roadmap.</p>
+<p class="exp-desc">Conducted <b>Stages of Change Model-driven mixed-methods research</b> (N=250 surveys &amp; interviews) to define feature requirements for a wearable glucose biosensor, directly shaping the product roadmap.</p>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">May 2022–Aug 2023</div><div class="cv-details">
 <b>Impossible Foods</b>, Redwood City, CA<br>
 <b>Research Scientist</b>
-<p class="exp-desc">Analyzed <b>10k+ nutrient data points</b> to generate insights that drove the development of <b>7 product SKUs</b> and informed long-term business strategy.</p>
+<p class="exp-desc">Analyzed <b>100K+ nutrient data points</b> in Python and SQL to generate data-driven product insights that drove the development of <b>7 product SKUs</b> and informed long-term business strategy.</p>
 <div class="exp-tools"><span>Python</span><span>SQL</span></div>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jun 2021–Apr 2022</div><div class="cv-details">
 <b>Eating Recovery Center</b>, Bellevue, WA<br>
 <b>Clinical Dietitian</b>
-<p class="exp-desc">Delivered <b>nutrition assessments and interventions</b> for patients with complex eating and mental health disorders as part of interdisciplinary care teams.</p>
+<p class="exp-desc">Interpreted behavioral, psychological, and medical data with multidisciplinary mental-health teams to guide care for patients with eating and mental-health disorders.</p>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jun 2019–Aug 2019</div><div class="cv-details">
 <b>Pharmavite Research</b>, West Hills, CA<br>
 <b>Data Science Research Intern</b>
-<p class="exp-desc">Analyzed <b>NHANES national survey data</b> to inform data-driven public health strategy and product development decisions.</p>
+<p class="exp-desc">Analyzed <b>NHANES national health and behavioral survey data</b> to inform data-driven public health strategy and product development decisions.</p>
 </div></div>
 
 <div class="cv-entry"><div class="cv-date">Jan 2018–Jul 2018</div><div class="cv-details">
