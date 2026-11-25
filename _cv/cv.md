@@ -13,7 +13,7 @@ body:has(.cv-entry) .page__content {
 }
 </style>
 
-<a href="/files/RayChung_CV_2026_Oct.pdf" class="cv-download-btn" target="_blank" rel="noopener noreferrer">Download CV as PDF</a>
+<a href="/files/RayChung_CV_full_2026_Nov.pdf" class="cv-download-btn" target="_blank" rel="noopener noreferrer">Download CV as PDF</a>
 
 <div style="text-align:center; margin-bottom: 0.5em;">
   <h1 style="margin-bottom:0.2em;">Ray-Yuan (Ray) Chung</h1>
